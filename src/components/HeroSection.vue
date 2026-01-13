@@ -15,7 +15,7 @@
               placeholder="Work email" 
               class="flex-1 px-4 py-3 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
-            <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="bg-black text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors whitespace-nowrap inline-block text-center relative overflow-hidden shimmer-button">
+            <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Hero Section')" class="bg-black text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors whitespace-nowrap inline-block text-center relative overflow-hidden shimmer-button">
               <span class="relative z-10">Contact Sales</span>
             </a>
           </div>
@@ -35,6 +35,7 @@
 </template>
 
 <script setup>
+import { trackContactSales } from '../composables/useAnalytics'
 // Hero Section Component
 </script>
 

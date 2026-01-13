@@ -27,7 +27,7 @@
               <span class="text-sm sm:text-base text-gray-700">Sound professional every time—consistent, polite, and on-brand conversations with every caller.</span>
             </li>
           </ul>
-          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="bg-gray-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-gray-800 transition-colors inline-block">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Features Section')" class="bg-gray-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-gray-800 transition-colors inline-block">
             Contact Sales
           </a>
         </div>
@@ -64,4 +64,5 @@
 
 <script setup>
 import { CheckIcon } from '@heroicons/vue/24/solid'
+import { trackContactSales } from '../composables/useAnalytics'
 </script>

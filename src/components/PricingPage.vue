@@ -70,7 +70,7 @@
             </div>
             <p class="text-xs sm:text-sm text-gray-500 mt-2">Contact us for pricing</p>
           </div>
-          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="w-full bg-gray-900 text-white py-2 sm:py-3 rounded-md text-sm sm:text-base font-semibold hover:bg-gray-800 transition-colors mb-4 sm:mb-6 inline-block text-center">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Pricing Page')" class="w-full bg-gray-900 text-white py-2 sm:py-3 rounded-md text-sm sm:text-base font-semibold hover:bg-gray-800 transition-colors mb-4 sm:mb-6 inline-block text-center">
             Contact sales
           </a>
           <ul class="space-y-2 sm:space-y-3">
@@ -139,6 +139,7 @@ import { ref } from 'vue'
 import Header from './Header.vue'
 import Footer from './Footer.vue'
 import { CheckIcon, ChevronDownIcon } from '@heroicons/vue/24/solid'
+import { trackContactSales } from '../composables/useAnalytics'
 
 const openFaqs = ref({})
 

@@ -180,7 +180,7 @@
           </a>
           
           <!-- Contact sales button -->
-          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors inline-block">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Header Desktop')" class="bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors inline-block">
             Contact sales
           </a>
         </div>
@@ -208,7 +208,7 @@
             <a href="#" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium">
               Log in
             </a>
-            <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="block w-full bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors text-center">
+            <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Header Mobile')" class="block w-full bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors text-center">
               Contact sales
             </a>
           </div>
@@ -223,6 +223,7 @@ import { ref } from 'vue'
 import Logo from './Logo.vue'
 import { ChevronDownIcon, GlobeAltIcon, Bars3Icon, XMarkIcon, ChatBubbleLeftRightIcon } from '@heroicons/vue/24/outline'
 import { SparklesIcon, PhoneIcon, CalendarIcon, WrenchScrewdriverIcon } from '@heroicons/vue/24/solid'
+import { trackContactSales } from '../composables/useAnalytics'
 
 const mobileMenuOpen = ref(false)
 </script>

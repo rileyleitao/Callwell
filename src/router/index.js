@@ -6,6 +6,7 @@ import CallAnsweringPage from '../pages/CallAnsweringPage.vue'
 import AppointmentBookingPage from '../pages/AppointmentBookingPage.vue'
 import ProductsPage from '../pages/ProductsPage.vue'
 import SolutionsPage from '../pages/SolutionsPage.vue'
+import NotFoundPage from '../pages/NotFoundPage.vue'
 
 const routes = [
   {
@@ -69,6 +70,15 @@ const routes = [
     meta: {
       title: 'Solutions for Service Businesses | Callwell',
       description: 'From after-hours calls to peak demand periods, Callwell handles every scenario so you never miss a booking opportunity.'
+    }
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: NotFoundPage,
+    meta: {
+      title: '404 - Page Not Found | Callwell',
+      description: 'The page you are looking for could not be found.'
     }
   }
 ]

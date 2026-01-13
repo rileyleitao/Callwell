@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="text-center mt-8 sm:mt-12">
-        <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="bg-gray-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-gray-800 transition-colors inline-block">
+        <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Features Grid Section')" class="bg-gray-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-gray-800 transition-colors inline-block">
           Contact Sales
         </a>
       </div>
@@ -38,4 +38,5 @@
 
 <script setup>
 import { PhoneIcon, CurrencyDollarIcon, UserGroupIcon } from '@heroicons/vue/24/solid'
+import { trackContactSales } from '../composables/useAnalytics'
 </script>
