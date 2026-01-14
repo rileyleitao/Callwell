@@ -4,7 +4,7 @@
     <HeroSection />
     <ProblemSection />
     <IntegrationsSection />
-    <FeaturesSection />
+    <FeaturesBentoSection />
     <FeaturesGridSection />
     <StatsSection />
     <CTASection />
@@ -17,7 +17,7 @@ import Header from '../components/Header.vue'
 import HeroSection from '../components/HeroSection.vue'
 import ProblemSection from '../components/ProblemSection.vue'
 import IntegrationsSection from '../components/IntegrationsSection.vue'
-import FeaturesSection from '../components/FeaturesSection.vue'
+import FeaturesBentoSection from '../components/FeaturesBentoSection.vue'
 import FeaturesGridSection from '../components/FeaturesGridSection.vue'
 import StatsSection from '../components/StatsSection.vue'
 import CTASection from '../components/CTASection.vue'
