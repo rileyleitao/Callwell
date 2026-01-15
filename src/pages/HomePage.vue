@@ -1,13 +1,15 @@
 <template>
   <div class="min-h-screen bg-white">
     <Header />
-    <HeroSection />
-    <ProblemSection />
-    <IntegrationsSection />
-    <FeaturesBentoSection />
-    <FeaturesGridSection />
-    <StatsSection />
-    <CTASection />
+    <main class="space-y-16 sm:space-y-20 lg:space-y-24">
+      <HeroSection />
+      <HeroCTASection />
+      <IntegrationsSection />
+      <ProblemSection />
+      <FeaturesBentoSection />
+      <StatsSection />
+      <CTASection />
+    </main>
     <Footer />
   </div>
 </template>
@@ -15,6 +17,7 @@
 <script setup>
 import Header from '../components/Header.vue'
 import HeroSection from '../components/HeroSection.vue'
+import HeroCTASection from '../components/HeroCTASection.vue'
 import ProblemSection from '../components/ProblemSection.vue'
 import IntegrationsSection from '../components/IntegrationsSection.vue'
 import FeaturesBentoSection from '../components/FeaturesBentoSection.vue'

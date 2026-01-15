@@ -52,6 +52,17 @@
                       </div>
                     </div>
                   </router-link>
+                  <router-link to="/emergency-call-routing" class="block group/item">
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
+                        <ExclamationTriangleIcon class="w-5 h-5 text-blue-600" />
+                      </div>
+                      <div>
+                        <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Emergency Call Routing</h4>
+                        <p class="text-xs text-gray-600 mt-1">Intelligent escalations with human-in-the-loop verification</p>
+                      </div>
+                    </div>
+                  </router-link>
                   <div class="block group/item opacity-60">
                     <div class="flex items-start space-x-3">
                       <div class="w-8 h-8 bg-gray-100 rounded flex items-center justify-center flex-shrink-0">
@@ -175,9 +186,9 @@
           </div>
           
           <!-- Log in -->
-          <a href="#" class="text-gray-900 hover:text-gray-700 text-sm font-medium">
+          <router-link to="/login" class="text-gray-900 hover:text-gray-700 text-sm font-medium">
             Log in
-          </a>
+          </router-link>
           
           <!-- Contact sales button -->
           <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Header Desktop')" class="bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors inline-block">
@@ -205,9 +216,9 @@
             </router-link>
           </div>
           <div class="pt-4 border-t border-gray-200 space-y-2">
-            <a href="#" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium">
+            <router-link to="/login" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium">
               Log in
-            </a>
+            </router-link>
             <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Header Mobile')" class="block w-full bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors text-center">
               Contact sales
             </a>
@@ -221,8 +232,8 @@
 <script setup>
 import { ref } from 'vue'
 import Logo from './Logo.vue'
-import { ChevronDownIcon, GlobeAltIcon, Bars3Icon, XMarkIcon, ChatBubbleLeftRightIcon } from '@heroicons/vue/24/outline'
-import { SparklesIcon, PhoneIcon, CalendarIcon, WrenchScrewdriverIcon } from '@heroicons/vue/24/solid'
+import { ChevronDownIcon, GlobeAltIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/solid'
+import { ChatBubbleLeftRightIcon, SparklesIcon, PhoneIcon, CalendarIcon, WrenchScrewdriverIcon, ExclamationTriangleIcon } from '@heroicons/vue/24/outline'
 import { trackContactSales } from '../composables/useAnalytics'
 
 const mobileMenuOpen = ref(false)

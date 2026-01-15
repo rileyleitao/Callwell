@@ -245,6 +245,7 @@
 <script setup>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-import { CheckIcon, PhoneIcon, CalendarIcon, ChatBubbleLeftRightIcon, StarIcon, AdjustmentsHorizontalIcon, DocumentTextIcon, ChartBarIcon, Cog6ToothIcon } from '@heroicons/vue/24/solid'
+import { CheckIcon, AdjustmentsHorizontalIcon, DocumentTextIcon, ChartBarIcon, Cog6ToothIcon } from '@heroicons/vue/24/solid'
+import { PhoneIcon, CalendarIcon, ChatBubbleLeftRightIcon, StarIcon } from '@heroicons/vue/24/outline'
 import { trackContactSales } from '../composables/useAnalytics'
 </script>

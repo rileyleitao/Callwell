@@ -7,6 +7,8 @@ import AppointmentBookingPage from '../pages/AppointmentBookingPage.vue'
 import ProductsPage from '../pages/ProductsPage.vue'
 import SolutionsPage from '../pages/SolutionsPage.vue'
 import NotFoundPage from '../pages/NotFoundPage.vue'
+import LoginPage from '../pages/LoginPage.vue'
+import EmergencyCallRoutingPage from '../pages/EmergencyCallRoutingPage.vue'
 
 const routes = [
   {
@@ -55,6 +57,15 @@ const routes = [
     }
   },
   {
+    path: '/emergency-call-routing',
+    name: 'EmergencyCallRouting',
+    component: EmergencyCallRoutingPage,
+    meta: {
+      title: 'Intelligent Escalations for Emergency Calls | Callwell',
+      description: 'Never miss an emergency. Our intelligent routing system automatically detects urgent calls and escalates them to your team with human-in-the-loop verification.'
+    }
+  },
+  {
     path: '/products',
     name: 'Products',
     component: ProductsPage,
@@ -73,6 +84,15 @@ const routes = [
     }
   },
   {
+    path: '/login',
+    name: 'Login',
+    component: LoginPage,
+    meta: {
+      title: 'Sign in to your account | Callwell',
+      description: 'Sign in to your Callwell account to manage your AI office assistant settings.'
+    }
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
     component: NotFoundPage,
@@ -85,7 +105,11 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    // Always scroll to top when navigating to a new page
+    return { top: 0 }
+  }
 })
 
 // Update document title and meta tags on route change

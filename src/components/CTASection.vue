@@ -1,19 +1,24 @@
 <template>
-  <section class="bg-blue-600 text-white py-12 sm:py-16 lg:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-        Ready to protect your revenue?
-      </h2>
-      <p class="text-lg sm:text-xl text-blue-100 mb-8 sm:mb-10 max-w-3xl mx-auto">
-        Join service businesses that never miss a booking. Reduce staff workload and deliver a consistently professional experience—automatically.
-      </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('CTA Section')" class="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-gray-100 transition-colors inline-block">
-          Contact Sales
-        </a>
-        <router-link to="/how-it-works" class="text-white text-base sm:text-lg font-medium hover:underline">
-          See how it works
-        </router-link>
+  <section class="bg-indigo-100 py-16 sm:py-20 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+        <div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            Ready to protect your revenue?<br />
+            Start your free trial today.
+          </h2>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 lg:flex-shrink-0">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('CTA Section')" class="bg-indigo-600 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-indigo-700 transition-colors inline-block">
+            Get started
+          </a>
+          <router-link to="/how-it-works" class="text-gray-900 text-sm font-medium hover:text-gray-700 inline-flex items-center gap-1">
+            Learn more
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </router-link>
+        </div>
       </div>
     </div>
   </section>

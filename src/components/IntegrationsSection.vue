@@ -1,10 +1,13 @@
 <template>
   <section class="bg-white py-12 sm:py-16 lg:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8 lg:mb-12">
+      <p class="text-indigo-600 font-semibold text-sm sm:text-base mb-3">
+        Get started in minutes
+      </p>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
         Easy setup—connect your existing phone system
       </h2>
-      <p class="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 lg:mb-12 max-w-3xl mx-auto">
+      <p class="text-lg sm:text-xl text-gray-600 mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto">
         Works with your current phone number. No hardware needed. Get started in minutes, not months.
       </p>
       <div class="flex justify-center mb-6 sm:mb-8 lg:mb-12">
