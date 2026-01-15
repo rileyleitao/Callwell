@@ -8,15 +8,15 @@
             In Beta
           </span>
           <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="text-gray-600 text-sm font-medium hover:text-gray-900 inline-flex items-center gap-1">
-            Try Beta now
+            Try for a limited time
             <ArrowRightIcon class="w-4 h-4" />
           </a>
         </div>
         
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
+        <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-4 sm:mb-6">
           Never Miss Another Booking
         </h1>
-        <p class="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
+        <p class="text-xl sm:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
           Callwell is an AI office assistant that acts as a virtual front desk—answering calls, booking appointments, and managing scheduling when your team is unavailable.
         </p>
         <div class="flex flex-wrap items-center gap-4">

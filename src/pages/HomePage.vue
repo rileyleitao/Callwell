@@ -1,12 +1,13 @@
 <template>
   <div class="min-h-screen bg-white">
     <Header />
-    <main class="space-y-16 sm:space-y-20 lg:space-y-24">
+    <main>
       <HeroSection />
       <HeroCTASection />
-      <IntegrationsSection />
-      <ProblemSection />
       <FeaturesBentoSection />
+      <ProblemSection />
+      <IntegrationsSection />
+      <FeaturesGridSection />
       <StatsSection />
       <CTASection />
     </main>

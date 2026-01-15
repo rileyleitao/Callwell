@@ -1,12 +1,12 @@
 <template>
-  <section class="bg-white py-12 sm:py-16 lg:py-20">
+  <section class="bg-white py-16 sm:py-20 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Heading -->
       <div class="text-center mb-12 sm:mb-16">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
           Built for service businesses like yours
         </h2>
-        <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+        <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
           Join service businesses that never miss a booking opportunity and deliver a consistently professional experience.
         </p>
       </div>

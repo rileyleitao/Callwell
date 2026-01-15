@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Apply Satoshi font globally */
+html, body {
+  font-family: 'Satoshi', ui-sans-serif, system-ui, sans-serif;
+}

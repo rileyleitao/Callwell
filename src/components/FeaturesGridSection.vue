@@ -1,11 +1,11 @@
 <template>
-  <section class="bg-white py-12 sm:py-16 lg:py-20">
+  <section class="bg-white py-16 sm:py-20 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12 sm:mb-16">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
           Stay on top of customer support
         </h2>
-        <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+        <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
           Never miss a call or booking opportunity. Our AI-powered system handles every customer interaction, ensuring your business is always available and responsive.
         </p>
       </div>
@@ -18,7 +18,7 @@
           <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
             24/7 Call Answering
           </h3>
-          <p class="text-base text-gray-600 mb-4">
+          <p class="text-base sm:text-lg text-gray-600 mb-4">
             Never miss another call. Our AI answers every incoming call 24/7, handles customer inquiries, and books appointments—even after hours or during peak demand. Always available when your customers need you.
           </p>
           <router-link to="/automated-call-answering" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center gap-1">
@@ -37,7 +37,7 @@
           <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
             Appointment Booking
           </h3>
-          <p class="text-base text-gray-600 mb-4">
+          <p class="text-base sm:text-lg text-gray-600 mb-4">
             Automated scheduling that works around the clock. Our AI understands your availability, books appointments in real-time during customer calls, and handles rescheduling requests automatically.
           </p>
           <router-link to="/ai-appointment-scheduling" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center gap-1">
@@ -56,7 +56,7 @@
           <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
             Intelligent Escalations
           </h3>
-          <p class="text-base text-gray-600 mb-4">
+          <p class="text-base sm:text-lg text-gray-600 mb-4">
             Never miss an emergency. Our intelligent routing system automatically detects urgent calls and escalates them to your team with human-in-the-loop verification, ensuring critical situations are handled immediately.
           </p>
           <router-link to="/emergency-call-routing" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center gap-1">
