@@ -9,9 +9,9 @@
           <p class="text-lg sm:text-xl text-gray-300 mb-4 sm:mb-6">
             For  service businesses, every missed call is a customer booking with someone else.
           </p>
-          <button class="bg-white text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-gray-100 transition-colors mt-4 sm:mt-6">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Problem Section')" class="bg-white text-gray-900 px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-100 transition-colors mt-4 sm:mt-6 inline-block">
             Protect Revenue
-          </button>
+          </a>
         </div>
         <div class="space-y-3 sm:space-y-4 mt-8 lg:mt-0">
           <div class="flex items-start">
@@ -38,4 +38,5 @@
 
 <script setup>
 import { PhoneIcon, CurrencyDollarIcon } from '@heroicons/vue/24/solid'
+import { trackContactSales } from '../composables/useAnalytics'
 </script>

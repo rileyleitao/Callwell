@@ -15,13 +15,13 @@
               target="_blank" 
               rel="noopener noreferrer" 
               @click="trackContactSales('Hero CTA Section')"
-              class="bg-gray-900 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors inline-block"
+              class="bg-gray-900 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-800 transition-colors inline-block"
             >
               Get started
             </a>
             <router-link 
               to="/pricing" 
-              class="bg-white text-gray-900 px-5 py-2.5 rounded-full text-sm font-semibold border border-gray-300 hover:bg-gray-50 transition-colors inline-block"
+              class="bg-white text-gray-900 px-6 py-3 rounded-md text-sm font-semibold border border-gray-300 hover:bg-gray-50 transition-colors inline-block"
             >
               See pricing
             </router-link>
