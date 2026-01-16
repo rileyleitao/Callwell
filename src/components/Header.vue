@@ -5,7 +5,7 @@
         <!-- Logo on the left with spacing -->
         <div class="flex-shrink-0 flex items-center pl-4 sm:pl-6 lg:pl-8">
           <router-link to="/">
-            <Logo class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 text-gray-900" />
+            <Logo class="w-28 h-28 sm:w-28 sm:h-28 md:w-32 md:h-32 text-gray-900" />
           </router-link>
         </div>
         
@@ -141,35 +141,6 @@
               </div>
             </div>
 
-            <!-- Resources Dropdown -->
-            <div class="relative group">
-              <a href="#" class="text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium flex items-center">
-                Resources
-                <ChevronDownIcon class="w-4 h-4 ml-1" />
-              </a>
-              <!-- Dropdown Menu -->
-              <div class="absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] bg-white rounded-lg shadow-lg border border-gray-200 p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <div class="space-y-4">
-                  <router-link to="/how-it-works" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">How It Works</h4>
-                    <p class="text-xs text-gray-600 mt-1">Learn about our automated office assistant</p>
-                  </router-link>
-                  <router-link to="/automated-call-answering" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Call Answering</h4>
-                    <p class="text-xs text-gray-600 mt-1">Automated call answering for service businesses</p>
-                  </router-link>
-                  <router-link to="/ai-appointment-scheduling" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Appointment Booking</h4>
-                    <p class="text-xs text-gray-600 mt-1">AI that schedules appointments automatically</p>
-                  </router-link>
-                  <a href="#" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Case Studies</h4>
-                    <p class="text-xs text-gray-600 mt-1">See how businesses use Callwell</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-
             <!-- Pricing (no dropdown) -->
             <router-link to="/pricing" class="text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">
               Pricing
@@ -208,9 +179,6 @@
             <router-link to="/solutions" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium">
               Solutions
             </router-link>
-            <a href="#" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium">
-              Resources
-            </a>
             <router-link to="/pricing" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium">
               Pricing
             </router-link>

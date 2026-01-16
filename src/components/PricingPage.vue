@@ -29,9 +29,9 @@
             </div>
             <p class="text-xs sm:text-sm text-gray-500 mt-2">CAD</p>
           </div>
-          <button class="w-full bg-blue-600 text-white py-2 sm:py-3 rounded-md text-sm sm:text-base font-semibold hover:bg-blue-700 transition-colors mb-4 sm:mb-6">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Pricing Page - Get Started')" class="w-full bg-blue-600 text-white py-2 sm:py-3 rounded-md text-sm sm:text-base font-semibold hover:bg-blue-700 transition-colors mb-4 sm:mb-6 inline-block text-center">
             Get started
-          </button>
+          </a>
           <ul class="space-y-2 sm:space-y-3">
             <li class="flex items-start">
               <CheckIcon class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
