@@ -102,62 +102,27 @@
                 <ChevronDownIcon class="w-4 h-4 ml-1" />
               </span>
               <!-- Dropdown Menu -->
-              <div class="absolute top-full left-0 mt-2 w-[90vw] max-w-[500px] bg-white rounded-lg shadow-lg border border-gray-200 p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <div class="absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] bg-white rounded-lg shadow-lg border border-gray-200 p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div class="space-y-4">
                   <router-link to="/industries/plumbing" class="block group/item">
-                    <div class="flex items-start space-x-3">
-                      <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
-                        <WrenchScrewdriverIcon class="w-5 h-5 text-blue-600" />
-                      </div>
-                      <div>
-                        <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Plumbing</h4>
-                        <p class="text-xs text-gray-600 mt-1">AI answering for plumbers and plumbing companies</p>
-                      </div>
-                    </div>
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Plumbing</h4>
+                    <p class="text-xs text-gray-600 mt-1">AI answering for plumbers and plumbing companies</p>
                   </router-link>
                   <router-link to="/industries/hvac" class="block group/item">
-                    <div class="flex items-start space-x-3">
-                      <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
-                        <WrenchScrewdriverIcon class="w-5 h-5 text-blue-600" />
-                      </div>
-                      <div>
-                        <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">HVAC</h4>
-                        <p class="text-xs text-gray-600 mt-1">AI answering for heating and cooling companies</p>
-                      </div>
-                    </div>
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">HVAC</h4>
+                    <p class="text-xs text-gray-600 mt-1">AI answering for heating and cooling companies</p>
                   </router-link>
                   <router-link to="/industries/electrician" class="block group/item">
-                    <div class="flex items-start space-x-3">
-                      <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
-                        <WrenchScrewdriverIcon class="w-5 h-5 text-blue-600" />
-                      </div>
-                      <div>
-                        <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Electrician</h4>
-                        <p class="text-xs text-gray-600 mt-1">AI answering for electrical contractors</p>
-                      </div>
-                    </div>
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Electrician</h4>
+                    <p class="text-xs text-gray-600 mt-1">AI answering for electrical contractors</p>
                   </router-link>
                   <router-link to="/industries/roofing" class="block group/item">
-                    <div class="flex items-start space-x-3">
-                      <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
-                        <WrenchScrewdriverIcon class="w-5 h-5 text-blue-600" />
-                      </div>
-                      <div>
-                        <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Roofing</h4>
-                        <p class="text-xs text-gray-600 mt-1">AI answering for roofing companies</p>
-                      </div>
-                    </div>
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Roofing</h4>
+                    <p class="text-xs text-gray-600 mt-1">AI answering for roofing companies</p>
                   </router-link>
                   <router-link to="/industries/construction" class="block group/item">
-                    <div class="flex items-start space-x-3">
-                      <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
-                        <WrenchScrewdriverIcon class="w-5 h-5 text-blue-600" />
-                      </div>
-                      <div>
-                        <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Construction & Contracting</h4>
-                        <p class="text-xs text-gray-600 mt-1">AI answering for general contractors</p>
-                      </div>
-                    </div>
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Construction & Contracting</h4>
+                    <p class="text-xs text-gray-600 mt-1">AI answering for general contractors</p>
                   </router-link>
                 </div>
               </div>
