@@ -13,6 +13,85 @@
         </p>
       </div>
 
+      <!-- Features Section -->
+      <section class="py-12 sm:py-16 lg:py-20 mb-12 sm:mb-16 lg:mb-20">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-x-8">
+          <!-- Left Column -->
+          <div class="lg:col-span-4 mb-10 lg:mb-0">
+            <p class="text-base font-semibold text-blue-600">Intelligent routing</p>
+            <h2 class="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">Emergency Escalation</h2>
+            <p class="mt-4 text-base sm:text-lg text-gray-600">
+              Advanced AI detects emergency situations in real-time and routes critical calls to your on-call team immediately—with human verification to prevent false alarms.
+            </p>
+          </div>
+
+          <!-- Right Column - Features Grid -->
+          <div class="lg:col-span-8">
+            <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
+              <div class="relative">
+                <dt class="flex items-start gap-x-3">
+                  <CheckIcon class="h-5 w-5 flex-none text-blue-600 mt-1" />
+                  <span class="text-base font-semibold text-gray-900">Automatic Detection</span>
+                </dt>
+                <dd class="mt-2 text-sm sm:text-base text-gray-600 ml-8">
+                  AI recognizes urgent keywords and context to identify emergencies instantly.
+                </dd>
+              </div>
+
+              <div class="relative">
+                <dt class="flex items-start gap-x-3">
+                  <CheckIcon class="h-5 w-5 flex-none text-blue-600 mt-1" />
+                  <span class="text-base font-semibold text-gray-900">Human-in-the-Loop</span>
+                </dt>
+                <dd class="mt-2 text-sm sm:text-base text-gray-600 ml-8">
+                  Intelligent verification prevents false escalations while catching true emergencies.
+                </dd>
+              </div>
+
+              <div class="relative">
+                <dt class="flex items-start gap-x-3">
+                  <CheckIcon class="h-5 w-5 flex-none text-blue-600 mt-1" />
+                  <span class="text-base font-semibold text-gray-900">Instant Alerts</span>
+                </dt>
+                <dd class="mt-2 text-sm sm:text-base text-gray-600 ml-8">
+                  On-call team receives immediate notifications for verified emergencies.
+                </dd>
+              </div>
+
+              <div class="relative">
+                <dt class="flex items-start gap-x-3">
+                  <CheckIcon class="h-5 w-5 flex-none text-blue-600 mt-1" />
+                  <span class="text-base font-semibold text-gray-900">Custom Rules</span>
+                </dt>
+                <dd class="mt-2 text-sm sm:text-base text-gray-600 ml-8">
+                  Configure your own emergency keywords and routing preferences.
+                </dd>
+              </div>
+
+              <div class="relative">
+                <dt class="flex items-start gap-x-3">
+                  <CheckIcon class="h-5 w-5 flex-none text-blue-600 mt-1" />
+                  <span class="text-base font-semibold text-gray-900">Rapid Response</span>
+                </dt>
+                <dd class="mt-2 text-sm sm:text-base text-gray-600 ml-8">
+                  Critical situations are handled within minutes, not hours.
+                </dd>
+              </div>
+
+              <div class="relative">
+                <dt class="flex items-start gap-x-3">
+                  <CheckIcon class="h-5 w-5 flex-none text-blue-600 mt-1" />
+                  <span class="text-base font-semibold text-gray-900">Call Forwarding</span>
+                </dt>
+                <dd class="mt-2 text-sm sm:text-base text-gray-600 ml-8">
+                  Emergency calls are instantly forwarded to available team members.
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
       <!-- Main Content -->
       <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16 lg:mb-20">
         <div>

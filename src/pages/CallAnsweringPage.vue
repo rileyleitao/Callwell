@@ -13,6 +13,85 @@
         </p>
       </div>
 
+      <!-- Features Section -->
+      <section class="py-12 sm:py-16 lg:py-20 mb-12 sm:mb-16 lg:mb-20">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-x-8">
+          <!-- Left Column -->
+          <div class="lg:col-span-4 mb-10 lg:mb-0">
+            <p class="text-base font-semibold text-blue-600">Always available</p>
+            <h2 class="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">24/7 Call Answering</h2>
+            <p class="mt-4 text-base sm:text-lg text-gray-600">
+              Your AI phone assistant handles every call professionally, understands customer needs, and books appointments—all while you focus on running your business.
+            </p>
+          </div>
+
+          <!-- Right Column - Features Grid -->
+          <div class="lg:col-span-8">
+            <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
+              <div class="relative">
+                <dt class="flex items-start gap-x-3">
+                  <CheckIcon class="h-5 w-5 flex-none text-blue-600 mt-1" />
+                  <span class="text-base font-semibold text-gray-900">24/7 Call Coverage</span>
+                </dt>
+                <dd class="mt-2 text-sm sm:text-base text-gray-600 ml-8">
+                  Answer calls after hours, weekends, and holidays—never miss a customer again.
+                </dd>
+              </div>
+
+              <div class="relative">
+                <dt class="flex items-start gap-x-3">
+                  <CheckIcon class="h-5 w-5 flex-none text-blue-600 mt-1" />
+                  <span class="text-base font-semibold text-gray-900">Natural Conversations</span>
+                </dt>
+                <dd class="mt-2 text-sm sm:text-base text-gray-600 ml-8">
+                  AI phone assistant speaks naturally, just like your team would.
+                </dd>
+              </div>
+
+              <div class="relative">
+                <dt class="flex items-start gap-x-3">
+                  <CheckIcon class="h-5 w-5 flex-none text-blue-600 mt-1" />
+                  <span class="text-base font-semibold text-gray-900">Automatic Booking</span>
+                </dt>
+                <dd class="mt-2 text-sm sm:text-base text-gray-600 ml-8">
+                  Books appointments while the customer is on the call.
+                </dd>
+              </div>
+
+              <div class="relative">
+                <dt class="flex items-start gap-x-3">
+                  <CheckIcon class="h-5 w-5 flex-none text-blue-600 mt-1" />
+                  <span class="text-base font-semibold text-gray-900">No Hardware Required</span>
+                </dt>
+                <dd class="mt-2 text-sm sm:text-base text-gray-600 ml-8">
+                  Works with your existing phone number. No equipment needed.
+                </dd>
+              </div>
+
+              <div class="relative">
+                <dt class="flex items-start gap-x-3">
+                  <CheckIcon class="h-5 w-5 flex-none text-blue-600 mt-1" />
+                  <span class="text-base font-semibold text-gray-900">Peak Demand Support</span>
+                </dt>
+                <dd class="mt-2 text-sm sm:text-base text-gray-600 ml-8">
+                  Handle multiple calls simultaneously during your busiest times.
+                </dd>
+              </div>
+
+              <div class="relative">
+                <dt class="flex items-start gap-x-3">
+                  <CheckIcon class="h-5 w-5 flex-none text-blue-600 mt-1" />
+                  <span class="text-base font-semibold text-gray-900">Instant Confirmations</span>
+                </dt>
+                <dd class="mt-2 text-sm sm:text-base text-gray-600 ml-8">
+                  Customers receive booking confirmations immediately.
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
       <!-- Main Content -->
       <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16 lg:mb-20">
         <div>

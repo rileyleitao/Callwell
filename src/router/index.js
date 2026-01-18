@@ -9,6 +9,12 @@ import SolutionsPage from '../pages/SolutionsPage.vue'
 import NotFoundPage from '../pages/NotFoundPage.vue'
 import LoginPage from '../pages/LoginPage.vue'
 import EmergencyCallRoutingPage from '../pages/EmergencyCallRoutingPage.vue'
+import FAQPage from '../pages/FAQPage.vue'
+import PlumbingPage from '../pages/PlumbingPage.vue'
+import HVACPage from '../pages/HVACPage.vue'
+import ElectricianPage from '../pages/ElectricianPage.vue'
+import RoofingPage from '../pages/RoofingPage.vue'
+import ConstructionPage from '../pages/ConstructionPage.vue'
 
 const routes = [
   {
@@ -81,6 +87,60 @@ const routes = [
     meta: {
       title: 'Solutions for Service Businesses | Callwell',
       description: 'From after-hours calls to peak demand periods, Callwell handles every scenario so you never miss a booking opportunity.'
+    }
+  },
+  {
+    path: '/faq',
+    name: 'FAQ',
+    component: FAQPage,
+    meta: {
+      title: 'Frequently Asked Questions | Callwell',
+      description: 'Find answers to common questions about Callwell AI office assistant, pricing, setup, and support.'
+    }
+  },
+  {
+    path: '/industries/plumbing',
+    name: 'Plumbing',
+    component: PlumbingPage,
+    meta: {
+      title: 'AI Answering Service for Plumbers | Callwell',
+      description: 'Never miss a plumbing call. AI phone answering for plumbing companies handles emergency calls, books service appointments, and dispatches plumbers 24/7.'
+    }
+  },
+  {
+    path: '/industries/hvac',
+    name: 'HVAC',
+    component: HVACPage,
+    meta: {
+      title: 'AI Answering Service for HVAC Companies | Callwell',
+      description: 'Never miss an HVAC call. AI phone answering for heating and cooling companies handles AC repairs, furnace emergencies, and books service appointments 24/7.'
+    }
+  },
+  {
+    path: '/industries/electrician',
+    name: 'Electrician',
+    component: ElectricianPage,
+    meta: {
+      title: 'AI Answering Service for Electricians | Callwell',
+      description: 'Never miss an electrical call. AI phone answering for electrical contractors handles emergency calls, books service appointments, and dispatches electricians 24/7.'
+    }
+  },
+  {
+    path: '/industries/roofing',
+    name: 'Roofing',
+    component: RoofingPage,
+    meta: {
+      title: 'AI Answering Service for Roofing Companies | Callwell',
+      description: 'Never miss a roofing lead. AI phone answering for roofers handles storm damage calls, books estimates, and captures leads 24/7.'
+    }
+  },
+  {
+    path: '/industries/construction',
+    name: 'Construction',
+    component: ConstructionPage,
+    meta: {
+      title: 'AI Answering Service for Contractors | Callwell',
+      description: 'Never miss a construction lead. AI phone answering for general contractors handles project inquiries, books consultations, and captures leads 24/7.'
     }
   },
   {
