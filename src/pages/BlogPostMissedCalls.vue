@@ -152,7 +152,62 @@
 </template>
 
 <script setup>
+import { onMounted, onUnmounted } from 'vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import { CheckIcon, ArrowLeftIcon } from '@heroicons/vue/24/solid'
+
+// Blog post metadata
+const post = {
+  title: 'How Many Calls Is Your Business Missing After Hours? (And How Much Revenue That Costs You)',
+  description: 'Learn how missed calls cost service businesses thousands in lost revenue and how AI call answering can help capture every lead.',
+  datePublished: '2025-01-15',
+  dateModified: '2025-01-15',
+  author: 'Riley Parada',
+  url: 'https://callwell.io/blog/missed-calls-cost',
+  image: 'https://callwell.io/PlumbingHeroimage.png'
+}
+
+onMounted(() => {
+  const blogSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    image: post.image,
+    datePublished: post.datePublished,
+    dateModified: post.dateModified,
+    author: {
+      '@type': 'Person',
+      name: post.author,
+      url: 'https://callwell.io'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Callwell',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://callwell.io/logo.svg'
+      }
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': post.url
+    },
+    keywords: 'missed calls cost businesses, after hours calls service business, missed calls lost revenue, answering service alternatives'
+  }
+
+  const script = document.createElement('script')
+  script.type = 'application/ld+json'
+  script.id = 'blog-schema'
+  script.textContent = JSON.stringify(blogSchema)
+  document.head.appendChild(script)
+})
+
+onUnmounted(() => {
+  const existingSchema = document.getElementById('blog-schema')
+  if (existingSchema) {
+    existingSchema.remove()
+  }
+})
 </script>

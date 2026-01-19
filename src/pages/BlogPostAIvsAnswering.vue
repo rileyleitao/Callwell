@@ -166,7 +166,62 @@
 </template>
 
 <script setup>
+import { onMounted, onUnmounted } from 'vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import { CheckIcon, ArrowLeftIcon, XMarkIcon } from '@heroicons/vue/24/solid'
+
+// Blog post metadata
+const post = {
+  title: 'AI Receptionist vs Answering Service: What Actually Works in 2026?',
+  description: 'Compare AI receptionists to traditional answering services. Learn the differences in cost, capability, and customer experience.',
+  datePublished: '2025-01-10',
+  dateModified: '2025-01-10',
+  author: 'Riley Parada',
+  url: 'https://callwell.io/blog/ai-receptionist-vs-answering-service',
+  image: 'https://callwell.io/PlumbingHeroimage.png'
+}
+
+onMounted(() => {
+  const blogSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    image: post.image,
+    datePublished: post.datePublished,
+    dateModified: post.dateModified,
+    author: {
+      '@type': 'Person',
+      name: post.author,
+      url: 'https://callwell.io'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Callwell',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://callwell.io/logo.svg'
+      }
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': post.url
+    },
+    keywords: 'AI receptionist for small business, answering service vs AI, virtual receptionist comparison, phone answering for service businesses'
+  }
+
+  const script = document.createElement('script')
+  script.type = 'application/ld+json'
+  script.id = 'blog-schema'
+  script.textContent = JSON.stringify(blogSchema)
+  document.head.appendChild(script)
+})
+
+onUnmounted(() => {
+  const existingSchema = document.getElementById('blog-schema')
+  if (existingSchema) {
+    existingSchema.remove()
+  }
+})
 </script>

@@ -108,7 +108,8 @@ const routes = [
     component: BlogPage,
     meta: {
       title: 'Blog | Callwell',
-      description: 'Expert advice and insights for service businesses on AI call answering, appointment booking, and growing your business.'
+      description: 'Expert advice and insights for service businesses on AI call answering, appointment booking, and growing your business.',
+      keywords: 'service business tips, AI call answering blog, small business growth, phone answering tips'
     }
   },
   {
@@ -117,7 +118,12 @@ const routes = [
     component: BlogPostMissedCalls,
     meta: {
       title: 'How Many Calls Is Your Business Missing After Hours? | Callwell Blog',
-      description: 'Learn how missed calls cost service businesses thousands in lost revenue and how AI call answering can help capture every lead.'
+      description: 'Learn how missed calls cost service businesses thousands in lost revenue and how AI call answering can help capture every lead.',
+      keywords: 'missed calls cost businesses, after hours calls service business, missed calls lost revenue, answering service alternatives',
+      type: 'article',
+      datePublished: '2025-01-15',
+      dateModified: '2025-01-15',
+      author: 'Riley Parada'
     }
   },
   {
@@ -126,7 +132,12 @@ const routes = [
     component: BlogPostAIvsAnswering,
     meta: {
       title: 'AI Receptionist vs Answering Service: What Works in 2026 | Callwell Blog',
-      description: 'Compare AI receptionists to traditional answering services. Learn the differences in cost, capability, and customer experience.'
+      description: 'Compare AI receptionists to traditional answering services. Learn the differences in cost, capability, and customer experience.',
+      keywords: 'AI receptionist for small business, answering service vs AI, virtual receptionist comparison, phone answering for service businesses',
+      type: 'article',
+      datePublished: '2025-01-10',
+      dateModified: '2025-01-10',
+      author: 'Riley Parada'
     }
   },
   {
@@ -135,7 +146,12 @@ const routes = [
     component: BlogPostPhoneSetup,
     meta: {
       title: 'Best Phone Setup for Service Businesses in 2026 | Callwell Blog',
-      description: 'The ideal phone setup for plumbers, electricians, and contractors. No new hardware, no new numbers, just better call handling.'
+      description: 'The ideal phone setup for plumbers, electricians, and contractors. No new hardware, no new numbers, just better call handling.',
+      keywords: 'phone system for service business, business phone setup, AI phone assistant, call routing small business',
+      type: 'article',
+      datePublished: '2025-01-05',
+      dateModified: '2025-01-05',
+      author: 'Riley Parada'
     }
   },
   {
@@ -228,6 +244,15 @@ router.beforeEach((to, from, next) => {
   }
   metaDescription.setAttribute('content', to.meta.description || 'Callwell is an AI office assistant that acts as a virtual front desk—answering calls, booking appointments, and managing scheduling when your team is unavailable.')
   
+  // Update or create keywords meta tag
+  let metaKeywords = document.querySelector('meta[name="keywords"]')
+  if (!metaKeywords) {
+    metaKeywords = document.createElement('meta')
+    metaKeywords.setAttribute('name', 'keywords')
+    document.head.appendChild(metaKeywords)
+  }
+  metaKeywords.setAttribute('content', to.meta.keywords || 'AI assistant, AI office assistant, virtual office assistant, automated call answering, appointment booking software')
+  
   // Update or create Open Graph tags
   const updateOrCreateMeta = (property, content) => {
     let meta = document.querySelector(`meta[property="${property}"]`)
@@ -236,20 +261,48 @@ router.beforeEach((to, from, next) => {
       meta.setAttribute('property', property)
       document.head.appendChild(meta)
     }
-    meta.setAttribute('content', content)
+    if (content) {
+      meta.setAttribute('content', content)
+    }
+  }
+  
+  // Remove article-specific meta tags function
+  const removeArticleMeta = () => {
+    const articleMetas = ['article:published_time', 'article:modified_time', 'article:author']
+    articleMetas.forEach(prop => {
+      const meta = document.querySelector(`meta[property="${prop}"]`)
+      if (meta) meta.remove()
+    })
   }
   
   const url = `https://callwell.io${to.path}`
   const title = to.meta.title || 'Callwell - AI Office Assistant'
   const description = to.meta.description || 'Callwell is an AI office assistant that acts as a virtual front desk—answering calls, booking appointments, and managing scheduling when your team is unavailable.'
   const image = 'https://callwell.io/PlumbingHeroimage.png'
+  const ogType = to.meta.type || 'website'
   
   updateOrCreateMeta('og:title', title)
   updateOrCreateMeta('og:description', description)
   updateOrCreateMeta('og:url', url)
-  updateOrCreateMeta('og:type', 'website')
+  updateOrCreateMeta('og:type', ogType)
   updateOrCreateMeta('og:image', image)
   updateOrCreateMeta('og:site_name', 'Callwell')
+  
+  // Handle article-specific meta tags
+  if (ogType === 'article') {
+    if (to.meta.datePublished) {
+      updateOrCreateMeta('article:published_time', to.meta.datePublished)
+    }
+    if (to.meta.dateModified) {
+      updateOrCreateMeta('article:modified_time', to.meta.dateModified)
+    }
+    if (to.meta.author) {
+      updateOrCreateMeta('article:author', to.meta.author)
+    }
+  } else {
+    // Remove article meta tags when not on article pages
+    removeArticleMeta()
+  }
   
   // Update or create Twitter Card tags
   const updateOrCreateTwitterMeta = (name, content) => {

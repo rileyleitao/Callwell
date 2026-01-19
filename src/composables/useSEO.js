@@ -21,7 +21,20 @@ export function useSEO() {
           url: 'https://callwell.io',
           logo: 'https://callwell.io/logo.svg',
           description: 'AI office assistant that answers calls and books appointments 24/7 for service businesses',
-          sameAs: []
+          sameAs: [],
+          founder: {
+            '@id': 'https://callwell.io/#author'
+          }
+        },
+        {
+          '@type': 'Person',
+          '@id': 'https://callwell.io/#author',
+          name: 'Riley Parada',
+          jobTitle: 'Founder',
+          worksFor: {
+            '@id': 'https://callwell.io/#organization'
+          },
+          image: 'https://callwell.io/RileyParada.jpg'
         },
         {
           '@type': 'WebSite',

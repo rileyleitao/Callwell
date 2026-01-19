@@ -162,7 +162,62 @@
 </template>
 
 <script setup>
+import { onMounted, onUnmounted } from 'vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import { CheckIcon, ArrowLeftIcon, XMarkIcon } from '@heroicons/vue/24/solid'
+
+// Blog post metadata
+const post = {
+  title: 'The Best Phone Setup for Service Businesses in 2026 (Without Replacing Your Current System)',
+  description: 'The ideal phone setup for plumbers, electricians, and contractors. No new hardware, no new numbers, just better call handling.',
+  datePublished: '2025-01-05',
+  dateModified: '2025-01-05',
+  author: 'Riley Parada',
+  url: 'https://callwell.io/blog/phone-setup-service-business',
+  image: 'https://callwell.io/PlumbingHeroimage.png'
+}
+
+onMounted(() => {
+  const blogSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    image: post.image,
+    datePublished: post.datePublished,
+    dateModified: post.dateModified,
+    author: {
+      '@type': 'Person',
+      name: post.author,
+      url: 'https://callwell.io'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Callwell',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://callwell.io/logo.svg'
+      }
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': post.url
+    },
+    keywords: 'phone system for service business, business phone setup, AI phone assistant, call routing small business'
+  }
+
+  const script = document.createElement('script')
+  script.type = 'application/ld+json'
+  script.id = 'blog-schema'
+  script.textContent = JSON.stringify(blogSchema)
+  document.head.appendChild(script)
+})
+
+onUnmounted(() => {
+  const existingSchema = document.getElementById('blog-schema')
+  if (existingSchema) {
+    existingSchema.remove()
+  }
+})
 </script>
