@@ -19,10 +19,11 @@
           </ul>
         </div>
         <div class="text-center">
-          <h4 class="font-semibold mb-4">Follow us</h4>
+          <h4 class="font-semibold mb-4">Resources</h4>
           <ul class="space-y-2 text-gray-400 text-sm">
-            <li><a href="#" class="hover:text-white">Twitter / X</a></li>
-            <li><a href="#" class="hover:text-white">LinkedIn</a></li>
+            <li><router-link to="/how-it-works" class="hover:text-white">How It Works</router-link></li>
+            <li><router-link to="/faq" class="hover:text-white">FAQ</router-link></li>
+            <li><router-link to="/blog" class="hover:text-white">Blog</router-link></li>
           </ul>
         </div>
       </div>
