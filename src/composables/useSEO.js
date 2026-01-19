@@ -30,7 +30,7 @@ export function useSEO() {
           '@type': 'Person',
           '@id': 'https://callwell.io/#author',
           name: 'Riley Parada',
-          jobTitle: 'Founder',
+          jobTitle: 'Co-founder',
           worksFor: {
             '@id': 'https://callwell.io/#organization'
           },

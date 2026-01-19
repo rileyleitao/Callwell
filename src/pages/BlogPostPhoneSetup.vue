@@ -17,7 +17,7 @@
           <img src="/RileyParada.jpg" alt="Riley Parada" class="h-10 w-10 rounded-full object-cover" />
           <div class="text-sm">
             <p class="font-semibold text-gray-900">Riley Parada</p>
-            <p class="text-gray-600">Founder</p>
+            <p class="text-gray-600">Co-founder</p>
           </div>
         </div>
       </header>

@@ -83,7 +83,7 @@ const posts = [
     category: 'Business Growth',
     author: {
       name: 'Riley Parada',
-      role: 'Founder'
+      role: 'Co-founder'
     }
   },
   {
@@ -94,7 +94,7 @@ const posts = [
     category: 'Industry Insights',
     author: {
       name: 'Riley Parada',
-      role: 'Founder'
+      role: 'Co-founder'
     }
   },
   {
@@ -105,7 +105,7 @@ const posts = [
     category: 'How-To Guide',
     author: {
       name: 'Riley Parada',
-      role: 'Founder'
+      role: 'Co-founder'
     }
   }
 ]
