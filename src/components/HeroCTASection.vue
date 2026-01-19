@@ -11,7 +11,7 @@
           </p>
           <div class="flex flex-wrap items-center justify-center gap-3">
             <a 
-              href="https://calendly.com/rileyleitao/30min" 
+              href="https://calendly.com/riley-callwell/callwell-demo" 
               target="_blank" 
               rel="noopener noreferrer" 
               @click="trackContactSales('Hero CTA Section')"

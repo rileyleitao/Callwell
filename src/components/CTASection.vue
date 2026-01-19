@@ -9,7 +9,7 @@
           </h2>
         </div>
         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 lg:flex-shrink-0">
-          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('CTA Section')" class="bg-indigo-600 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-indigo-700 transition-colors inline-block">
+          <a href="https://calendly.com/riley-callwell/callwell-demo" target="_blank" rel="noopener noreferrer" @click="trackContactSales('CTA Section')" class="bg-indigo-600 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-indigo-700 transition-colors inline-block">
             Get started
           </a>
           <router-link to="/how-it-works" class="text-gray-900 text-sm font-medium hover:text-gray-700 inline-flex items-center gap-1">
