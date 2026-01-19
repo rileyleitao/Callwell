@@ -16,6 +16,9 @@ import ElectricianPage from '../pages/ElectricianPage.vue'
 import RoofingPage from '../pages/RoofingPage.vue'
 import ConstructionPage from '../pages/ConstructionPage.vue'
 import BlogPage from '../pages/BlogPage.vue'
+import BlogPostMissedCalls from '../pages/BlogPostMissedCalls.vue'
+import BlogPostAIvsAnswering from '../pages/BlogPostAIvsAnswering.vue'
+import BlogPostPhoneSetup from '../pages/BlogPostPhoneSetup.vue'
 
 const routes = [
   {
@@ -106,6 +109,33 @@ const routes = [
     meta: {
       title: 'Blog | Callwell',
       description: 'Expert advice and insights for service businesses on AI call answering, appointment booking, and growing your business.'
+    }
+  },
+  {
+    path: '/blog/missed-calls-cost',
+    name: 'BlogMissedCalls',
+    component: BlogPostMissedCalls,
+    meta: {
+      title: 'How Many Calls Is Your Business Missing After Hours? | Callwell Blog',
+      description: 'Learn how missed calls cost service businesses thousands in lost revenue and how AI call answering can help capture every lead.'
+    }
+  },
+  {
+    path: '/blog/ai-receptionist-vs-answering-service',
+    name: 'BlogAIvsAnswering',
+    component: BlogPostAIvsAnswering,
+    meta: {
+      title: 'AI Receptionist vs Answering Service: What Works in 2026 | Callwell Blog',
+      description: 'Compare AI receptionists to traditional answering services. Learn the differences in cost, capability, and customer experience.'
+    }
+  },
+  {
+    path: '/blog/phone-setup-service-business',
+    name: 'BlogPhoneSetup',
+    component: BlogPostPhoneSetup,
+    meta: {
+      title: 'Best Phone Setup for Service Businesses in 2026 | Callwell Blog',
+      description: 'The ideal phone setup for plumbers, electricians, and contractors. No new hardware, no new numbers, just better call handling.'
     }
   },
   {

@@ -79,9 +79,9 @@ const formatDate = (dateString) => {
 // Blog posts data - can be moved to a separate file or CMS later
 const posts = [
   {
-    slug: 'why-service-businesses-miss-calls',
-    title: 'Why Service Businesses Miss 40% of Their Calls (And How to Fix It)',
-    excerpt: 'Studies show that service businesses miss nearly half of incoming calls. Learn why this happens and how AI-powered call answering can help you capture every lead.',
+    slug: 'missed-calls-cost',
+    title: 'How Many Calls Is Your Business Missing After Hours? (And How Much Revenue That Costs You)',
+    excerpt: 'Most service businesses don\'t realize how many calls they miss — because missed calls don\'t show up on the books. Learn the real cost and how to fix it.',
     date: '2025-01-15',
     category: 'Business Growth',
     author: {
@@ -90,9 +90,9 @@ const posts = [
     }
   },
   {
-    slug: 'ai-vs-traditional-answering-services',
-    title: 'AI vs Traditional Answering Services: Which Is Right for Your Business?',
-    excerpt: 'Compare the costs, capabilities, and customer experience between AI-powered virtual receptionists and traditional call centers for service businesses.',
+    slug: 'ai-receptionist-vs-answering-service',
+    title: 'AI Receptionist vs Answering Service: What Actually Works in 2026?',
+    excerpt: 'Answering services have been around forever. AI receptionists are new. But they don\'t do the same job — and the differences matter.',
     date: '2025-01-10',
     category: 'Industry Insights',
     author: {
@@ -101,11 +101,11 @@ const posts = [
     }
   },
   {
-    slug: 'after-hours-calls-revenue',
-    title: 'How After-Hours Calls Impact Your Revenue',
-    excerpt: 'Most emergency service calls come outside business hours. Discover how much revenue you could be losing and strategies to capture these high-value opportunities.',
+    slug: 'phone-setup-service-business',
+    title: 'The Best Phone Setup for Service Businesses in 2026 (Without Replacing Your Current System)',
+    excerpt: 'Most business owners think improving their phone setup means switching providers, buying hardware, or retraining staff. It doesn\'t.',
     date: '2025-01-05',
-    category: 'Revenue',
+    category: 'How-To Guide',
     author: {
       name: 'Riley Leitao',
       role: 'Founder'
