@@ -145,6 +145,10 @@
                     <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">FAQ</h4>
                     <p class="text-xs text-gray-600 mt-1">Answers to common questions about Callwell</p>
                   </router-link>
+                  <router-link to="/blog" class="block group/item">
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Blog</h4>
+                    <p class="text-xs text-gray-600 mt-1">Tips and insights for service businesses</p>
+                  </router-link>
                 </div>
               </div>
             </div>

@@ -15,6 +15,7 @@ import HVACPage from '../pages/HVACPage.vue'
 import ElectricianPage from '../pages/ElectricianPage.vue'
 import RoofingPage from '../pages/RoofingPage.vue'
 import ConstructionPage from '../pages/ConstructionPage.vue'
+import BlogPage from '../pages/BlogPage.vue'
 
 const routes = [
   {
@@ -96,6 +97,15 @@ const routes = [
     meta: {
       title: 'Frequently Asked Questions | Callwell',
       description: 'Find answers to common questions about Callwell AI office assistant, pricing, setup, and support.'
+    }
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: BlogPage,
+    meta: {
+      title: 'Blog | Callwell',
+      description: 'Expert advice and insights for service businesses on AI call answering, appointment booking, and growing your business.'
     }
   },
   {

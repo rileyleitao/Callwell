@@ -55,6 +55,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://callwell.io/blog</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://callwell.io/industries/plumbing</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
