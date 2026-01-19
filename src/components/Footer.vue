@@ -19,14 +19,6 @@
           </ul>
         </div>
         <div class="text-center">
-          <h4 class="font-semibold mb-4">Resources</h4>
-          <ul class="space-y-2 text-gray-400 text-sm">
-            <li><router-link to="/how-it-works" class="hover:text-white">How It Works</router-link></li>
-            <li><router-link to="/faq" class="hover:text-white">FAQ</router-link></li>
-            <li><router-link to="/blog" class="hover:text-white">Blog</router-link></li>
-          </ul>
-        </div>
-        <div class="text-center">
           <h4 class="font-semibold mb-4">Industries</h4>
           <ul class="space-y-2 text-gray-400 text-sm">
             <li><router-link to="/industries/plumbing" class="hover:text-white">Plumbing</router-link></li>
@@ -34,6 +26,14 @@
             <li><router-link to="/industries/electrician" class="hover:text-white">Electrician</router-link></li>
             <li><router-link to="/industries/roofing" class="hover:text-white">Roofing</router-link></li>
             <li><router-link to="/industries/construction" class="hover:text-white">Construction</router-link></li>
+          </ul>
+        </div>
+        <div class="text-center">
+          <h4 class="font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><router-link to="/how-it-works" class="hover:text-white">How It Works</router-link></li>
+            <li><router-link to="/faq" class="hover:text-white">FAQ</router-link></li>
+            <li><router-link to="/blog" class="hover:text-white">Blog</router-link></li>
           </ul>
         </div>
       </div>
