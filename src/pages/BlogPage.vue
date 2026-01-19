@@ -29,9 +29,7 @@
               <p class="mt-3 text-sm text-gray-600 line-clamp-3">{{ post.excerpt }}</p>
             </div>
             <div class="mt-6 flex items-center gap-x-4">
-              <div class="h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center">
-                <UserIcon class="h-6 w-6 text-gray-400" />
-              </div>
+              <img src="/RileyParada.jpg" alt="Riley Parada" class="h-10 w-10 rounded-full object-cover" />
               <div class="text-sm">
                 <p class="font-semibold text-gray-900">{{ post.author.name }}</p>
                 <p class="text-gray-600">{{ post.author.role }}</p>
@@ -68,7 +66,6 @@
 <script setup>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-import { UserIcon } from '@heroicons/vue/24/solid'
 import { trackContactSales } from '../composables/useAnalytics'
 
 const formatDate = (dateString) => {
@@ -85,7 +82,7 @@ const posts = [
     date: '2025-01-15',
     category: 'Business Growth',
     author: {
-      name: 'Riley Leitao',
+      name: 'Riley Parada',
       role: 'Founder'
     }
   },
@@ -96,7 +93,7 @@ const posts = [
     date: '2025-01-10',
     category: 'Industry Insights',
     author: {
-      name: 'Riley Leitao',
+      name: 'Riley Parada',
       role: 'Founder'
     }
   },
@@ -107,7 +104,7 @@ const posts = [
     date: '2025-01-05',
     category: 'How-To Guide',
     author: {
-      name: 'Riley Leitao',
+      name: 'Riley Parada',
       role: 'Founder'
     }
   }

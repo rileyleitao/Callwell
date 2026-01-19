@@ -14,11 +14,9 @@
           AI Receptionist vs Answering Service: What Actually Works in 2026?
         </h1>
         <div class="flex items-center gap-x-4 mt-6">
-          <div class="h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center">
-            <UserIcon class="h-6 w-6 text-gray-400" />
-          </div>
+          <img src="/RileyParada.jpg" alt="Riley Parada" class="h-10 w-10 rounded-full object-cover" />
           <div class="text-sm">
-            <p class="font-semibold text-gray-900">Riley Leitao</p>
+            <p class="font-semibold text-gray-900">Riley Parada</p>
             <p class="text-gray-600">Founder</p>
           </div>
         </div>
@@ -170,5 +168,5 @@
 <script setup>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-import { UserIcon, CheckIcon, ArrowLeftIcon, XMarkIcon } from '@heroicons/vue/24/solid'
+import { CheckIcon, ArrowLeftIcon, XMarkIcon } from '@heroicons/vue/24/solid'
 </script>
