@@ -56,7 +56,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import { ChevronDownIcon } from '@heroicons/vue/24/solid'
@@ -94,4 +94,33 @@ const faqs = [
     answer: 'Standard plans include priority support with faster response times. Enterprise plans include a dedicated account manager and 24/7 phone support.'
   }
 ]
+
+// Inject FAQ Schema for SEO
+onMounted(() => {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  }
+
+  const script = document.createElement('script')
+  script.type = 'application/ld+json'
+  script.id = 'faq-schema'
+  script.textContent = JSON.stringify(faqSchema)
+  document.head.appendChild(script)
+})
+
+onUnmounted(() => {
+  const existingSchema = document.getElementById('faq-schema')
+  if (existingSchema) {
+    existingSchema.remove()
+  }
+})
 </script>

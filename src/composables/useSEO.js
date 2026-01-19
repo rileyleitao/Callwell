@@ -32,6 +32,42 @@ export function useSEO() {
           publisher: {
             '@id': 'https://callwell.io/#organization'
           }
+        },
+        {
+          '@type': 'SoftwareApplication',
+          '@id': 'https://callwell.io/#software',
+          name: 'Callwell',
+          applicationCategory: 'BusinessApplication',
+          operatingSystem: 'Web',
+          description: 'AI-powered virtual receptionist that answers calls and books appointments automatically for service businesses',
+          offers: {
+            '@type': 'Offer',
+            price: '350',
+            priceCurrency: 'CAD',
+            priceValidUntil: '2026-12-31',
+            availability: 'https://schema.org/InStock'
+          },
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '5',
+            ratingCount: '1',
+            bestRating: '5',
+            worstRating: '1'
+          },
+          featureList: [
+            '24/7 AI Call Answering',
+            'Automated Appointment Booking',
+            'Calendar Integration',
+            'Emergency Call Routing',
+            'Custom AI Training',
+            'ServiceTitan Integration',
+            'Jobber Integration'
+          ],
+          screenshot: 'https://callwell.io/PlumbingHeroimage.png',
+          softwareVersion: '1.0',
+          author: {
+            '@id': 'https://callwell.io/#organization'
+          }
         }
       ]
     }
