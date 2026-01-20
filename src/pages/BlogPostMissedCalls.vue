@@ -132,7 +132,7 @@
           <p class="text-lg text-gray-900">
             <strong>If your phone rings when no one's available, Callwell answers it — and books the job.</strong>
           </p>
-          <a href="https://calendly.com/riley-callwell/callwell-demo" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 bg-black text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 transition-colors">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 bg-black text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 transition-colors">
             See How It Works
           </a>
         </div>

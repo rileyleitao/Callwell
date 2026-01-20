@@ -7,7 +7,7 @@
           <span class="bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full text-sm font-medium border border-indigo-200">
             In Beta
           </span>
-          <a href="https://calendly.com/riley-callwell/callwell-demo" target="_blank" rel="noopener noreferrer" class="text-gray-600 text-sm font-medium hover:text-gray-900 inline-flex items-center gap-1">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="text-gray-600 text-sm font-medium hover:text-gray-900 inline-flex items-center gap-1">
             Try for a limited time
             <ArrowRightIcon class="w-4 h-4" />
           </a>
@@ -20,7 +20,7 @@
           Callwell is an AI office assistant that acts as a virtual front desk—answering calls, booking appointments, and managing scheduling when your team is unavailable.
         </p>
         <div class="flex flex-wrap items-center gap-4">
-          <a href="https://calendly.com/riley-callwell/callwell-demo" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Hero Section')" class="bg-indigo-600 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-indigo-700 transition-colors inline-block">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Hero Section')" class="bg-indigo-600 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-indigo-700 transition-colors inline-block">
             Contact Sales
           </a>
         </div>

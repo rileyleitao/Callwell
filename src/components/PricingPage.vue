@@ -29,7 +29,7 @@
             </div>
             <p class="text-xs sm:text-sm text-gray-500 mt-2">CAD</p>
           </div>
-          <a href="https://calendly.com/riley-callwell/callwell-demo" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Pricing Page - Get Started')" class="w-full bg-blue-600 text-white py-2 sm:py-3 rounded-md text-sm sm:text-base font-semibold hover:bg-blue-700 transition-colors mb-4 sm:mb-6 inline-block text-center">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Pricing Page - Get Started')" class="w-full bg-blue-600 text-white py-2 sm:py-3 rounded-md text-sm sm:text-base font-semibold hover:bg-blue-700 transition-colors mb-4 sm:mb-6 inline-block text-center">
             Get started
           </a>
           <ul class="space-y-2 sm:space-y-3">
@@ -70,7 +70,7 @@
             </div>
             <p class="text-xs sm:text-sm text-gray-500 mt-2">Contact us for pricing</p>
           </div>
-          <a href="https://calendly.com/riley-callwell/callwell-demo" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Pricing Page')" class="w-full bg-gray-900 text-white py-2 sm:py-3 rounded-md text-sm sm:text-base font-semibold hover:bg-gray-800 transition-colors mb-4 sm:mb-6 inline-block text-center">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Pricing Page')" class="w-full bg-gray-900 text-white py-2 sm:py-3 rounded-md text-sm sm:text-base font-semibold hover:bg-gray-800 transition-colors mb-4 sm:mb-6 inline-block text-center">
             Contact sales
           </a>
           <ul class="space-y-2 sm:space-y-3">

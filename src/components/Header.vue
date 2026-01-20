@@ -174,7 +174,7 @@
           </router-link>
           
           <!-- Contact sales button -->
-          <a href="https://calendly.com/riley-callwell/callwell-demo" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Header Desktop')" class="bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors inline-block">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Header Desktop')" class="bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors inline-block">
             Contact sales
           </a>
         </div>
@@ -202,7 +202,7 @@
             <router-link to="/login" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium">
               Log in
             </router-link>
-            <a href="https://calendly.com/riley-callwell/callwell-demo" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Header Mobile')" class="block w-full bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors text-center">
+            <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Header Mobile')" class="block w-full bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors text-center">
               Contact sales
             </a>
           </div>
