@@ -295,7 +295,9 @@ router.beforeEach((to, from, next) => {
     })
   }
   
-  const url = `https://callwell.io${to.path}`
+  // Normalize URL: remove trailing slash except for homepage
+  const path = to.path === '/' ? '' : to.path.replace(/\/$/, '')
+  const url = `https://callwell.io${path || '/'}`
   const title = to.meta.title || 'Callwell - AI Office Assistant'
   const description = to.meta.description || 'Callwell is an AI office assistant that acts as a virtual front desk—answering calls, booking appointments, and managing scheduling when your team is unavailable.'
   const image = 'https://callwell.io/PlumbingHeroimage.png'

@@ -2,6 +2,13 @@
   command = "npm run build"
   publish = "dist"
 
+# Remove trailing slashes for URL consistency
+[[redirects]]
+  from = "/*/"
+  to = "/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
