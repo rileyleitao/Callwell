@@ -149,6 +149,14 @@
                     <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Blog</h4>
                     <p class="text-xs text-gray-600 mt-1">Tips and insights for service businesses</p>
                   </router-link>
+                  <router-link to="/terms" class="block group/item">
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Terms of Service</h4>
+                    <p class="text-xs text-gray-600 mt-1">Our terms and conditions</p>
+                  </router-link>
+                  <router-link to="/privacy" class="block group/item">
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Privacy Policy</h4>
+                    <p class="text-xs text-gray-600 mt-1">How we protect your data</p>
+                  </router-link>
                 </div>
               </div>
             </div>

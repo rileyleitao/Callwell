@@ -19,6 +19,8 @@ import BlogPage from '../pages/BlogPage.vue'
 import BlogPostMissedCalls from '../pages/BlogPostMissedCalls.vue'
 import BlogPostAIvsAnswering from '../pages/BlogPostAIvsAnswering.vue'
 import BlogPostPhoneSetup from '../pages/BlogPostPhoneSetup.vue'
+import TermsPage from '../pages/TermsPage.vue'
+import PrivacyPage from '../pages/PrivacyPage.vue'
 
 const routes = [
   {
@@ -197,6 +199,24 @@ const routes = [
     meta: {
       title: 'AI Answering Service for Contractors | Callwell',
       description: 'Never miss a construction lead. AI phone answering for general contractors handles project inquiries, books consultations, and captures leads 24/7.'
+    }
+  },
+  {
+    path: '/terms',
+    name: 'Terms',
+    component: TermsPage,
+    meta: {
+      title: 'Terms of Service | Callwell',
+      description: 'Read the Terms of Service for Callwell AI office assistant. Learn about your rights and responsibilities when using our services.'
+    }
+  },
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: PrivacyPage,
+    meta: {
+      title: 'Privacy Policy | Callwell',
+      description: 'Learn how Callwell collects, uses, and protects your personal information. Our privacy policy is compliant with Canadian privacy law (PIPEDA).'
     }
   },
   {

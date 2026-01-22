@@ -34,6 +34,8 @@
             <li><router-link to="/how-it-works" class="hover:text-white">How It Works</router-link></li>
             <li><router-link to="/faq" class="hover:text-white">FAQ</router-link></li>
             <li><router-link to="/blog" class="hover:text-white">Blog</router-link></li>
+            <li><router-link to="/terms" class="hover:text-white">Terms of Service</router-link></li>
+            <li><router-link to="/privacy" class="hover:text-white">Privacy Policy</router-link></li>
           </ul>
         </div>
       </div>
