@@ -1,6 +1,6 @@
 <template>
   <section class="mx-auto" style="width: 98vw;">
-    <div class="relative overflow-hidden rounded-tr-3xl rounded-br-3xl rounded-bl-3xl bg-gradient-to-r from-amber-100 via-pink-200 to-purple-300">
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-amber-100 via-pink-200 to-purple-300">
       <div class="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 py-16 sm:py-20 lg:py-24">
         <div class="max-w-2xl mx-auto text-center">
           <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-4 sm:mb-6">
