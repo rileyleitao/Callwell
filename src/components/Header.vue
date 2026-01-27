@@ -124,6 +124,10 @@
                     <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Construction & Contracting</h4>
                     <p class="text-xs text-gray-600 mt-1">AI answering for general contractors</p>
                   </router-link>
+                  <router-link to="/industries/window-door" class="block group/item">
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Window & Door Installation</h4>
+                    <p class="text-xs text-gray-600 mt-1">AI answering for window and door companies</p>
+                  </router-link>
                 </div>
               </div>
             </div>

@@ -15,6 +15,7 @@ import HVACPage from '../pages/HVACPage.vue'
 import ElectricianPage from '../pages/ElectricianPage.vue'
 import RoofingPage from '../pages/RoofingPage.vue'
 import ConstructionPage from '../pages/ConstructionPage.vue'
+import WindowDoorPage from '../pages/WindowDoorPage.vue'
 import BlogPage from '../pages/BlogPage.vue'
 import BlogPostMissedCalls from '../pages/BlogPostMissedCalls.vue'
 import BlogPostAIvsAnswering from '../pages/BlogPostAIvsAnswering.vue'
@@ -202,6 +203,16 @@ const routes = [
     }
   },
   {
+    path: '/industries/window-door',
+    name: 'WindowDoor',
+    component: WindowDoorPage,
+    meta: {
+      title: 'AI Answering Service for Window & Door Installation Companies | Callwell',
+      description: 'Never miss a window or door installation lead. AI phone answering for window and door companies handles consultations, books installations, and captures leads 24/7.',
+      keywords: 'window installation answering service, door installation AI assistant, window replacement call answering, door company phone service, window installer AI receptionist'
+    }
+  },
+  {
     path: '/terms',
     name: 'Terms',
     component: TermsPage,
@@ -295,9 +306,7 @@ router.beforeEach((to, from, next) => {
     })
   }
   
-  // Normalize URL: remove trailing slash except for homepage
-  const path = to.path === '/' ? '' : to.path.replace(/\/$/, '')
-  const url = `https://callwell.io${path || '/'}`
+  const url = `https://callwell.io${to.path}`
   const title = to.meta.title || 'Callwell - AI Office Assistant'
   const description = to.meta.description || 'Callwell is an AI office assistant that acts as a virtual front desk—answering calls, booking appointments, and managing scheduling when your team is unavailable.'
   const image = 'https://callwell.io/PlumbingHeroimage.png'

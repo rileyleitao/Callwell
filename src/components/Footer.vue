@@ -26,6 +26,7 @@
             <li><router-link to="/industries/electrician" class="hover:text-white">Electrician</router-link></li>
             <li><router-link to="/industries/roofing" class="hover:text-white">Roofing</router-link></li>
             <li><router-link to="/industries/construction" class="hover:text-white">Construction</router-link></li>
+            <li><router-link to="/industries/window-door" class="hover:text-white">Window & Door</router-link></li>
           </ul>
         </div>
         <div class="text-center">
