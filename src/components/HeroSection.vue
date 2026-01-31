@@ -23,13 +23,13 @@
           <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Hero Section')" class="bg-indigo-600 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-indigo-700 transition-colors inline-block">
             Contact Sales
           </a>
-          <button
+          <!-- <button
             type="button"
             @click="openDemo"
             class="bg-white text-indigo-600 px-6 py-3 rounded-md text-sm font-semibold border-2 border-indigo-600 hover:bg-indigo-50 transition-colors"
           >
             Try Demo
-          </button>
+          </button> -->
         </div>
       </div>
       <div class="flex justify-center items-center">
