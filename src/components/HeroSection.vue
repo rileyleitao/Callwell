@@ -25,7 +25,7 @@
           </a>
           <button
             type="button"
-            @click="$emit('openDemo')"
+            @click="openDemo"
             class="bg-white text-indigo-600 px-6 py-3 rounded-md text-sm font-semibold border-2 border-indigo-600 hover:bg-indigo-50 transition-colors"
           >
             Try Demo
@@ -45,9 +45,13 @@
 
 <script setup>
 import { ArrowRightIcon } from '@heroicons/vue/24/solid'
-import { trackContactSales } from '../composables/useAnalytics'
+import { trackContactSales, trackTryDemoClick } from '../composables/useAnalytics'
 
-defineEmits(['openDemo'])
+const emit = defineEmits(['openDemo'])
+const openDemo = () => {
+  trackTryDemoClick('hero_section')
+  emit('openDemo')
+}
 </script>
 
 <style scoped>

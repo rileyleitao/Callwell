@@ -21,7 +21,7 @@
             </a>
             <button
               type="button"
-              @click="$emit('openDemo')"
+              @click="openDemo"
               class="bg-indigo-600 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-indigo-700 transition-colors"
             >
               Try Demo
@@ -40,7 +40,11 @@
 </template>
 
 <script setup>
-import { trackContactSales } from '../composables/useAnalytics'
+import { trackContactSales, trackTryDemoClick } from '../composables/useAnalytics'
 
-defineEmits(['openDemo'])
+const emit = defineEmits(['openDemo'])
+const openDemo = () => {
+  trackTryDemoClick('hero_cta')
+  emit('openDemo')
+}
 </script>
