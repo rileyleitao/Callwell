@@ -9,30 +9,15 @@
           <p class="text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8">
             Callwell helps you grow your business by ensuring every customer call is answered and every appointment is booked.
           </p>
-          <div class="flex flex-wrap items-center justify-center gap-3">
-            <a
-              href="https://calendly.com/rileyleitao/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              @click="trackContactSales('Hero CTA Section')"
-              class="bg-gray-900 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-800 transition-colors inline-block"
-            >
-              Get started
-            </a>
-            <button
-              type="button"
-              @click="openDemo"
-              class="bg-indigo-600 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-indigo-700 transition-colors"
-            >
-              Try Demo
-            </button>
-            <router-link
-              to="/pricing"
-              class="bg-white text-gray-900 px-6 py-3 rounded-md text-sm font-semibold border border-gray-300 hover:bg-gray-50 transition-colors inline-block"
-            >
-              See pricing
-            </router-link>
-          </div>
+          <a
+            href="https://calendly.com/rileyleitao/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            @click="trackContactSales('Hero CTA Section')"
+            class="inline-block bg-gray-900 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-800 transition-colors"
+          >
+            Get started
+          </a>
         </div>
       </div>
     </div>
@@ -40,11 +25,5 @@
 </template>
 
 <script setup>
-import { trackContactSales, trackTryDemoClick } from '../composables/useAnalytics'
-
-const emit = defineEmits(['openDemo'])
-const openDemo = () => {
-  trackTryDemoClick('hero_cta')
-  emit('openDemo')
-}
+import { trackContactSales } from '../composables/useAnalytics'
 </script>

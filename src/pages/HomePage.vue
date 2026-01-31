@@ -3,7 +3,7 @@
     <Header />
     <main>
       <HeroSection @open-demo="showDemoModal = true" />
-      <HeroCTASection @open-demo="showDemoModal = true" />
+      <HeroCTASection />
       <FeaturesBentoSection />
       <ProblemSection />
       <IntegrationsSection />
