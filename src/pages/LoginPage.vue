@@ -4,7 +4,7 @@
       <!-- Logo -->
       <div class="text-center mb-8">
         <router-link to="/" class="inline-block">
-          <img src="/CallwellCircleLogo.png" alt="Callwell" class="mx-auto w-24 h-24" />
+          <img src="/CallwellCircleLogo.png" alt="Callwell" class="mx-auto w-24 h-24" loading="lazy" decoding="async" width="96" height="96" />
         </router-link>
       </div>
       

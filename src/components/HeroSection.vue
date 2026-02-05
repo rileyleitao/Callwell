@@ -37,6 +37,10 @@
           src="/PlumbingHeroimage.png" 
           alt="Callwell appointment booking interface showing video call and appointment confirmation" 
           class="max-w-full h-auto"
+          width="640"
+          height="480"
+          fetchpriority="high"
+          decoding="async"
         />
       </div>
     </div>

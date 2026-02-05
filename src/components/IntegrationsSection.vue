@@ -15,6 +15,8 @@
           src="/integration.png" 
           alt="Callwell integrates with ServiceTitan and Jobber" 
           class="max-w-full sm:max-w-5xl w-full h-auto"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </div>

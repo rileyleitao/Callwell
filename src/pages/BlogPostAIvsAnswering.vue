@@ -14,7 +14,7 @@
           AI Receptionist vs Answering Service: What Actually Works in 2026?
         </h1>
         <div class="flex items-center gap-x-4 mt-6">
-          <img src="/RileyParada.jpg" alt="Riley Parada" class="h-10 w-10 rounded-full object-cover" />
+          <img src="/RileyParada.jpg" alt="Riley Parada" class="h-10 w-10 rounded-full object-cover" loading="lazy" decoding="async" width="40" height="40" />
           <div class="text-sm">
             <p class="font-semibold text-gray-900">Riley Parada</p>
             <p class="text-gray-600">Co-founder</p>

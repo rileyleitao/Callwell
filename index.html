@@ -8,6 +8,11 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/callwell-192x192.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/callwell-180x180.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Preconnect to critical origins to reduce latency (LCP, fonts, analytics) -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <!-- Preload LCP image (hero) so it starts loading immediately -->
+    <link rel="preload" href="/PlumbingHeroimage.png" as="image" />
     <meta name="description" content="Callwell is an AI office assistant that acts as a virtual front desk—answering calls, booking appointments, and managing scheduling when your team is unavailable." />
     <meta name="keywords" content="AI assistant, AI office assistant, office assistant, virtual office assistant, automated office assistant, AI phone assistant, automated call answering, appointment booking software" />
     
@@ -27,10 +32,11 @@
     <meta name="twitter:image" content="https://callwell.io/PlumbingHeroimage.png" />
     
     
-    <!-- Satoshi Font -->
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+    <!-- Satoshi Font: load async so it doesn't block first paint (saves ~1.5s on mobile) -->
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" /></noscript>
     
-    <!-- Sitemap -->
+    <!-- Sitemap (low priority, not needed for first paint) -->
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     
     <!-- Canonical URL (set early so crawlers see it before SPA boot; root = no trailing slash to avoid "Page with redirect") -->

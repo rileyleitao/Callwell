@@ -22,7 +22,7 @@
             Never miss another call. Our AI answers every incoming call 24/7, handles customer inquiries, and books appointments—even after hours or during peak demand. Always available when your customers need you.
           </p>
           <router-link to="/automated-call-answering" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center gap-1">
-            Learn more
+            Learn more about automated call answering
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
@@ -41,7 +41,7 @@
             Automated scheduling that works around the clock. Our AI understands your availability, books appointments in real-time during customer calls, and handles rescheduling requests automatically.
           </p>
           <router-link to="/ai-appointment-scheduling" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center gap-1">
-            Learn more
+            Learn more about AI appointment scheduling
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
@@ -60,7 +60,7 @@
             Never miss an emergency. Our intelligent routing system automatically detects urgent calls and escalates them to your team with human-in-the-loop verification, ensuring critical situations are handled immediately.
           </p>
           <router-link to="/emergency-call-routing" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center gap-1">
-            Learn more
+            Learn more about emergency call routing
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>

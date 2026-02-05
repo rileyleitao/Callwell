@@ -13,7 +13,7 @@
               <p class="mt-2 max-w-lg text-base text-gray-600 max-lg:text-center">Never miss a customer call, even after hours or during peak demand. Our AI handles every call professionally 24/7.</p>
             </div>
             <div class="@container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm">
-                <img class="size-full object-cover object-top" src="/missedcall.png" alt="Callwell answering calls automatically" />
+                <img class="size-full object-cover object-top" src="/missedcall.png" alt="Callwell answering calls automatically" loading="lazy" decoding="async" />
               </div>
           </div>
           <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 lg:rounded-l-4xl"></div>
@@ -28,7 +28,7 @@
               <p class="mt-2 max-w-lg text-base text-gray-600 max-lg:text-center">Smart forwarding to a human in the loop during emergencies. Our system knows when to escalate important calls.</p>
             </div>
             <div class="@container flex flex-1 items-center justify-center max-lg:py-8 lg:py-4 px-8">
-              <img src="/routing.png" alt="Intelligent routing with human in the loop" class="w-full max-w-md object-contain" />
+              <img src="/routing.png" alt="Intelligent routing with human in the loop" class="w-full max-w-md object-contain" loading="lazy" decoding="async" />
             </div>         
          </div>
           <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl"></div>
@@ -43,7 +43,7 @@
               <p class="mt-2 max-w-lg text-base text-gray-600 max-lg:text-center">Works with tools such as Jobber, Housecall Pro, and ServiceTitan to sync your appointments automatically.</p>
             </div>
             <div class="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
-              <img class="h-[min(152px,40cqw)] object-cover" src="/Integrations.svg" alt="Integrations with Jobber, Housecall Pro, and ServiceTitan" />
+              <img class="h-[min(152px,40cqw)] object-cover" src="/Integrations.svg" alt="Integrations with Jobber, Housecall Pro, and ServiceTitan" loading="lazy" decoding="async" />
             </div>
           </div>
           <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5"></div>
