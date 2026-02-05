@@ -104,29 +104,33 @@
               <!-- Dropdown Menu -->
               <div class="absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] bg-white rounded-lg shadow-lg border border-gray-200 p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div class="space-y-4">
-                  <router-link to="/industries/plumbing" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Plumbing</h4>
-                    <p class="text-xs text-gray-600 mt-1">AI answering for plumbers and plumbing companies</p>
-                  </router-link>
-                  <router-link to="/industries/hvac" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">HVAC</h4>
-                    <p class="text-xs text-gray-600 mt-1">AI answering for heating and cooling companies</p>
+                  <router-link to="/industries/plumbing-hvac" class="block group/item">
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Plumbing & HVAC</h4>
+                    <p class="text-xs text-gray-600 mt-1">AI answering for plumbers and heating & cooling companies</p>
                   </router-link>
                   <router-link to="/industries/electrician" class="block group/item">
                     <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Electrician</h4>
                     <p class="text-xs text-gray-600 mt-1">AI answering for electrical contractors</p>
                   </router-link>
-                  <router-link to="/industries/roofing" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Roofing</h4>
-                    <p class="text-xs text-gray-600 mt-1">AI answering for roofing companies</p>
+                  <router-link to="/industries/window-door" class="block group/item">
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Window & Door Installation</h4>
+                    <p class="text-xs text-gray-600 mt-1">AI answering for window and door companies</p>
                   </router-link>
                   <router-link to="/industries/construction" class="block group/item">
                     <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Construction & Contracting</h4>
                     <p class="text-xs text-gray-600 mt-1">AI answering for general contractors</p>
                   </router-link>
-                  <router-link to="/industries/window-door" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Window & Door Installation</h4>
-                    <p class="text-xs text-gray-600 mt-1">AI answering for window and door companies</p>
+                  <router-link to="/industries/dental-clinics" class="block group/item">
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Dental Clinics</h4>
+                    <p class="text-xs text-gray-600 mt-1">AI answering for dental practices</p>
+                  </router-link>
+                  <router-link to="/industries/medical-clinics" class="block group/item">
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Medical Clinics</h4>
+                    <p class="text-xs text-gray-600 mt-1">AI answering for medical practices</p>
+                  </router-link>
+                  <router-link to="/industries/physiotherapy-massage" class="block group/item">
+                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Physiotherapy & Massage</h4>
+                    <p class="text-xs text-gray-600 mt-1">AI answering for PT and massage clinics</p>
                   </router-link>
                 </div>
               </div>
@@ -197,16 +201,16 @@
         <div class="px-4 pt-2 pb-4 space-y-1">
           <!-- Mobile navigation items -->
           <div class="space-y-1">
-            <router-link to="/products" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium">
+            <router-link to="/products" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium" @click="mobileMenuOpen = false">
               Products
             </router-link>
-            <router-link to="/industries/plumbing" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium">
+            <router-link to="/industries" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium" @click="mobileMenuOpen = false">
               Industries
             </router-link>
-            <router-link to="/how-it-works" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium">
+            <router-link to="/resources" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium" @click="mobileMenuOpen = false">
               Resources
             </router-link>
-            <router-link to="/pricing" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium">
+            <router-link to="/pricing" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium" @click="mobileMenuOpen = false">
               Pricing
             </router-link>
           </div>

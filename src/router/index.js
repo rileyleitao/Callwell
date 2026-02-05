@@ -10,12 +10,15 @@ import NotFoundPage from '../pages/NotFoundPage.vue'
 import LoginPage from '../pages/LoginPage.vue'
 import EmergencyCallRoutingPage from '../pages/EmergencyCallRoutingPage.vue'
 import FAQPage from '../pages/FAQPage.vue'
-import PlumbingPage from '../pages/PlumbingPage.vue'
-import HVACPage from '../pages/HVACPage.vue'
+import PlumbingHVACPage from '../pages/PlumbingHVACPage.vue'
 import ElectricianPage from '../pages/ElectricianPage.vue'
-import RoofingPage from '../pages/RoofingPage.vue'
 import ConstructionPage from '../pages/ConstructionPage.vue'
 import WindowDoorPage from '../pages/WindowDoorPage.vue'
+import DentalClinicsPage from '../pages/DentalClinicsPage.vue'
+import MedicalClinicsPage from '../pages/MedicalClinicsPage.vue'
+import PhysiotherapyMassagePage from '../pages/PhysiotherapyMassagePage.vue'
+import IndustriesPage from '../pages/IndustriesPage.vue'
+import ResourcesPage from '../pages/ResourcesPage.vue'
 import BlogPage from '../pages/BlogPage.vue'
 import BlogPostMissedCalls from '../pages/BlogPostMissedCalls.vue'
 import BlogPostAIvsAnswering from '../pages/BlogPostAIvsAnswering.vue'
@@ -97,6 +100,15 @@ const routes = [
     }
   },
   {
+    path: '/resources',
+    name: 'Resources',
+    component: ResourcesPage,
+    meta: {
+      title: 'Resources | Callwell',
+      description: 'Learn how Callwell works, read the FAQ, blog, and find our terms of service and privacy policy.'
+    }
+  },
+  {
     path: '/faq',
     name: 'FAQ',
     component: FAQPage,
@@ -158,21 +170,31 @@ const routes = [
     }
   },
   {
-    path: '/industries/plumbing',
-    name: 'Plumbing',
-    component: PlumbingPage,
+    path: '/industries',
+    name: 'Industries',
+    component: IndustriesPage,
     meta: {
-      title: 'AI Answering Service for Plumbers | Callwell',
-      description: 'Never miss a plumbing call. AI phone answering for plumbing companies handles emergency calls, books service appointments, and dispatches plumbers 24/7.'
+      title: 'Industries We Serve | Callwell',
+      description: 'Callwell’s AI answering and scheduling for plumbing, HVAC, electricians, construction, dental, medical, and physiotherapy practices. Choose your industry.'
     }
   },
   {
+    path: '/industries/plumbing',
+    name: 'PlumbingRedirect',
+    redirect: { name: 'PlumbingHVAC' }
+  },
+  {
     path: '/industries/hvac',
-    name: 'HVAC',
-    component: HVACPage,
+    name: 'HVACRedirect',
+    redirect: { name: 'PlumbingHVAC' }
+  },
+  {
+    path: '/industries/plumbing-hvac',
+    name: 'PlumbingHVAC',
+    component: PlumbingHVACPage,
     meta: {
-      title: 'AI Answering Service for HVAC Companies | Callwell',
-      description: 'Never miss an HVAC call. AI phone answering for heating and cooling companies handles AC repairs, furnace emergencies, and books service appointments 24/7.'
+      title: 'AI Answering Service for Plumbing & HVAC | Callwell',
+      description: 'Never miss a plumbing or HVAC call. AI phone answering for plumbing and heating & cooling companies handles emergency calls, books service appointments, and dispatches your team 24/7.'
     }
   },
   {
@@ -182,15 +204,6 @@ const routes = [
     meta: {
       title: 'AI Answering Service for Electricians | Callwell',
       description: 'Never miss an electrical call. AI phone answering for electrical contractors handles emergency calls, books service appointments, and dispatches electricians 24/7.'
-    }
-  },
-  {
-    path: '/industries/roofing',
-    name: 'Roofing',
-    component: RoofingPage,
-    meta: {
-      title: 'AI Answering Service for Roofing Companies | Callwell',
-      description: 'Never miss a roofing lead. AI phone answering for roofers handles storm damage calls, books estimates, and captures leads 24/7.'
     }
   },
   {
@@ -210,6 +223,33 @@ const routes = [
       title: 'AI Answering Service for Window & Door Installation Companies | Callwell',
       description: 'Never miss a window or door installation lead. AI phone answering for window and door companies handles consultations, books installations, and captures leads 24/7.',
       keywords: 'window installation answering service, door installation AI assistant, window replacement call answering, door company phone service, window installer AI receptionist'
+    }
+  },
+  {
+    path: '/industries/dental-clinics',
+    name: 'DentalClinics',
+    component: DentalClinicsPage,
+    meta: {
+      title: 'AI Answering Service for Dental Clinics | Callwell',
+      description: 'Never miss a patient call. AI phone answering for dental practices handles calls 24/7, books appointments, handles cancellations, and keeps your chairs full.'
+    }
+  },
+  {
+    path: '/industries/medical-clinics',
+    name: 'MedicalClinics',
+    component: MedicalClinicsPage,
+    meta: {
+      title: 'AI Answering Service for Medical Clinics | Callwell',
+      description: 'Never miss a patient call. AI phone answering for medical practices handles calls 24/7, books appointments, and keeps your front desk running smoothly.'
+    }
+  },
+  {
+    path: '/industries/physiotherapy-massage',
+    name: 'PhysiotherapyMassage',
+    component: PhysiotherapyMassagePage,
+    meta: {
+      title: 'AI Answering Service for Physiotherapy & Massage | Callwell',
+      description: 'Never miss a client call. AI phone answering for physiotherapy and massage practices handles calls 24/7, books appointments, and keeps your schedule full.'
     }
   },
   {

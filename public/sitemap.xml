@@ -49,6 +49,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://callwell.io/resources</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://callwell.io/faq</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -79,13 +85,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://callwell.io/industries/plumbing</loc>
+    <loc>https://callwell.io/industries</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://callwell.io/industries/hvac</loc>
+    <loc>https://callwell.io/industries/plumbing-hvac</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -97,7 +103,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://callwell.io/industries/roofing</loc>
+    <loc>https://callwell.io/industries/window-door</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -109,7 +115,19 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://callwell.io/industries/window-door</loc>
+    <loc>https://callwell.io/industries/dental-clinics</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://callwell.io/industries/medical-clinics</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://callwell.io/industries/physiotherapy-massage</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

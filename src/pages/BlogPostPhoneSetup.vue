@@ -23,7 +23,7 @@
       </header>
 
       <!-- Content -->
-      <div class="prose prose-lg max-w-none">
+      <div class="prose prose-lg max-w-none text-gray-900">
         <p class="lead text-xl text-gray-600 mb-8">
           Most business owners think improving their phone setup means switching providers, buying hardware, or retraining staff. It doesn't.
         </p>
@@ -142,7 +142,7 @@
             <strong>Callwell plugs into your existing setup and handles calls when your team can't.</strong>
           </p>
           <p class="text-gray-600 mt-2">No hardware. No new numbers. No complicated menus. Just fewer missed calls.</p>
-          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 bg-black text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 transition-colors">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 bg-black !text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 transition-colors">
             See How It Works
           </a>
         </div>

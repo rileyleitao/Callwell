@@ -6,3 +6,16 @@
 html, body {
   font-family: 'Satoshi', ui-sans-serif, system-ui, sans-serif;
 }
+
+/* Blog prose: ensure readable text on white background (no typography plugin) */
+.prose p,
+.prose li,
+.prose span {
+  @apply text-gray-700;
+}
+.prose strong {
+  @apply text-gray-900;
+}
+.prose a {
+  @apply text-blue-600;
+}
