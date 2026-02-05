@@ -311,7 +311,7 @@ router.beforeEach((to, from, next) => {
     })
   }
   
-  const url = `https://callwell.io${to.path}`
+  const url = (to.path === '/' ? 'https://callwell.io' : `https://callwell.io${to.path}`)
   const title = to.meta.title || 'Callwell - AI Office Assistant'
   const description = to.meta.description || 'Callwell is an AI office assistant that acts as a virtual front desk—answering calls, booking appointments, and managing scheduling when your team is unavailable.'
   const image = 'https://callwell.io/PlumbingHeroimage.png'
