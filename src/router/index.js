@@ -259,8 +259,13 @@ const router = createRouter({
   }
 })
 
-// Update document title and meta tags on route change
+// Normalize trailing slashes: redirect /path/ to /path (avoids 404 and Google redirect errors)
 router.beforeEach((to, from, next) => {
+  if (to.path !== '/' && to.path.endsWith('/')) {
+    next({ path: to.path.slice(0, -1), replace: true })
+    return
+  }
+
   // Update title
   if (to.meta.title) {
     document.title = to.meta.title
