@@ -60,7 +60,7 @@
 
     <!-- Chat-style booking popup -->
     <!-- Mobile: bottom-center, nearly full width. Desktop: bottom-right, fixed width -->
-    <div class="absolute bottom-4 left-3 right-3 sm:left-auto sm:bottom-10 sm:right-10 z-[3] sm:w-80">
+    <div class="absolute left-3 right-3 sm:left-auto sm:bottom-10 sm:right-10 z-[3] sm:w-80" style="bottom: max(1.5rem, env(safe-area-inset-bottom, 1rem))">
       <div class="chat-stack flex flex-col justify-end gap-2.5 sm:gap-3" :class="{ 'is-fading': isFadingOut }">
         <!-- Step 1: Callwell greeting (left-aligned) -->
         <div
