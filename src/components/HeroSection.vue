@@ -75,7 +75,7 @@
               <span class="text-white/70 text-xs font-medium">Callwell</span>
             </div>
             <p class="text-white text-sm leading-relaxed">
-              "Hi there! How can I help you today?"
+              Hi there! How can I help you today?
             </p>
           </div>
         </div>
@@ -89,13 +89,13 @@
         >
           <div class="bg-white/20 backdrop-blur-md rounded-2xl rounded-br-sm border border-white/25 p-3 sm:p-3.5 shadow-2xl w-[80%] sm:max-w-[85%] sm:w-auto">
             <div class="flex items-center gap-2 mb-1.5 justify-end">
-              <span class="text-white/70 text-xs font-medium">Caller</span>
+              <span class="text-white/70 text-xs font-medium">Jason</span>
               <div class="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-indigo-500 flex items-center justify-center flex-shrink-0">
                 <PhoneIcon class="w-3 h-3 text-white" />
               </div>
             </div>
             <p class="text-white text-sm leading-relaxed text-right">
-              "I need to book a furnace inspection for next week."
+              I need to book a furnace inspection.
             </p>
           </div>
         </div>
@@ -113,7 +113,7 @@
               <span class="text-white/70 text-xs font-medium">Callwell</span>
             </div>
             <p class="text-white text-sm leading-relaxed">
-              "I have Tuesday at 9 AM — I'll book you in for then!"
+              I have Tuesday at 9 AM — I'll book you in for then!
             </p>
           </div>
         </div>
