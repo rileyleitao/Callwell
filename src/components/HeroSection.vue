@@ -27,7 +27,7 @@
     </svg>
 
     <!-- Content — push text toward top so chat doesn't overlap -->
-    <div class="relative z-[2] flex flex-col items-center justify-start h-full px-4 sm:px-6 lg:px-8 text-center pt-44 sm:pt-32 lg:pt-36">
+    <div class="relative z-[2] flex flex-col items-center justify-start sm:justify-center h-full px-4 sm:px-6 lg:px-8 text-center pt-44 sm:pt-0 sm:pb-24 lg:pb-32">
       <!-- Beta Badge -->
       <div class="flex items-center gap-3 mb-6">
         <span class="bg-white/15 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium border border-white/25">

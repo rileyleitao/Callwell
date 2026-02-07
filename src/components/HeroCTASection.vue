@@ -1,5 +1,5 @@
 <template>
-  <section ref="sectionRef" :class="['mx-auto reveal', { 'is-visible': sectionVisible }]" style="width: 98vw;">
+  <section ref="sectionRef" :class="['mx-auto bg-gray-50 reveal', { 'is-visible': sectionVisible }]" style="width: 98vw;">
     <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-amber-100 via-pink-200 to-purple-300">
       <!-- Animated shimmer overlay -->
       <div class="shimmer-overlay absolute inset-0 pointer-events-none"></div>
