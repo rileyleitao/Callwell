@@ -27,7 +27,7 @@
     </svg>
 
     <!-- Content — push text toward top so chat doesn't overlap -->
-    <div class="relative z-[2] flex flex-col items-center justify-start h-full px-4 sm:px-6 lg:px-8 text-center pt-28 sm:pt-32 lg:pt-36">
+    <div class="relative z-[2] flex flex-col items-center justify-start h-full px-4 sm:px-6 lg:px-8 text-center pt-36 sm:pt-32 lg:pt-36">
       <!-- Beta Badge -->
       <div class="flex items-center gap-3 mb-6">
         <span class="bg-white/15 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium border border-white/25">
@@ -60,7 +60,7 @@
 
     <!-- Chat-style booking popup -->
     <!-- Mobile: bottom-center, nearly full width. Desktop: bottom-right, fixed width -->
-    <div class="absolute left-3 right-3 sm:left-auto sm:bottom-10 sm:right-10 z-[3] sm:w-80" style="bottom: max(1.5rem, env(safe-area-inset-bottom, 1rem))">
+    <div class="absolute left-3 right-3 sm:left-auto sm:bottom-10 sm:right-10 z-[3] sm:w-80" style="bottom: max(2.5rem, calc(env(safe-area-inset-bottom, 0px) + 1rem))">
       <div class="chat-stack flex flex-col justify-end gap-2.5 sm:gap-3" :class="{ 'is-fading': isFadingOut }">
         <!-- Step 1: Callwell greeting (left-aligned) -->
         <div

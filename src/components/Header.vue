@@ -237,12 +237,14 @@
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useRoute } from 'vue-router'
 import Logo from './Logo.vue'
 import LogoWhite from './LogoWhite.vue'
 import { ChevronDownIcon, GlobeAltIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/solid'
 import { ChatBubbleLeftRightIcon, SparklesIcon, PhoneIcon, CalendarIcon, WrenchScrewdriverIcon, ExclamationTriangleIcon } from '@heroicons/vue/24/outline'
 import { trackContactSales } from '../composables/useAnalytics'
 
+const route = useRoute()
 const mobileMenuOpen = ref(false)
 const scrollY = ref(0)
 
@@ -259,6 +261,7 @@ onUnmounted(() => {
   window.removeEventListener('scroll', onScroll)
 })
 
-// Glass UI at top of page, solid white once scrolled
-const scrolled = computed(() => scrollY.value > 50)
+// Only use Glass UI on the home page when at the top; solid white everywhere else
+const isHomePage = computed(() => route.path === '/')
+const scrolled = computed(() => !isHomePage.value || scrollY.value > 50)
 </script>
