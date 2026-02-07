@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-indigo-100 py-16 sm:py-20 lg:py-24">
+  <section class="bg-indigo-100 py-16 sm:py-20 lg:py-24 relative z-10">
     <div ref="ctaRef" :class="['max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal', { 'is-visible': ctaVisible }]">
       <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
         <div>
