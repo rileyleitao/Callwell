@@ -13,11 +13,15 @@
           </a>
         </div>
         
-        <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-4 sm:mb-6">
-          Never Miss Another Booking
+        <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-4 sm:mb-6 min-h-[1.2em]">
+          {{ displayedText }}<span
+            v-show="!isComplete"
+            class="inline-block w-0.5 h-[0.9em] bg-indigo-600 ml-0.5 animate-blink align-middle"
+            aria-hidden="true"
+          />
         </h1>
         <p class="text-xl sm:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
-          Callwell is an AI office assistant that acts as a virtual front desk—answering calls, booking appointments, and managing scheduling when your team is unavailable.
+          The voice-based AI office assistant that answers calls, booking appointments, and manages scheduling 24/7.
         </p>
         <div class="flex flex-wrap items-center gap-4">
           <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Hero Section')" class="bg-indigo-600 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-indigo-700 transition-colors inline-block">
@@ -36,7 +40,7 @@
         <img 
           src="/PlumbingHeroimage.png" 
           alt="Callwell appointment booking interface showing video call and appointment confirmation" 
-          class="max-w-full h-auto"
+          class="hero-image max-w-full h-auto"
           width="640"
           height="480"
           fetchpriority="high"
@@ -50,6 +54,9 @@
 <script setup>
 import { ArrowRightIcon } from '@heroicons/vue/24/solid'
 import { trackContactSales, trackTryDemoClick } from '../composables/useAnalytics'
+import { useTypewriter } from '../composables/useTypewriter'
+
+const { displayedText, isComplete } = useTypewriter('Never Miss Another Booking', 55)
 
 const emit = defineEmits(['openDemo'])
 const openDemo = () => {
@@ -85,6 +92,22 @@ const openDemo = () => {
   }
   100% {
     left: 100%;
+  }
+}
+
+.hero-image {
+  opacity: 0;
+  animation: hero-image-fade 0.6s ease-out 1.5s forwards;
+}
+
+@keyframes hero-image-fade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>
