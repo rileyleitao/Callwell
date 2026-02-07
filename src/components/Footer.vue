@@ -1,5 +1,5 @@
 <template>
-  <footer ref="footerRef" class="footer-reveal bg-[#070709] text-white py-8 sm:py-12" :class="{ 'is-visible': footerVisible }">
+  <footer ref="footerRef" class="footer-sticky bg-[#070709] text-white py-8 sm:py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="footer-content" :class="{ 'is-visible': footerVisible }">
         <div class="flex flex-wrap justify-center gap-8 sm:gap-16 md:gap-20 lg:gap-32 xl:gap-40 mb-8">
@@ -56,23 +56,23 @@
 import LogoWhite from './LogoWhite.vue'
 import { useScrollReveal } from '../composables/useScrollReveal'
 
-const { target: footerRef, isVisible: footerVisible } = useScrollReveal({ threshold: 0.05 })
+const { target: footerRef, isVisible: footerVisible } = useScrollReveal({ threshold: 0.1 })
 </script>
 
 <style scoped>
-/* Footer slides out from behind the section above it */
-.footer-reveal {
-  position: relative;
+/* Footer sticks to bottom of viewport — content scrolls over it, revealing it from behind */
+.footer-sticky {
+  position: sticky;
+  bottom: 0;
   z-index: 0;
-  margin-top: -1px;
 }
 
-/* Text fades in when footer is visible */
+/* Text fades in when footer becomes visible */
 .footer-content {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s,
-              transform 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s,
+              transform 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
 }
 .footer-content.is-visible {
   opacity: 1;

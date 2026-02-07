@@ -35,6 +35,12 @@ html, body {
 .reveal-stagger.is-visible > *:nth-child(9) { transition-delay: 800ms; opacity: 1; transform: translateY(0); }
 .reveal-stagger.is-visible > *:nth-child(10) { transition-delay: 900ms; opacity: 1; transform: translateY(0); }
 
+/* All sections sit above the sticky footer */
+section, main, div[class*="min-h-screen"] > div:not(footer) {
+  position: relative;
+  z-index: 1;
+}
+
 /* Blog prose: ensure readable text on white background (no typography plugin) */
 .prose p,
 .prose li,
