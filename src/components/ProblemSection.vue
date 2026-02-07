@@ -2,7 +2,7 @@
   <section class="bg-gray-900 text-white py-16 sm:py-20 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-        <div>
+        <div ref="leftRef" :class="['reveal', { 'is-visible': leftVisible }]">
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
             Missed Calls = <span class="text-red-500">Lost Revenue</span>
           </h2>
@@ -13,7 +13,7 @@
             Protect Revenue
           </a>
         </div>
-        <div class="space-y-3 sm:space-y-4 mt-8 lg:mt-0">
+        <div ref="bulletsRef" :class="['space-y-3 sm:space-y-4 mt-8 lg:mt-0 reveal-stagger', { 'is-visible': bulletsVisible }]">
           <div class="flex items-start">
             <PhoneIcon class="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 sm:mr-4 mt-1 flex-shrink-0" />
             <p class="text-base sm:text-lg text-gray-300">Calls come in after hours when no one's available</p>
@@ -39,4 +39,8 @@
 <script setup>
 import { PhoneIcon, CurrencyDollarIcon } from '@heroicons/vue/24/solid'
 import { trackContactSales } from '../composables/useAnalytics'
+import { useScrollReveal } from '../composables/useScrollReveal'
+
+const { target: leftRef, isVisible: leftVisible } = useScrollReveal()
+const { target: bulletsRef, isVisible: bulletsVisible } = useScrollReveal({ threshold: 0.2 })
 </script>

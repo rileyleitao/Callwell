@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white py-16 sm:py-20 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12 sm:mb-16">
+      <div ref="headingRef" :class="['text-center mb-12 sm:mb-16 reveal', { 'is-visible': headingVisible }]">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
           Stay on top of customer support
         </h2>
@@ -9,7 +9,7 @@
           Never miss a call or booking opportunity. Our AI-powered system handles every customer interaction, ensuring your business is always available and responsive.
         </p>
       </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12">
+      <div ref="gridRef" :class="['grid sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 reveal-stagger', { 'is-visible': gridVisible }]">
         <!-- 24/7 Call Answering Card -->
         <div class="text-left">
           <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: #4F39F6;">
@@ -21,9 +21,9 @@
           <p class="text-base sm:text-lg text-gray-600 mb-4">
             Never miss another call. Our AI answers every incoming call 24/7, handles customer inquiries, and books appointments—even after hours or during peak demand. Always available when your customers need you.
           </p>
-          <router-link to="/automated-call-answering" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center gap-1">
+          <router-link to="/automated-call-answering" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center gap-1 group">
             Learn more about automated call answering
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </router-link>
@@ -40,9 +40,9 @@
           <p class="text-base sm:text-lg text-gray-600 mb-4">
             Automated scheduling that works around the clock. Our AI understands your availability, books appointments in real-time during customer calls, and handles rescheduling requests automatically.
           </p>
-          <router-link to="/ai-appointment-scheduling" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center gap-1">
+          <router-link to="/ai-appointment-scheduling" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center gap-1 group">
             Learn more about AI appointment scheduling
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </router-link>
@@ -59,9 +59,9 @@
           <p class="text-base sm:text-lg text-gray-600 mb-4">
             Never miss an emergency. Our intelligent routing system automatically detects urgent calls and escalates them to your team with human-in-the-loop verification, ensuring critical situations are handled immediately.
           </p>
-          <router-link to="/emergency-call-routing" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center gap-1">
+          <router-link to="/emergency-call-routing" class="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center gap-1 group">
             Learn more about emergency call routing
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </router-link>
@@ -73,4 +73,8 @@
 
 <script setup>
 import { EnvelopeIcon, UserGroupIcon, TrashIcon, PhoneIcon } from '@heroicons/vue/24/outline'
+import { useScrollReveal } from '../composables/useScrollReveal'
+
+const { target: headingRef, isVisible: headingVisible } = useScrollReveal()
+const { target: gridRef, isVisible: gridVisible } = useScrollReveal({ threshold: 0.1 })
 </script>

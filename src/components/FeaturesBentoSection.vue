@@ -1,18 +1,20 @@
 <template>
   <div class="bg-gray-50 py-16 sm:py-20 lg:py-24">
     <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-      <p class="text-center text-sm sm:text-base font-semibold text-indigo-600 mb-3">Smart automation</p>
-      <h2 class="mx-auto max-w-lg text-center text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Everything you need to run your business 24/7</h2>
-      <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+      <div ref="headingRef" :class="['reveal', { 'is-visible': headingVisible }]">
+        <p class="text-center text-sm sm:text-base font-semibold text-indigo-600 mb-3">Smart automation</p>
+        <h2 class="mx-auto max-w-lg text-center text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Everything you need to run your business 24/7</h2>
+      </div>
+      <div ref="gridRef" :class="['mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2 reveal-stagger', { 'is-visible': gridVisible }]">
         <!-- Left Column - Answers calls -->
-        <div class="relative max-lg:row-start-1 lg:row-span-2">
+        <div class="relative max-lg:row-start-1 lg:row-span-2 group">
           <div class="absolute inset-px rounded-lg bg-white lg:rounded-l-4xl"></div>
-          <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+          <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)] transition-shadow duration-300 group-hover:shadow-lg">
             <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
               <p class="mt-2 text-xl sm:text-2xl font-bold text-gray-900 max-lg:text-center">Answers calls while you're not around</p>
               <p class="mt-2 max-w-lg text-base text-gray-600 max-lg:text-center">Never miss a customer call, even after hours or during peak demand. Our AI handles every call professionally 24/7.</p>
             </div>
-            <div class="@container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm">
+            <div class="@container relative min-h-[20rem] sm:min-h-[28rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
                 <img class="size-full object-cover object-top" src="/missedcall.png" alt="Callwell answering calls automatically" loading="lazy" decoding="async" />
               </div>
           </div>
@@ -20,9 +22,9 @@
         </div>
         
         <!-- Top Middle - Intelligent routing -->
-        <div class="relative max-lg:row-start-4">
+        <div class="relative max-lg:row-start-4 group">
           <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-4xl"></div>
-          <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+          <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] transition-shadow duration-300 group-hover:shadow-lg">
             <div class="px-8 pt-8 sm:px-10 sm:pt-10">
               <p class="mt-2 text-xl sm:text-2xl font-bold text-gray-900 max-lg:text-center">Intelligent routing</p>
               <p class="mt-2 max-w-lg text-base text-gray-600 max-lg:text-center">Smart forwarding to a human in the loop during emergencies. Our system knows when to escalate important calls.</p>
@@ -35,9 +37,9 @@
         </div>
         
         <!-- Bottom Middle - Integrations -->
-        <div class="relative max-lg:row-start-2 lg:col-start-2 lg:row-start-2">
+        <div class="relative max-lg:row-start-2 lg:col-start-2 lg:row-start-2 group">
           <div class="absolute inset-px rounded-lg bg-white"></div>
-          <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
+          <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] transition-shadow duration-300 group-hover:shadow-lg">
             <div class="px-8 pt-8 sm:px-10 sm:pt-10">
               <p class="mt-2 text-xl sm:text-2xl font-bold text-gray-900 max-lg:text-center">Integrates seamlessly</p>
               <p class="mt-2 max-w-lg text-base text-gray-600 max-lg:text-center">Works with tools such as Jobber, Housecall Pro, and ServiceTitan to sync your appointments automatically.</p>
@@ -50,15 +52,15 @@
         </div>
         
         <!-- Right Column - Books automatically -->
-        <div class="relative max-lg:row-start-3 lg:row-span-2">
+        <div class="relative max-lg:row-start-3 lg:row-span-2 group">
           <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-4xl lg:rounded-r-4xl"></div>
-          <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+          <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)] transition-shadow duration-300 group-hover:shadow-lg">
             <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
               <p class="mt-2 text-xl sm:text-2xl font-bold text-gray-900 max-lg:text-center">Books automatically</p>
               <p class="mt-2 max-w-lg text-base text-gray-600 max-lg:text-center">Appointments are scheduled directly into your calendar. No manual entry needed—everything syncs automatically.</p>
             </div>
-            <div class="relative min-h-120 w-full grow">
-              <div class="absolute top-10 right-0 bottom-0 left-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl outline outline-white/10">
+            <div class="relative min-h-[20rem] sm:min-h-[28rem] w-full grow">
+              <div class="absolute top-6 right-0 bottom-0 left-4 sm:top-10 sm:left-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl outline outline-white/10">
                 <div class="flex bg-gray-900 outline outline-white/5">
                   <div class="-mb-px flex text-sm/6 font-medium text-gray-400">
                     <div class="border-r border-gray-600/10 px-4 py-2">Calendar</div>
@@ -136,7 +138,10 @@
 </template>
 
 <script setup>
-// Features Bento Section Component
+import { useScrollReveal } from '../composables/useScrollReveal'
+
+const { target: headingRef, isVisible: headingVisible } = useScrollReveal()
+const { target: gridRef, isVisible: gridVisible } = useScrollReveal({ threshold: 0.05 })
 </script>
 
 <style scoped>

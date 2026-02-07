@@ -1,18 +1,26 @@
 <template>
-  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+  <header
+    :class="[
+      'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+      scrolled
+        ? 'bg-white border-b border-gray-200 shadow-sm'
+        : 'bg-white/10 backdrop-blur-md border-b border-white/15'
+    ]"
+  >
     <nav class="w-full">
       <div class="flex items-center h-16">
         <!-- Logo on the left with spacing -->
         <div class="flex-shrink-0 flex items-center pl-4 sm:pl-6 lg:pl-8">
           <router-link to="/">
-            <Logo class="w-28 h-28 sm:w-28 sm:h-28 md:w-32 md:h-32 text-gray-900" />
+            <Logo v-if="scrolled" class="w-28 h-28 sm:w-28 sm:h-28 md:w-32 md:h-32" />
+            <LogoWhite v-else class="w-28 h-28 sm:w-28 sm:h-28 md:w-32 md:h-32" />
           </router-link>
         </div>
         
         <!-- Mobile menu button -->
         <button 
           @click="mobileMenuOpen = !mobileMenuOpen"
-          class="md:hidden ml-auto mr-4 p-2 text-gray-900 hover:text-gray-700 focus:outline-none"
+          :class="['md:hidden ml-auto mr-4 p-2 focus:outline-none', scrolled ? 'text-gray-900 hover:text-gray-700' : 'text-white hover:text-white/80']"
           aria-label="Toggle menu"
         >
           <Bars3Icon v-if="!mobileMenuOpen" class="w-6 h-6" />
@@ -23,71 +31,71 @@
         <div class="hidden md:flex items-center space-x-6 flex-1 justify-center">
             <!-- Products Dropdown -->
             <div class="relative group">
-              <span class="text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium flex items-center cursor-pointer">
+              <span :class="[scrolled ? 'text-gray-900 hover:text-gray-700' : 'text-white hover:text-white/80', 'px-3 py-2 text-sm font-medium flex items-center cursor-pointer']">
                 Products
                 <ChevronDownIcon class="w-4 h-4 ml-1" />
               </span>
               <!-- Dropdown Menu -->
-              <div class="absolute top-full left-0 mt-2 w-[90vw] max-w-[500px] bg-white rounded-lg shadow-lg border border-gray-200 p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <div :class="['absolute top-full left-0 mt-2 w-[90vw] max-w-[500px] rounded-2xl shadow-2xl p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200', scrolled ? 'bg-white border border-gray-200' : 'bg-white/10 backdrop-blur-xl border border-white/20']">
                 <div class="space-y-4">
                   <router-link to="/automated-call-answering" class="block group/item">
                     <div class="flex items-start space-x-3">
-                      <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
-                        <PhoneIcon class="w-5 h-5 text-blue-600" />
+                      <div :class="['w-8 h-8 rounded flex items-center justify-center flex-shrink-0', scrolled ? 'bg-blue-100' : 'bg-white/15']">
+                        <PhoneIcon :class="['w-5 h-5', scrolled ? 'text-blue-600' : 'text-white']" />
                       </div>
                       <div>
-                        <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Call Answering</h4>
-                        <p class="text-xs text-gray-600 mt-1">24/7 AI-powered call answering for service businesses</p>
+                        <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Call Answering</h4>
+                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">24/7 AI-powered call answering for service businesses</p>
                       </div>
                     </div>
                   </router-link>
                   <router-link to="/ai-appointment-scheduling" class="block group/item">
                     <div class="flex items-start space-x-3">
-                      <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
-                        <CalendarIcon class="w-5 h-5 text-blue-600" />
+                      <div :class="['w-8 h-8 rounded flex items-center justify-center flex-shrink-0', scrolled ? 'bg-blue-100' : 'bg-white/15']">
+                        <CalendarIcon :class="['w-5 h-5', scrolled ? 'text-blue-600' : 'text-white']" />
                       </div>
                       <div>
-                        <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Appointment Booking</h4>
-                        <p class="text-xs text-gray-600 mt-1">Automated scheduling, rescheduling, and cancellations</p>
+                        <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Appointment Booking</h4>
+                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">Automated scheduling, rescheduling, and cancellations</p>
                       </div>
                     </div>
                   </router-link>
                   <router-link to="/emergency-call-routing" class="block group/item">
                     <div class="flex items-start space-x-3">
-                      <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center flex-shrink-0">
-                        <ExclamationTriangleIcon class="w-5 h-5 text-blue-600" />
+                      <div :class="['w-8 h-8 rounded flex items-center justify-center flex-shrink-0', scrolled ? 'bg-blue-100' : 'bg-white/15']">
+                        <ExclamationTriangleIcon :class="['w-5 h-5', scrolled ? 'text-blue-600' : 'text-white']" />
                       </div>
                       <div>
-                        <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Emergency Call Routing</h4>
-                        <p class="text-xs text-gray-600 mt-1">Intelligent escalations with human-in-the-loop verification</p>
+                        <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Emergency Call Routing</h4>
+                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">Intelligent escalations with human-in-the-loop verification</p>
                       </div>
                     </div>
                   </router-link>
-                  <div class="block group/item opacity-60">
+                  <div class="block group/item opacity-50">
                     <div class="flex items-start space-x-3">
-                      <div class="w-8 h-8 bg-gray-100 rounded flex items-center justify-center flex-shrink-0">
-                        <ChatBubbleLeftRightIcon class="w-5 h-5 text-gray-500" />
+                      <div :class="['w-8 h-8 rounded flex items-center justify-center flex-shrink-0', scrolled ? 'bg-gray-100' : 'bg-white/10']">
+                        <ChatBubbleLeftRightIcon :class="['w-5 h-5', scrolled ? 'text-gray-500' : 'text-white/60']" />
                       </div>
                       <div>
                         <div class="flex items-center space-x-2">
-                          <h4 class="text-sm font-semibold text-gray-900">Text Messaging</h4>
-                          <span class="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">Coming Soon</span>
+                          <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900' : 'text-white']">Text Messaging</h4>
+                          <span :class="['text-xs px-2 py-0.5 rounded-full', scrolled ? 'bg-gray-200 text-gray-600' : 'bg-white/15 text-white/70']">Coming Soon</span>
                         </div>
-                        <p class="text-xs text-gray-600 mt-1">Automated SMS confirmations and follow-ups</p>
+                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/50']">Automated SMS confirmations and follow-ups</p>
                       </div>
                     </div>
                   </div>
-                  <div class="block group/item opacity-60">
+                  <div class="block group/item opacity-50">
                     <div class="flex items-start space-x-3">
-                      <div class="w-8 h-8 bg-gray-100 rounded flex items-center justify-center flex-shrink-0">
-                        <SparklesIcon class="w-5 h-5 text-gray-500" />
+                      <div :class="['w-8 h-8 rounded flex items-center justify-center flex-shrink-0', scrolled ? 'bg-gray-100' : 'bg-white/10']">
+                        <SparklesIcon :class="['w-5 h-5', scrolled ? 'text-gray-500' : 'text-white/60']" />
                       </div>
                       <div>
                         <div class="flex items-center space-x-2">
-                          <h4 class="text-sm font-semibold text-gray-900">Review Generation</h4>
-                          <span class="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">Coming Soon</span>
+                          <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900' : 'text-white']">Review Generation</h4>
+                          <span :class="['text-xs px-2 py-0.5 rounded-full', scrolled ? 'bg-gray-200 text-gray-600' : 'bg-white/15 text-white/70']">Coming Soon</span>
                         </div>
-                        <p class="text-xs text-gray-600 mt-1">Automatically request reviews after appointments</p>
+                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/50']">Automatically request reviews after appointments</p>
                       </div>
                     </div>
                   </div>
@@ -97,40 +105,40 @@
 
             <!-- Industries Dropdown -->
             <div class="relative group">
-              <span class="text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium flex items-center cursor-pointer">
+              <span :class="[scrolled ? 'text-gray-900 hover:text-gray-700' : 'text-white hover:text-white/80', 'px-3 py-2 text-sm font-medium flex items-center cursor-pointer']">
                 Industries
                 <ChevronDownIcon class="w-4 h-4 ml-1" />
               </span>
               <!-- Dropdown Menu -->
-              <div class="absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] bg-white rounded-lg shadow-lg border border-gray-200 p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <div :class="['absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] rounded-2xl shadow-2xl p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200', scrolled ? 'bg-white border border-gray-200' : 'bg-white/10 backdrop-blur-xl border border-white/20']">
                 <div class="space-y-4">
                   <router-link to="/industries/plumbing-hvac" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Plumbing & HVAC</h4>
-                    <p class="text-xs text-gray-600 mt-1">AI answering for plumbers and heating & cooling companies</p>
+                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Plumbing & HVAC</h4>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for plumbers and heating & cooling companies</p>
                   </router-link>
                   <router-link to="/industries/electrician" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Electrician</h4>
-                    <p class="text-xs text-gray-600 mt-1">AI answering for electrical contractors</p>
+                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Electrician</h4>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for electrical contractors</p>
                   </router-link>
                   <router-link to="/industries/window-door" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Window & Door Installation</h4>
-                    <p class="text-xs text-gray-600 mt-1">AI answering for window and door companies</p>
+                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Window & Door Installation</h4>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for window and door companies</p>
                   </router-link>
                   <router-link to="/industries/construction" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Construction & Contracting</h4>
-                    <p class="text-xs text-gray-600 mt-1">AI answering for general contractors</p>
+                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Construction & Contracting</h4>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for general contractors</p>
                   </router-link>
                   <router-link to="/industries/dental-clinics" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Dental Clinics</h4>
-                    <p class="text-xs text-gray-600 mt-1">AI answering for dental practices</p>
+                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Dental Clinics</h4>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for dental practices</p>
                   </router-link>
                   <router-link to="/industries/medical-clinics" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Medical Clinics</h4>
-                    <p class="text-xs text-gray-600 mt-1">AI answering for medical practices</p>
+                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Medical Clinics</h4>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for medical practices</p>
                   </router-link>
                   <router-link to="/industries/physiotherapy-massage" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Physiotherapy & Massage</h4>
-                    <p class="text-xs text-gray-600 mt-1">AI answering for PT and massage clinics</p>
+                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Physiotherapy & Massage</h4>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for PT and massage clinics</p>
                   </router-link>
                 </div>
               </div>
@@ -138,39 +146,39 @@
 
             <!-- Resources Dropdown -->
             <div class="relative group">
-              <span class="text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium flex items-center cursor-pointer">
+              <span :class="[scrolled ? 'text-gray-900 hover:text-gray-700' : 'text-white hover:text-white/80', 'px-3 py-2 text-sm font-medium flex items-center cursor-pointer']">
                 Resources
                 <ChevronDownIcon class="w-4 h-4 ml-1" />
               </span>
               <!-- Dropdown Menu -->
-              <div class="absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] bg-white rounded-lg shadow-lg border border-gray-200 p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <div :class="['absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] rounded-2xl shadow-2xl p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200', scrolled ? 'bg-white border border-gray-200' : 'bg-white/10 backdrop-blur-xl border border-white/20']">
                 <div class="space-y-4">
                   <router-link to="/how-it-works" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">How It Works</h4>
-                    <p class="text-xs text-gray-600 mt-1">Learn about our automated office assistant</p>
+                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">How It Works</h4>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">Learn about our automated office assistant</p>
                   </router-link>
                   <router-link to="/faq" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">FAQ</h4>
-                    <p class="text-xs text-gray-600 mt-1">Answers to common questions about Callwell</p>
+                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">FAQ</h4>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">Answers to common questions about Callwell</p>
                   </router-link>
                   <router-link to="/blog" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Blog</h4>
-                    <p class="text-xs text-gray-600 mt-1">Tips and insights for service businesses</p>
+                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Blog</h4>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">Tips and insights for service businesses</p>
                   </router-link>
                   <router-link to="/terms" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Terms of Service</h4>
-                    <p class="text-xs text-gray-600 mt-1">Our terms and conditions</p>
+                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Terms of Service</h4>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">Our terms and conditions</p>
                   </router-link>
                   <router-link to="/privacy" class="block group/item">
-                    <h4 class="text-sm font-semibold text-gray-900 group-hover/item:text-blue-600">Privacy Policy</h4>
-                    <p class="text-xs text-gray-600 mt-1">How we protect your data</p>
+                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Privacy Policy</h4>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">How we protect your data</p>
                   </router-link>
                 </div>
               </div>
             </div>
 
             <!-- Pricing (no dropdown) -->
-            <router-link to="/pricing" class="text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">
+            <router-link to="/pricing" :class="[scrolled ? 'text-gray-900 hover:text-gray-700' : 'text-white hover:text-white/80', 'px-3 py-2 text-sm font-medium']">
               Pricing
             </router-link>
           </div>
@@ -178,47 +186,46 @@
         <!-- Right side: Language, Log in, Contact sales -->
         <div class="hidden md:flex items-center space-x-6 pr-4 sm:pr-6 lg:pr-8">
           <!-- Language selector -->
-          <div class="flex items-center space-x-1 text-gray-900 hover:text-gray-700 cursor-pointer">
+          <div :class="['flex items-center space-x-1 cursor-pointer', scrolled ? 'text-gray-900 hover:text-gray-700' : 'text-white hover:text-white/80']">
             <GlobeAltIcon class="w-5 h-5" />
             <span class="text-sm font-medium">EN</span>
             <ChevronDownIcon class="w-4 h-4" />
           </div>
           
           <!-- Log in -->
-          <router-link to="/login" class="text-gray-900 hover:text-gray-700 text-sm font-medium">
+          <router-link to="/login" :class="['text-sm font-medium', scrolled ? 'text-gray-900 hover:text-gray-700' : 'text-white hover:text-white/80']">
             Log in
           </router-link>
           
           <!-- Contact sales button -->
-          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Header Desktop')" class="bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors inline-block">
+          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Header Desktop')" :class="['px-4 py-2 rounded-full text-sm font-medium transition-colors inline-block', scrolled ? 'bg-black text-white hover:bg-gray-800' : 'bg-white/15 text-white hover:bg-white/25 border border-white/20']">
             Contact sales
           </a>
         </div>
       </div>
       
       <!-- Mobile menu -->
-      <div v-if="mobileMenuOpen" class="md:hidden border-t border-gray-200 bg-white">
+      <div v-if="mobileMenuOpen" :class="['md:hidden', scrolled ? 'border-t border-gray-200 bg-white' : 'border-t border-white/15 bg-white/10 backdrop-blur-xl']">
         <div class="px-4 pt-2 pb-4 space-y-1">
-          <!-- Mobile navigation items -->
           <div class="space-y-1">
-            <router-link to="/products" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium" @click="mobileMenuOpen = false">
+            <router-link to="/products" :class="['block px-3 py-2 rounded-md text-base font-medium', scrolled ? 'text-gray-900 hover:bg-gray-50' : 'text-white hover:bg-white/10']" @click="mobileMenuOpen = false">
               Products
             </router-link>
-            <router-link to="/industries" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium" @click="mobileMenuOpen = false">
+            <router-link to="/industries" :class="['block px-3 py-2 rounded-md text-base font-medium', scrolled ? 'text-gray-900 hover:bg-gray-50' : 'text-white hover:bg-white/10']" @click="mobileMenuOpen = false">
               Industries
             </router-link>
-            <router-link to="/resources" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium" @click="mobileMenuOpen = false">
+            <router-link to="/resources" :class="['block px-3 py-2 rounded-md text-base font-medium', scrolled ? 'text-gray-900 hover:bg-gray-50' : 'text-white hover:bg-white/10']" @click="mobileMenuOpen = false">
               Resources
             </router-link>
-            <router-link to="/pricing" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium" @click="mobileMenuOpen = false">
+            <router-link to="/pricing" :class="['block px-3 py-2 rounded-md text-base font-medium', scrolled ? 'text-gray-900 hover:bg-gray-50' : 'text-white hover:bg-white/10']" @click="mobileMenuOpen = false">
               Pricing
             </router-link>
           </div>
-          <div class="pt-4 border-t border-gray-200 space-y-2">
-            <router-link to="/login" class="block px-3 py-2 text-gray-900 hover:bg-gray-50 rounded-md text-base font-medium">
+          <div :class="['pt-4 space-y-2', scrolled ? 'border-t border-gray-200' : 'border-t border-white/15']">
+            <router-link to="/login" :class="['block px-3 py-2 rounded-md text-base font-medium', scrolled ? 'text-gray-900 hover:bg-gray-50' : 'text-white hover:bg-white/10']">
               Log in
             </router-link>
-            <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Header Mobile')" class="block w-full bg-black text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors text-center">
+            <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Header Mobile')" :class="['block w-full px-4 py-2 rounded-full text-sm font-medium transition-colors text-center', scrolled ? 'bg-black text-white hover:bg-gray-800' : 'bg-white/15 text-white hover:bg-white/25 border border-white/20']">
               Contact sales
             </a>
           </div>
@@ -229,11 +236,29 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import Logo from './Logo.vue'
+import LogoWhite from './LogoWhite.vue'
 import { ChevronDownIcon, GlobeAltIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/solid'
 import { ChatBubbleLeftRightIcon, SparklesIcon, PhoneIcon, CalendarIcon, WrenchScrewdriverIcon, ExclamationTriangleIcon } from '@heroicons/vue/24/outline'
 import { trackContactSales } from '../composables/useAnalytics'
 
 const mobileMenuOpen = ref(false)
+const scrollY = ref(0)
+
+function onScroll() {
+  scrollY.value = window.scrollY
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', onScroll, { passive: true })
+  onScroll()
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', onScroll)
+})
+
+// Glass UI at top of page, solid white once scrolled
+const scrolled = computed(() => scrollY.value > 50)
 </script>
