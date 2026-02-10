@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="text-center">
-          <router-link to="/" class="inline-block mb-4">
+          <router-link to="/" class="inline-block mb-4" aria-label="Callwell homepage">
             <LogoWhite class="w-32 h-32 sm:w-48 sm:h-48" />
           </router-link>
         </div>

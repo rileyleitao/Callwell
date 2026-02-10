@@ -1,0 +1,9 @@
+﻿
+Name                   SizeKB
+----                   ------
+index-CmrjBrC2.js       250.5
+vue-vendor-n4htSHXI.js   97.2
+index-CZRwMpK9.css       43.3
+heroicons-Cq2yVhWp.js    26.3
+
+
