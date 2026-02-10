@@ -29,7 +29,7 @@
               <p class="mt-3 text-sm text-gray-600 line-clamp-3">{{ post.excerpt }}</p>
             </div>
             <div class="mt-6 flex items-center gap-x-4">
-              <img src="/RileyParada.jpg" alt="Riley Parada" class="h-10 w-10 rounded-full object-cover" loading="lazy" decoding="async" width="40" height="40" />
+              <img src="/RileyParada.webp" alt="Riley Parada" class="h-10 w-10 rounded-full object-cover" loading="lazy" decoding="async" width="40" height="40" />
               <div class="text-sm">
                 <p class="font-semibold text-gray-900">{{ post.author.name }}</p>
                 <p class="text-gray-600">{{ post.author.role }}</p>

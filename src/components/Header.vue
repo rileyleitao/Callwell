@@ -11,7 +11,7 @@
       <div class="flex items-center h-16">
         <!-- Logo on the left with spacing -->
         <div class="flex-shrink-0 flex items-center pl-4 sm:pl-6 lg:pl-8">
-          <router-link to="/">
+          <router-link to="/" aria-label="Callwell homepage">
             <Logo v-if="scrolled" class="w-28 h-28 sm:w-28 sm:h-28 md:w-32 md:h-32" />
             <LogoWhite v-else class="w-28 h-28 sm:w-28 sm:h-28 md:w-32 md:h-32" />
           </router-link>
@@ -44,8 +44,8 @@
                         <PhoneIcon :class="['w-5 h-5', scrolled ? 'text-blue-600' : 'text-white']" />
                       </div>
                       <div>
-                        <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Call Answering</h4>
-                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">24/7 AI-powered call answering for service businesses</p>
+                        <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Call Answering</p>
+                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">24/7 AI-powered call answering for service businesses</p>
                       </div>
                     </div>
                   </router-link>
@@ -55,8 +55,8 @@
                         <CalendarIcon :class="['w-5 h-5', scrolled ? 'text-blue-600' : 'text-white']" />
                       </div>
                       <div>
-                        <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Appointment Booking</h4>
-                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">Automated scheduling, rescheduling, and cancellations</p>
+                        <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Appointment Booking</p>
+                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Automated scheduling, rescheduling, and cancellations</p>
                       </div>
                     </div>
                   </router-link>
@@ -66,8 +66,8 @@
                         <ExclamationTriangleIcon :class="['w-5 h-5', scrolled ? 'text-blue-600' : 'text-white']" />
                       </div>
                       <div>
-                        <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Emergency Call Routing</h4>
-                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">Intelligent escalations with human-in-the-loop verification</p>
+                        <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Emergency Call Routing</p>
+                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Intelligent escalations with human-in-the-loop verification</p>
                       </div>
                     </div>
                   </router-link>
@@ -78,10 +78,10 @@
                       </div>
                       <div>
                         <div class="flex items-center space-x-2">
-                          <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900' : 'text-white']">Text Messaging</h4>
+                          <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900' : 'text-white']">Text Messaging</p>
                           <span :class="['text-xs px-2 py-0.5 rounded-full', scrolled ? 'bg-gray-200 text-gray-600' : 'bg-white/15 text-white/70']">Coming Soon</span>
                         </div>
-                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/50']">Automated SMS confirmations and follow-ups</p>
+                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Automated SMS confirmations and follow-ups</p>
                       </div>
                     </div>
                   </div>
@@ -92,10 +92,10 @@
                       </div>
                       <div>
                         <div class="flex items-center space-x-2">
-                          <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900' : 'text-white']">Review Generation</h4>
+                          <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900' : 'text-white']">Review Generation</p>
                           <span :class="['text-xs px-2 py-0.5 rounded-full', scrolled ? 'bg-gray-200 text-gray-600' : 'bg-white/15 text-white/70']">Coming Soon</span>
                         </div>
-                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/50']">Automatically request reviews after appointments</p>
+                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Automatically request reviews after appointments</p>
                       </div>
                     </div>
                   </div>
@@ -113,32 +113,32 @@
               <div :class="['absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] rounded-2xl shadow-2xl p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200', scrolled ? 'bg-white border border-gray-200' : 'bg-white/10 backdrop-blur-xl border border-white/20']">
                 <div class="space-y-4">
                   <router-link to="/industries/plumbing-hvac" class="block group/item">
-                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Plumbing & HVAC</h4>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for plumbers and heating & cooling companies</p>
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Plumbing & HVAC</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for plumbers and heating & cooling companies</p>
                   </router-link>
                   <router-link to="/industries/electrician" class="block group/item">
-                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Electrician</h4>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for electrical contractors</p>
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Electrician</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for electrical contractors</p>
                   </router-link>
                   <router-link to="/industries/window-door" class="block group/item">
-                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Window & Door Installation</h4>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for window and door companies</p>
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Window & Door Installation</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for window and door companies</p>
                   </router-link>
                   <router-link to="/industries/construction" class="block group/item">
-                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Construction & Contracting</h4>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for general contractors</p>
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Construction & Contracting</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for general contractors</p>
                   </router-link>
                   <router-link to="/industries/dental-clinics" class="block group/item">
-                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Dental Clinics</h4>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for dental practices</p>
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Dental Clinics</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for dental practices</p>
                   </router-link>
                   <router-link to="/industries/medical-clinics" class="block group/item">
-                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Medical Clinics</h4>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for medical practices</p>
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Medical Clinics</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for medical practices</p>
                   </router-link>
                   <router-link to="/industries/physiotherapy-massage" class="block group/item">
-                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Physiotherapy & Massage</h4>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">AI answering for PT and massage clinics</p>
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Physiotherapy & Massage</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for PT and massage clinics</p>
                   </router-link>
                 </div>
               </div>
@@ -154,24 +154,24 @@
               <div :class="['absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] rounded-2xl shadow-2xl p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200', scrolled ? 'bg-white border border-gray-200' : 'bg-white/10 backdrop-blur-xl border border-white/20']">
                 <div class="space-y-4">
                   <router-link to="/how-it-works" class="block group/item">
-                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">How It Works</h4>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">Learn about our automated office assistant</p>
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">How It Works</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Learn about our automated office assistant</p>
                   </router-link>
                   <router-link to="/faq" class="block group/item">
-                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">FAQ</h4>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">Answers to common questions about Callwell</p>
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">FAQ</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Answers to common questions about Callwell</p>
                   </router-link>
                   <router-link to="/blog" class="block group/item">
-                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Blog</h4>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">Tips and insights for service businesses</p>
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Blog</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Tips and insights for service businesses</p>
                   </router-link>
                   <router-link to="/terms" class="block group/item">
-                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Terms of Service</h4>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">Our terms and conditions</p>
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Terms of Service</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Our terms and conditions</p>
                   </router-link>
                   <router-link to="/privacy" class="block group/item">
-                    <h4 :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Privacy Policy</h4>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/60']">How we protect your data</p>
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Privacy Policy</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">How we protect your data</p>
                   </router-link>
                 </div>
               </div>

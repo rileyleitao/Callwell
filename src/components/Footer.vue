@@ -1,27 +1,27 @@
 <template>
-  <footer ref="footerRef" class="footer-sticky bg-[#070709] text-white py-8 sm:py-12">
+  <footer ref="footerRef" :class="['bg-[#070709] text-white py-6 sm:py-12', isHomePage ? 'footer-sticky' : '']">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="footer-content" :class="{ 'is-visible': footerVisible }">
-        <div class="flex flex-wrap justify-center gap-8 sm:gap-16 md:gap-20 lg:gap-32 xl:gap-40 mb-8">
-          <div class="text-center">
-            <h4 class="font-semibold mb-4">Product</h4>
-            <ul class="space-y-2 text-gray-400 text-sm">
+      <div class="footer-content" :class="{ 'is-visible': footerVisible || !isHomePage }">
+        <div class="grid grid-cols-2 gap-6 max-w-xs mx-auto sm:max-w-none sm:flex sm:flex-wrap sm:justify-center sm:gap-16 md:gap-20 lg:gap-32 xl:gap-40 mb-6 sm:mb-8">
+          <div class="text-left sm:text-center">
+            <p class="font-semibold mb-2 sm:mb-4 text-sm sm:text-base">Product</p>
+            <ul class="space-y-1.5 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
               <li><router-link to="/products" class="hover:text-white">Products</router-link></li>
               <li><router-link to="/how-it-works" class="hover:text-white">How it works</router-link></li>
             </ul>
           </div>
-          <div class="text-center">
-            <h4 class="font-semibold mb-4">Company</h4>
-            <ul class="space-y-2 text-gray-400 text-sm">
+          <div class="text-left sm:text-center">
+            <p class="font-semibold mb-2 sm:mb-4 text-sm sm:text-base">Company</p>
+            <ul class="space-y-1.5 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
               <li><router-link to="/solutions" class="hover:text-white">Solutions</router-link></li>
               <li><router-link to="/pricing" class="hover:text-white">Pricing</router-link></li>
               <li><router-link to="/automated-call-answering" class="hover:text-white">Call Answering</router-link></li>
               <li><router-link to="/ai-appointment-scheduling" class="hover:text-white">Appointment Scheduling</router-link></li>
             </ul>
           </div>
-          <div class="text-center">
-            <h4 class="font-semibold mb-4">Industries</h4>
-            <ul class="space-y-2 text-gray-400 text-sm">
+          <div class="text-left sm:text-center">
+            <p class="font-semibold mb-2 sm:mb-4 text-sm sm:text-base">Industries</p>
+            <ul class="space-y-1.5 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
               <li><router-link to="/industries/plumbing-hvac" class="hover:text-white">Plumbing & HVAC</router-link></li>
               <li><router-link to="/industries/electrician" class="hover:text-white">Electrician</router-link></li>
               <li><router-link to="/industries/window-door" class="hover:text-white">Window & Door</router-link></li>
@@ -31,9 +31,9 @@
               <li><router-link to="/industries/physiotherapy-massage" class="hover:text-white">Physiotherapy & Massage</router-link></li>
             </ul>
           </div>
-          <div class="text-center">
-            <h4 class="font-semibold mb-4">Resources</h4>
-            <ul class="space-y-2 text-gray-400 text-sm">
+          <div class="text-left sm:text-center">
+            <p class="font-semibold mb-2 sm:mb-4 text-sm sm:text-base">Resources</p>
+            <ul class="space-y-1.5 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
               <li><router-link to="/how-it-works" class="hover:text-white">How It Works</router-link></li>
               <li><router-link to="/faq" class="hover:text-white">FAQ</router-link></li>
               <li><router-link to="/blog" class="hover:text-white">Blog</router-link></li>
@@ -44,7 +44,7 @@
         </div>
         <div class="text-center">
           <router-link to="/" class="inline-block mb-4">
-            <LogoWhite class="w-48 h-48" />
+            <LogoWhite class="w-32 h-32 sm:w-48 sm:h-48" />
           </router-link>
         </div>
       </div>
@@ -54,8 +54,12 @@
 
 <script setup>
 import LogoWhite from './LogoWhite.vue'
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 import { useScrollReveal } from '../composables/useScrollReveal'
 
+const route = useRoute()
+const isHomePage = computed(() => route.path === '/')
 const { target: footerRef, isVisible: footerVisible } = useScrollReveal({ threshold: 0.1 })
 </script>
 

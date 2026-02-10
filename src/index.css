@@ -35,10 +35,11 @@ html, body {
 .reveal-stagger.is-visible > *:nth-child(9) { transition-delay: 800ms; opacity: 1; transform: translateY(0); }
 .reveal-stagger.is-visible > *:nth-child(10) { transition-delay: 900ms; opacity: 1; transform: translateY(0); }
 
-/* All sections sit above the sticky footer */
-section {
+/* Main content sits above the sticky footer */
+main {
   position: relative;
   z-index: 1;
+  background: inherit;
 }
 
 /* Blog prose: ensure readable text on white background (no typography plugin) */

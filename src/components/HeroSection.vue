@@ -7,7 +7,6 @@
       muted
       playsinline
       class="absolute inset-0 w-full h-full object-cover object-[20%_center] sm:object-center"
-      poster=""
     >
       <source src="/hero-video.mp4" type="video/mp4" />
     </video>
@@ -33,7 +32,7 @@
         <span class="bg-white/15 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium border border-white/25">
           In Beta
         </span>
-        <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="text-white/80 text-sm font-medium hover:text-white inline-flex items-center gap-1 transition-colors">
+        <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" aria-label="Try Callwell for a limited time" class="text-white/80 text-sm font-medium hover:text-white inline-flex items-center gap-1 transition-colors">
           Try for a limited time
           <ArrowRightIcon class="w-4 h-4" />
         </a>
@@ -71,7 +70,7 @@
         >
           <div class="bg-white/10 backdrop-blur-md rounded-2xl rounded-bl-sm border border-white/20 p-3 sm:p-3.5 shadow-2xl w-[80%] sm:max-w-[85%] sm:w-auto">
             <div class="flex items-center gap-2 mb-1.5">
-              <img src="/CallwellCircleLogo.png" alt="Callwell" class="w-5 h-5 sm:w-6 sm:h-6 rounded-full flex-shrink-0 object-cover" />
+              <img src="/CallwellCircleLogo.webp" alt="Callwell" class="w-5 h-5 sm:w-6 sm:h-6 rounded-full flex-shrink-0 object-cover" width="24" height="24" loading="lazy" decoding="async" />
               <span class="text-white/70 text-xs font-medium">Callwell</span>
             </div>
             <p class="text-white text-sm leading-relaxed">
@@ -109,7 +108,7 @@
         >
           <div class="bg-white/10 backdrop-blur-md rounded-2xl rounded-bl-sm border border-white/20 p-3 sm:p-3.5 shadow-2xl w-[80%] sm:max-w-[85%] sm:w-auto">
             <div class="flex items-center gap-2 mb-1.5">
-              <img src="/CallwellCircleLogo.png" alt="Callwell" class="w-5 h-5 sm:w-6 sm:h-6 rounded-full flex-shrink-0 object-cover" />
+              <img src="/CallwellCircleLogo.webp" alt="Callwell" class="w-5 h-5 sm:w-6 sm:h-6 rounded-full flex-shrink-0 object-cover" width="24" height="24" loading="lazy" decoding="async" />
               <span class="text-white/70 text-xs font-medium">Callwell</span>
             </div>
             <p class="text-white text-sm leading-relaxed">
