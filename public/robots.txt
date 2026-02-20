@@ -2,3 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://callwell.io/sitemap.xml
+
+# AI / LLM discovery
+# See https://llmstxt.org
+LLMs-Txt: https://callwell.io/llms.txt

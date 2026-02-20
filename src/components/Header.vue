@@ -36,7 +36,7 @@
                 <ChevronDownIcon class="w-4 h-4 ml-1" />
               </span>
               <!-- Dropdown Menu -->
-              <div :class="['absolute top-full left-0 mt-2 w-[90vw] max-w-[500px] rounded-2xl shadow-2xl p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200', scrolled ? 'bg-white border border-gray-200' : 'bg-white/10 backdrop-blur-xl border border-white/20']">
+              <div :class="['absolute top-full left-0 mt-2 w-[90vw] max-w-[500px] rounded-2xl shadow-2xl p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200', scrolled ? 'bg-white border border-gray-200' : 'bg-gray-900/95 backdrop-blur-xl border border-white/20']">
                 <div class="space-y-4">
                   <router-link to="/automated-call-answering" class="block group/item">
                     <div class="flex items-start space-x-3">
@@ -110,7 +110,7 @@
                 <ChevronDownIcon class="w-4 h-4 ml-1" />
               </span>
               <!-- Dropdown Menu -->
-              <div :class="['absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] rounded-2xl shadow-2xl p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200', scrolled ? 'bg-white border border-gray-200' : 'bg-white/10 backdrop-blur-xl border border-white/20']">
+              <div :class="['absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] rounded-2xl shadow-2xl p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200', scrolled ? 'bg-white border border-gray-200' : 'bg-gray-900/95 backdrop-blur-xl border border-white/20']">
                 <div class="space-y-4">
                   <router-link to="/industries/plumbing-hvac" class="block group/item">
                     <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Plumbing & HVAC</p>
@@ -151,13 +151,13 @@
                 <ChevronDownIcon class="w-4 h-4 ml-1" />
               </span>
               <!-- Dropdown Menu -->
-              <div :class="['absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] rounded-2xl shadow-2xl p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200', scrolled ? 'bg-white border border-gray-200' : 'bg-white/10 backdrop-blur-xl border border-white/20']">
+              <div :class="['absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] rounded-2xl shadow-2xl p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200', scrolled ? 'bg-white border border-gray-200' : 'bg-gray-900/95 backdrop-blur-xl border border-white/20']">
                 <div class="space-y-4">
                   <router-link to="/how-it-works" class="block group/item">
                     <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">How It Works</p>
                     <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Learn about our automated office assistant</p>
                   </router-link>
-                  <router-link to="/faq" class="block group/item">
+                  <router-link to="/resources#faq" class="block group/item">
                     <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">FAQ</p>
                     <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Answers to common questions about Callwell</p>
                   </router-link>

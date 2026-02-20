@@ -34,8 +34,8 @@
               </button>
             </div>
 
-            <!-- Row 2: Coming Soon (aligned with row 1, label to the left) -->
-            <div ref="comingSoonRef" :class="['flex flex-wrap items-center gap-3 reveal-stagger', { 'is-visible': comingSoonVisible }]">
+            <!-- Row 2: Coming Soon (hidden for now, kept in code) -->
+            <div ref="comingSoonRef" class="hidden">
               <span class="text-xs font-medium uppercase tracking-wider text-gray-400 flex-shrink-0">Coming Soon</span>
               <template v-for="item in comingSoon" :key="item.name">
                 <span
@@ -55,6 +55,10 @@
                   <span>{{ item.name }}</span>
                 </span>
               </template>
+            </div>
+
+            <!-- Request Another button (always visible) -->
+            <div class="flex flex-wrap items-center gap-3">
               <button
                 type="button"
                 class="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2.5 text-sm font-medium text-indigo-700 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md active:scale-[0.98] transition-all duration-200 cursor-pointer"

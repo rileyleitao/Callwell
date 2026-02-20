@@ -1,0 +1,40 @@
+# Callwell
+
+> Callwell is an AI office assistant that acts as a virtual front desk for service businesses — answering calls, booking appointments, and managing scheduling 24/7 when your team is unavailable.
+
+Callwell replaces traditional answering services with AI-powered call handling. It speaks naturally with customers, understands their needs, books appointments directly into your schedule, and routes emergency calls to your on-call team. No hardware required — it works with your existing phone number.
+
+## Products
+
+- [Call Answering](https://callwell.io/automated-call-answering): 24/7 AI-powered call answering for service businesses. Handles every customer interaction automatically.
+- [Appointment Scheduling](https://callwell.io/ai-appointment-scheduling): Automated booking system that handles scheduling, cancellations, and waitlists without human intervention.
+- [Emergency Call Routing](https://callwell.io/emergency-call-routing): Intelligent escalation system that detects urgent calls and routes them to your on-call team with human-in-the-loop verification.
+
+## Industries
+
+- [Plumbing & HVAC](https://callwell.io/industries/plumbing-hvac): AI answering for plumbers and heating & cooling companies. Handles emergency dispatch, service call booking, and after-hours coverage.
+- [Electrician](https://callwell.io/industries/electrician): AI answering for electrical contractors. Books service appointments and dispatches electricians 24/7.
+- [Construction & Contracting](https://callwell.io/industries/construction): AI answering for general contractors. Handles project inquiries, books consultations, and captures leads.
+- [Window & Door Installation](https://callwell.io/industries/window-door): AI answering for window and door companies. Books installations and captures leads.
+- [Dental Clinics](https://callwell.io/industries/dental-clinics): AI answering for dental practices. Books appointments, handles cancellations, and keeps chairs full.
+- [Medical Clinics](https://callwell.io/industries/medical-clinics): AI answering for medical practices. Books appointments and keeps your front desk running smoothly.
+- [Physiotherapy & Massage](https://callwell.io/industries/physiotherapy-massage): AI answering for PT and massage clinics. Books appointments and keeps your schedule full.
+
+## Key Pages
+
+- [Home](https://callwell.io/): Overview of Callwell's AI office assistant capabilities.
+- [Pricing](https://callwell.io/pricing): Plans starting at $350 CAD/month with 24/7 AI call answering and automated appointment booking.
+- [How It Works](https://callwell.io/how-it-works): Step-by-step guide to setting up your automated office assistant.
+- [Solutions](https://callwell.io/solutions): Use cases from after-hours calls to peak demand periods.
+- [FAQ](https://callwell.io/faq): Answers to common questions about Callwell.
+
+## Blog
+
+- [How Many Calls Is Your Business Missing After Hours?](https://callwell.io/blog/missed-calls-cost): Learn how missed calls cost service businesses thousands in lost revenue.
+- [AI Receptionist vs Answering Service](https://callwell.io/blog/ai-receptionist-vs-answering-service): Compare AI receptionists to traditional answering services.
+- [Best Phone Setup for Service Businesses](https://callwell.io/blog/phone-setup-service-business): The ideal phone setup for plumbers, electricians, and contractors.
+
+## Legal
+
+- [Terms of Service](https://callwell.io/terms)
+- [Privacy Policy](https://callwell.io/privacy)

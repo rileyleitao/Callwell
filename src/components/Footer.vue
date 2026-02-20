@@ -35,7 +35,7 @@
             <p class="font-semibold mb-2 sm:mb-4 text-sm sm:text-base">Resources</p>
             <ul class="space-y-1.5 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
               <li><router-link to="/how-it-works" class="hover:text-white">How It Works</router-link></li>
-              <li><router-link to="/faq" class="hover:text-white">FAQ</router-link></li>
+              <li><router-link to="/resources#faq" class="hover:text-white">FAQ</router-link></li>
               <li><router-link to="/blog" class="hover:text-white">Blog</router-link></li>
               <li><router-link to="/terms" class="hover:text-white">Terms of Service</router-link></li>
               <li><router-link to="/privacy" class="hover:text-white">Privacy Policy</router-link></li>

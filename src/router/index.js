@@ -78,7 +78,7 @@ const routes = [
     component: EmergencyCallRoutingPage,
     meta: {
       title: 'Intelligent Escalations for Emergency Calls | Callwell',
-      description: 'Never miss an emergency. Our intelligent routing system automatically detects urgent calls and escalates them to your team with human-in-the-loop verification.'
+      description: 'Never miss an emergency. Intelligent routing detects urgent calls and escalates them to your team automatically.'
     }
   },
   {
@@ -194,7 +194,7 @@ const routes = [
     component: PlumbingHVACPage,
     meta: {
       title: 'AI Answering Service for Plumbing & HVAC | Callwell',
-      description: 'Never miss a plumbing or HVAC call. AI phone answering for plumbing and heating & cooling companies handles emergency calls, books service appointments, and dispatches your team 24/7.'
+      description: 'AI phone answering for plumbing and HVAC companies. Handles emergency calls, books appointments, and dispatches 24/7.'
     }
   },
   {
@@ -203,7 +203,7 @@ const routes = [
     component: ElectricianPage,
     meta: {
       title: 'AI Answering Service for Electricians | Callwell',
-      description: 'Never miss an electrical call. AI phone answering for electrical contractors handles emergency calls, books service appointments, and dispatches electricians 24/7.'
+      description: 'AI phone answering for electrical contractors. Handles emergency calls, books service appointments, and dispatches 24/7.'
     }
   },
   {
@@ -221,7 +221,7 @@ const routes = [
     component: WindowDoorPage,
     meta: {
       title: 'AI Answering Service for Window & Door Installation Companies | Callwell',
-      description: 'Never miss a window or door installation lead. AI phone answering for window and door companies handles consultations, books installations, and captures leads 24/7.',
+      description: 'AI phone answering for window and door companies. Books installations and captures leads 24/7.',
       keywords: 'window installation answering service, door installation AI assistant, window replacement call answering, door company phone service, window installer AI receptionist'
     }
   },
@@ -294,6 +294,10 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
+    // Scroll to anchor if hash is present (e.g. /resources#faq)
+    if (to.hash) {
+      return { el: to.hash, behavior: 'smooth' }
+    }
     // Always scroll to top when navigating to a new page
     return { top: 0 }
   }
@@ -310,7 +314,7 @@ router.beforeEach((to, from, next) => {
   if (to.meta.title) {
     document.title = to.meta.title
   }
-  
+
   // Update or create meta description
   let metaDescription = document.querySelector('meta[name="description"]')
   if (!metaDescription) {
@@ -319,7 +323,7 @@ router.beforeEach((to, from, next) => {
     document.head.appendChild(metaDescription)
   }
   metaDescription.setAttribute('content', to.meta.description || 'Callwell is an AI office assistant that acts as a virtual front desk—answering calls, booking appointments, and managing scheduling when your team is unavailable.')
-  
+
   // Update or create keywords meta tag
   let metaKeywords = document.querySelector('meta[name="keywords"]')
   if (!metaKeywords) {
@@ -328,7 +332,7 @@ router.beforeEach((to, from, next) => {
     document.head.appendChild(metaKeywords)
   }
   metaKeywords.setAttribute('content', to.meta.keywords || 'AI assistant, AI office assistant, virtual office assistant, automated call answering, appointment booking software')
-  
+
   // Update or create Open Graph tags
   const updateOrCreateMeta = (property, content) => {
     let meta = document.querySelector(`meta[property="${property}"]`)
@@ -341,7 +345,7 @@ router.beforeEach((to, from, next) => {
       meta.setAttribute('content', content)
     }
   }
-  
+
   // Remove article-specific meta tags function
   const removeArticleMeta = () => {
     const articleMetas = ['article:published_time', 'article:modified_time', 'article:author']
@@ -350,20 +354,20 @@ router.beforeEach((to, from, next) => {
       if (meta) meta.remove()
     })
   }
-  
+
   const url = (to.path === '/' ? 'https://callwell.io' : `https://callwell.io${to.path}`)
   const title = to.meta.title || 'Callwell - AI Office Assistant'
   const description = to.meta.description || 'Callwell is an AI office assistant that acts as a virtual front desk—answering calls, booking appointments, and managing scheduling when your team is unavailable.'
   const image = 'https://callwell.io/PlumbingHeroimage.png'
   const ogType = to.meta.type || 'website'
-  
+
   updateOrCreateMeta('og:title', title)
   updateOrCreateMeta('og:description', description)
   updateOrCreateMeta('og:url', url)
   updateOrCreateMeta('og:type', ogType)
   updateOrCreateMeta('og:image', image)
   updateOrCreateMeta('og:site_name', 'Callwell')
-  
+
   // Handle article-specific meta tags
   if (ogType === 'article') {
     if (to.meta.datePublished) {
@@ -379,7 +383,7 @@ router.beforeEach((to, from, next) => {
     // Remove article meta tags when not on article pages
     removeArticleMeta()
   }
-  
+
   // Update or create Twitter Card tags
   const updateOrCreateTwitterMeta = (name, content) => {
     let meta = document.querySelector(`meta[name="${name}"]`)
@@ -390,12 +394,12 @@ router.beforeEach((to, from, next) => {
     }
     meta.setAttribute('content', content)
   }
-  
+
   updateOrCreateTwitterMeta('twitter:card', 'summary_large_image')
   updateOrCreateTwitterMeta('twitter:title', title)
   updateOrCreateTwitterMeta('twitter:description', description)
   updateOrCreateTwitterMeta('twitter:image', image)
-  
+
   // Update canonical URL
   let canonical = document.querySelector('link[rel="canonical"]')
   if (!canonical) {
@@ -404,7 +408,7 @@ router.beforeEach((to, from, next) => {
     document.head.appendChild(canonical)
   }
   canonical.setAttribute('href', url)
-  
+
   next()
 })
 
