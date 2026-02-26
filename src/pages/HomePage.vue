@@ -9,7 +9,7 @@
       <CallwellDashboardSection />
       <ProblemSection />
       <FeaturesGridSection />
-      <IntegrationsSection />
+      <!-- <IntegrationsSection /> -->
       <StatsSection />
       <CTASection />
     </main>
@@ -26,7 +26,7 @@ import HeroSection from '../components/HeroSection.vue'
 import BookingAnimationSection from '../components/BookingAnimationSection.vue'
 import HeroCTASection from '../components/HeroCTASection.vue'
 import ProblemSection from '../components/ProblemSection.vue'
-import IntegrationsSection from '../components/IntegrationsSection.vue'
+// import IntegrationsSection from '../components/IntegrationsSection.vue'
 import FeaturesBentoSection from '../components/FeaturesBentoSection.vue'
 import CallwellDashboardSection from '../components/CallwellDashboardSection.vue'
 import FeaturesGridSection from '../components/FeaturesGridSection.vue'
