@@ -6,7 +6,7 @@
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
       <div class="text-center mb-12 sm:mb-16">
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
-          Automated Call Answering for Service Businesses
+          Automated Call Answering for Modern Businesses & Clinics
         </h1>
         <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
           Never miss another call. Our software that answers calls and books appointments automatically handles every customer interaction, 24/7.
@@ -99,10 +99,10 @@
             Software That Answers Calls and Books Appointments
           </h2>
           <p class="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6">
-            Callwell is the complete solution for service businesses that need reliable call handling. Our AI phone assistant answers every call, understands customer needs, and books appointments directly into your calendar—all automatically.
+            Callwell is the complete solution for appointment-based teams and clinics that need reliable call handling. Our AI phone assistant answers every call, understands customer needs, and books appointments directly into your calendar—all automatically.
           </p>
           <p class="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6">
-            Whether it's an emergency plumbing call at 2 AM or a scheduling request during your busiest hours, our automated call answering system ensures no customer goes unanswered.
+            Whether it's a booking inquiry at 2 AM or a scheduling request during your busiest hours, our automated call answering system ensures no customer goes unanswered.
           </p>
           <ul class="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
             <li class="flex items-start">
@@ -173,7 +173,7 @@
       <!-- Benefits Section -->
       <section class="bg-gray-50 rounded-lg p-6 sm:p-8 lg:p-12 mb-12 sm:mb-16 lg:mb-20">
         <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">
-          Why Service Businesses Choose Automated Call Answering
+          Why Clinics and Businesses Choose Automated Call Answering
         </h2>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           <div class="text-center">
@@ -198,7 +198,7 @@
       <section class="text-center">
         <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Ready to Never Miss a Call?</h2>
         <p class="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
-          See how automated call answering can transform your service business.
+          See how automated call answering can transform your business or clinic.
         </p>
         <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Call Answering Page')" class="bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-gray-800 transition-colors inline-block">
           Contact Sales

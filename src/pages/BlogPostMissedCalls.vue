@@ -25,11 +25,11 @@
       <!-- Content -->
       <div class="prose prose-lg max-w-none text-gray-900">
         <p class="lead text-xl text-gray-600 mb-8">
-          Most service businesses don't realize how many calls they miss — because missed calls don't show up on the books. They just quietly disappear.
+          Most appointment-based businesses and clinics don't realize how many calls they miss — because missed calls don't show up on the books. They just quietly disappear.
         </p>
 
         <p class="text-gray-700">
-          If you're a plumber, electrician, dental office, or clinic, missing calls often means missing jobs. And unlike other business problems, this one is invisible until you start measuring it.
+          If you're a clinic, dentist, lawyer, or local contractor, missing calls means missing potential clients or patients. And unlike other business problems, this one is invisible until you start measuring it.
         </p>
 
         <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">The Real Cost of a Missed Call</h2>
@@ -39,7 +39,7 @@
         <ul class="space-y-2 my-6 text-gray-700">
           <li class="flex items-start">
             <span class="text-blue-600 mr-2">•</span>
-            <span><strong>Average service call value:</strong> $150–$400</span>
+            <span><strong>Average booking value:</strong> $150–$400</span>
           </li>
           <li class="flex items-start">
             <span class="text-blue-600 mr-2">•</span>
@@ -57,12 +57,12 @@
 
         <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">Why Calls Go Unanswered</h2>
         
-        <p class="text-gray-700">It's not that you don't care about answering the phone. It's that running a service business makes it nearly impossible to catch every call:</p>
+        <p class="text-gray-700">It's not that you don't care about answering the phone. It's that running a busy practice or service business makes it nearly impossible to catch every call:</p>
 
         <ul class="space-y-2 my-6 text-gray-700">
           <li class="flex items-start">
             <span class="text-blue-600 mr-2">•</span>
-            <span><strong>After-hours:</strong> Someone's water heater explodes at 9 PM. Your phone rings. No one answers.</span>
+            <span><strong>After-hours:</strong> Someone needs to book a time urgently at 9 PM. Your phone rings. No one answers.</span>
           </li>
           <li class="flex items-start">
             <span class="text-blue-600 mr-2">•</span>
@@ -120,7 +120,7 @@
           </li>
           <li class="flex items-start">
             <CheckIcon class="h-5 w-5 text-green-500 mr-2 mt-1 flex-shrink-0" />
-            <span><strong>Escalates emergencies</strong> — burst pipes and no-heat calls go straight to your on-call team</span>
+            <span><strong>Escalates emergencies</strong> — urgent inquiries and priority calls go straight to your on-call team</span>
           </li>
         </ul>
 
@@ -130,7 +130,7 @@
 
         <div class="bg-blue-50 rounded-lg p-6 my-10">
           <p class="text-lg text-gray-900">
-            <strong>If your phone rings when no one's available, Callwell answers it — and books the job.</strong>
+            <strong>If your phone rings when no one's available, Callwell answers it — and books the appointment.</strong>
           </p>
           <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 bg-black !text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 transition-colors">
             See How It Works
@@ -160,7 +160,7 @@ import { CheckIcon, ArrowLeftIcon } from '@heroicons/vue/24/solid'
 // Blog post metadata
 const post = {
   title: 'How Many Calls Is Your Business Missing After Hours? (And How Much Revenue That Costs You)',
-  description: 'Learn how missed calls cost service businesses thousands in lost revenue and how AI call answering can help capture every lead.',
+  description: 'Learn how missed calls cost businesses and clinics thousands in lost revenue and how AI call answering can help capture every lead.',
   datePublished: '2025-01-15',
   dateModified: '2025-01-15',
   author: 'Riley Parada',
@@ -194,7 +194,7 @@ onMounted(() => {
       '@type': 'WebPage',
       '@id': post.url
     },
-    keywords: 'missed calls cost businesses, after hours calls service business, missed calls lost revenue, answering service alternatives'
+    keywords: 'missed calls cost businesses, after hours calls clinic, missed calls lost revenue, answering service alternatives'
   }
 
   const script = document.createElement('script')

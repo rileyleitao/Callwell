@@ -4,101 +4,79 @@
     
     <!-- Pricing Hero Section -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-      <div class="text-center">
+      <div class="text-center mb-12 sm:mb-16">
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
-          Pricing
+          Simple no-tricks pricing
         </h1>
-        <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8 sm:mb-12">
-          Choose the perfect plan for your service business. All plans include 24/7 AI call answering and automated appointment booking.
+        <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+          Get a custom AI receptionist fully trained on your business guidelines and workflows. Callwell answers calls, routes emergencies, and books appointments 24/7.
         </p>
       </div>
 
-      <!-- Pricing Cards -->
-      <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto mb-12 sm:mb-16">
-        <!-- Standard Plan -->
-        <div class="border-2 border-blue-500 rounded-lg p-6 sm:p-8 relative shadow-lg">
-          <div class="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2">
-            <span class="bg-blue-500 text-white px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-semibold">Most Popular</span>
+      <!-- Inspiration-Style Split Pricing Box -->
+      <div class="mx-auto max-w-5xl rounded-3xl border border-gray-200 bg-white shadow-sm lg:flex lg:items-stretch">
+        <!-- Left Side: Content & Features -->
+        <div class="p-8 sm:p-10 lg:flex-1">
+          <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Automated Office Platform</h3>
+          <p class="text-base text-gray-600 mb-6">
+            Everything you need to automate your front desk, book appointments automatically, and handle priority inquiries 24/7. Fully trained on your terminology and guidelines.
+          </p>
+          <div class="flex items-center gap-x-4 mb-6">
+            <h4 class="flex-none text-sm font-semibold leading-6 text-blue-600">What's included</h4>
+            <div class="h-px flex-auto bg-gray-200"></div>
           </div>
-          <div class="mb-4 sm:mb-6">
-            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Standard</h3>
-            <p class="text-gray-600 text-sm mb-3 sm:mb-4">Perfect for service businesses</p>
-            <div class="flex items-baseline">
-              <span class="text-3xl sm:text-4xl font-bold text-gray-900">$350</span>
-              <span class="text-gray-600 ml-2 text-sm sm:text-base">/month</span>
-            </div>
-            <p class="text-xs sm:text-sm text-gray-500 mt-2">CAD</p>
-          </div>
-          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Pricing Page - Get Started')" class="w-full bg-blue-600 text-white py-2 sm:py-3 rounded-md text-sm sm:text-base font-semibold hover:bg-blue-700 transition-colors mb-4 sm:mb-6 inline-block text-center">
-            Get started
-          </a>
-          <ul class="space-y-2 sm:space-y-3">
-            <li class="flex items-start">
-              <CheckIcon class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">24/7 AI call answering</span>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base text-gray-700">
+            <li class="flex gap-x-3">
+              <CheckIcon class="h-6 w-5 flex-none text-blue-600" aria-hidden="true" />
+              <span>24/7 natural-sounding AI call answering</span>
             </li>
-            <li class="flex items-start">
-              <CheckIcon class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">Automated appointment booking</span>
+            <li class="flex gap-x-3">
+              <CheckIcon class="h-6 w-5 flex-none text-blue-600" aria-hidden="true" />
+              <span>Automated booking & rescheduling</span>
             </li>
-            <li class="flex items-start">
-              <CheckIcon class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">Waitlist management</span>
+            <li class="flex gap-x-3">
+              <CheckIcon class="h-6 w-5 flex-none text-blue-600" aria-hidden="true" />
+              <span>Live calendar synchronisation</span>
             </li>
-            <li class="flex items-start">
-              <CheckIcon class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">Priority support</span>
+            <li class="flex gap-x-3">
+              <CheckIcon class="h-6 w-5 flex-none text-blue-600" aria-hidden="true" />
+              <span>Waitlist & cancellation automation</span>
             </li>
-            <li class="flex items-start">
-              <CheckIcon class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">Advanced analytics</span>
+            <li class="flex gap-x-3">
+              <CheckIcon class="h-6 w-5 flex-none text-blue-600" aria-hidden="true" />
+              <span>Custom brand voice & terms training</span>
             </li>
-            <li class="flex items-start">
-              <CheckIcon class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">Custom integrations</span>
+            <li class="flex gap-x-3">
+              <CheckIcon class="h-6 w-5 flex-none text-blue-600" aria-hidden="true" />
+              <span>Software & CRM integrations</span>
+            </li>
+            <li class="flex gap-x-3">
+              <CheckIcon class="h-6 w-5 flex-none text-blue-600" aria-hidden="true" />
+              <span>Priority emergency call routing</span>
+            </li>
+            <li class="flex gap-x-3">
+              <CheckIcon class="h-6 w-5 flex-none text-blue-600" aria-hidden="true" />
+              <span>Advanced dashboard & call analytics</span>
             </li>
           </ul>
         </div>
 
-        <!-- Enterprise Plan -->
-        <div class="border-2 border-gray-200 rounded-lg p-6 sm:p-8 hover:border-blue-500 transition-colors">
-          <div class="mb-4 sm:mb-6">
-            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
-            <p class="text-gray-600 text-sm mb-3 sm:mb-4">For large service businesses</p>
-            <div class="flex items-baseline">
-              <span class="text-3xl sm:text-4xl font-bold text-gray-900">Custom</span>
+        <!-- Right Side: CTA box (gray bg) -->
+        <div class="p-2 lg:w-96 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-stretch">
+          <div class="h-full rounded-2xl bg-gray-50/70 border border-gray-100/50 py-10 text-center lg:flex lg:flex-col lg:justify-center lg:py-16">
+            <div class="mx-auto max-w-xs px-8">
+              <p class="text-sm font-semibold text-gray-600">Tailored to your volume</p>
+              <p class="mt-4 flex items-baseline justify-center gap-x-2">
+                <span class="text-5xl font-extrabold tracking-tight text-gray-900">Custom</span>
+              </p>
+              <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Pricing Page - Inspiration')" class="mt-8 block w-full rounded-md bg-blue-600 px-3 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-colors cursor-pointer">
+                Contact Sales
+              </a>
+              <p class="mt-6 text-xs leading-5 text-gray-500">
+                Get set up with custom booking rules in 24-48 hours
+              </p>
             </div>
-            <p class="text-xs sm:text-sm text-gray-500 mt-2">Contact us for pricing</p>
           </div>
-          <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Pricing Page')" class="w-full bg-gray-900 text-white py-2 sm:py-3 rounded-md text-sm sm:text-base font-semibold hover:bg-gray-800 transition-colors mb-4 sm:mb-6 inline-block text-center">
-            Contact sales
-          </a>
-          <ul class="space-y-2 sm:space-y-3">
-            <li class="flex items-start">
-              <CheckIcon class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">Unlimited calls</span>
-            </li>
-            <li class="flex items-start">
-              <CheckIcon class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">Everything in Pro</span>
-            </li>
-            <li class="flex items-start">
-              <CheckIcon class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">Dedicated account manager</span>
-            </li>
-            <li class="flex items-start">
-              <CheckIcon class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">Custom AI training</span>
-            </li>
-            <li class="flex items-start">
-              <CheckIcon class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">SLA guarantee</span>
-            </li>
-            <li class="flex items-start">
-              <CheckIcon class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-              <span class="text-gray-700">On-premise deployment option</span>
-            </li>
-          </ul>
         </div>
       </div>
     </section>
@@ -154,11 +132,11 @@ const faqs = [
   },
   {
     question: 'Can I customize the AI responses?',
-    answer: 'Yes! Both Standard and Enterprise plans include custom AI training to match your business voice and brand. You can set booking rules, availability, and customize how the AI interacts with your customers.'
+    answer: 'Yes! We provide custom AI training to match your business voice, brand, and clinic terminology. You can set booking rules, availability, and customize how the AI interacts with your customers or patients.'
   },
   {
-    question: 'What happens if I exceed my call limit?',
-    answer: 'If you exceed your monthly call limit, we\'ll notify you and you can upgrade to Enterprise or purchase additional call credits. We never want you to miss a call, so we\'ll work with you to find the right solution.'
+    question: 'How does call volume pricing work?',
+    answer: 'Our tailored plan is modeled around your actual business needs. We will work with you to analyze your typical volume and design custom pricing so you only pay for what you actually use.'
   },
   {
     question: 'How quickly can I get started?',
@@ -170,7 +148,7 @@ const faqs = [
   },
   {
     question: 'What kind of support do you offer?',
-    answer: 'Standard plans include priority support with faster response times. Enterprise plans include a dedicated account manager and 24/7 phone support.'
+    answer: 'We provide comprehensive, dedicated support and hands-on setup setup assistance. We will walk you through setting up call routes, training the AI, connecting your existing calendars, and offer priority ongoing support.'
   }
 ]
 </script>

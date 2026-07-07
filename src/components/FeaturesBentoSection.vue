@@ -42,10 +42,10 @@
           <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] transition-shadow duration-300 group-hover:shadow-lg">
             <div class="px-8 pt-8 sm:px-10 sm:pt-10">
               <p class="mt-2 text-xl sm:text-2xl font-bold text-gray-900 max-lg:text-center">Integrates seamlessly</p>
-              <p class="mt-2 max-w-lg text-base text-gray-600 max-lg:text-center">Works with tools such as Jobber, Housecall Pro, and ServiceTitan to sync your appointments automatically.</p>
+              <p class="mt-2 max-w-lg text-base text-gray-600 max-lg:text-center">Works with your CRM, calendar, and existing business tools to sync your appointments automatically.</p>
             </div>
-            <div class="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
-              <img class="h-[min(152px,40cqw)] object-cover" src="/Integrations.webp" alt="Integrations with Jobber, Housecall Pro, and ServiceTitan" loading="lazy" decoding="async" width="980" height="152" />
+            <div class="@container flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2 px-8">
+              <img class="w-full max-w-md object-contain" src="/integrations_generic.png" alt="Integrates seamlessly with your CRM and business tools" loading="lazy" decoding="async" />
             </div>
           </div>
           <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5"></div>

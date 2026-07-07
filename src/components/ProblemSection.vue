@@ -7,7 +7,7 @@
             Missed Calls = <span class="text-red-500">Lost Revenue</span>
           </h2>
           <p class="text-lg sm:text-xl text-gray-300 mb-4 sm:mb-6">
-            For  service businesses, every missed call is a customer booking with someone else.
+            For clinics and service businesses, every missed call is a booking with someone else.
           </p>
           <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Problem Section')" class="bg-white text-gray-900 px-6 py-3 rounded-md text-sm font-semibold hover:bg-gray-100 transition-colors mt-4 sm:mt-6 inline-block">
             Protect Revenue
@@ -20,7 +20,7 @@
           </div>
           <div class="flex items-start">
             <PhoneIcon class="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 sm:mr-4 mt-1 flex-shrink-0" />
-            <p class="text-base sm:text-lg text-gray-300">Phones ring during peak jobs when staff can't answer</p>
+            <p class="text-base sm:text-lg text-gray-300">Phones ring during busy periods when staff are occupied</p>
           </div>
           <div class="flex items-start">
             <PhoneIcon class="w-5 h-5 sm:w-6 sm:h-6 text-red-500 mr-3 sm:mr-4 mt-1 flex-shrink-0" />

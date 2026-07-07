@@ -111,7 +111,7 @@
           </li>
           <li class="flex items-start">
             <CheckIcon class="h-5 w-5 text-green-500 mr-2 mt-1 flex-shrink-0" />
-            <span><strong>Route emergencies intelligently</strong> — Burst pipe at 2 AM? Goes straight to your on-call tech</span>
+            <span><strong>Route emergencies intelligently</strong> — Urgent client request or priority patient issue at 2 AM? Goes straight to your on-call team</span>
           </li>
           <li class="flex items-start">
             <CheckIcon class="h-5 w-5 text-green-500 mr-2 mt-1 flex-shrink-0" />
@@ -139,12 +139,12 @@
         </ul>
 
         <p>
-          But for most service businesses, the math doesn't work. You're paying per minute for someone to take a message that might not convert — instead of paying a flat fee for someone to book the job.
+          But for most appointment-driven businesses and clinics, the math doesn't work. You're paying per minute for someone to take a message that might not convert — instead of paying a flat fee for someone to book the appointment.
         </p>
 
         <div class="bg-blue-50 rounded-lg p-6 my-10">
           <p class="text-lg text-gray-900">
-            <strong>If your goal is booking jobs — not taking messages — AI wins.</strong>
+            <strong>If your goal is booking appointments and patients — not taking messages — AI wins.</strong>
           </p>
           <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 bg-black !text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 transition-colors">
             See the Difference
@@ -208,7 +208,7 @@ onMounted(() => {
       '@type': 'WebPage',
       '@id': post.url
     },
-    keywords: 'AI receptionist for small business, answering service vs AI, virtual receptionist comparison, phone answering for service businesses'
+    keywords: 'AI receptionist for small business, answering service vs AI, virtual receptionist comparison, phone answering for appointment based businesses'
   }
 
   const script = document.createElement('script')

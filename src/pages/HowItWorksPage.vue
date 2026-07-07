@@ -70,33 +70,33 @@
       <!-- AI Phone Assistant Section -->
       <section class="mb-12 sm:mb-16 lg:mb-20">
         <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">
-          An AI Phone Assistant Built for Service Businesses
+          An AI Phone Assistant Built for Appointment-Driven Teams
         </h2>
         <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div class="bg-blue-50 rounded-lg p-6 sm:p-8 order-2 lg:order-1">
             <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Perfect For</h3>
             <ul class="space-y-2 sm:space-y-3">
               <li class="flex items-center">
-                <WrenchScrewdriverIcon class="w-5 h-5 text-blue-600 mr-3" />
-                <span class="text-sm sm:text-base text-gray-700">Plumbing & HVAC Services</span>
+                <HeartIcon class="w-5 h-5 text-blue-600 mr-3" />
+                <span class="text-sm sm:text-base text-gray-700">Medical, Dental, & Wellness Clinics</span>
+              </li>
+              <li class="flex items-center">
+                <BriefcaseIcon class="w-5 h-5 text-blue-600 mr-3" />
+                <span class="text-sm sm:text-base text-gray-700">Law Firms & Professional Services</span>
               </li>
               <li class="flex items-center">
                 <WrenchScrewdriverIcon class="w-5 h-5 text-blue-600 mr-3" />
-                <span class="text-sm sm:text-base text-gray-700">Electrical Services</span>
+                <span class="text-sm sm:text-base text-gray-700">Contractors, Plumbing, & HVAC</span>
               </li>
               <li class="flex items-center">
-                <WrenchScrewdriverIcon class="w-5 h-5 text-blue-600 mr-3" />
-                <span class="text-sm sm:text-base text-gray-700">Painting & Contracting</span>
-              </li>
-              <li class="flex items-center">
-                <WrenchScrewdriverIcon class="w-5 h-5 text-blue-600 mr-3" />
-                <span class="text-sm sm:text-base text-gray-700">Home Service Businesses</span>
+                <HomeIcon class="w-5 h-5 text-blue-600 mr-3" />
+                <span class="text-sm sm:text-base text-gray-700">Home & Field Service Businesses</span>
               </li>
             </ul>
           </div>
           <div class="order-1 lg:order-2">
             <p class="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6">
-              Our AI phone assistant understands the unique needs of service businesses. It knows how to handle emergency calls, schedule service appointments, manage cancellations, and even maintain waitlists—all without human intervention.
+              Our AI phone assistant understands the unique needs of appointment-based businesses and clinics. It knows how to handle priority inquiries, schedule customer and patient appointments, manage cancellations, and maintain waitlists—all without human intervention.
             </p>
             <p class="text-base sm:text-lg text-gray-600">
               The automated office assistant integrates seamlessly with your existing calendar and booking systems, ensuring every appointment is scheduled correctly and your team is always in the loop.
@@ -109,7 +109,7 @@
       <section class="text-center bg-gray-50 rounded-lg p-6 sm:p-8 lg:p-12">
         <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Ready to Get Started?</h2>
         <p class="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
-          See how an automated office assistant can transform your service business.
+          See how an automated office assistant can transform your business or clinic.
         </p>
         <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('How It Works Page')" class="bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-gray-800 transition-colors inline-block">
           Contact Sales
@@ -124,6 +124,6 @@
 <script setup>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-import { CheckIcon, WrenchScrewdriverIcon } from '@heroicons/vue/24/solid'
+import { CheckIcon, WrenchScrewdriverIcon, HeartIcon, BriefcaseIcon, HomeIcon } from '@heroicons/vue/24/solid'
 import { trackContactSales } from '../composables/useAnalytics'
 </script>

@@ -9,7 +9,7 @@
           Frequently Asked Questions
         </h1>
         <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-          Everything you need to know about Callwell and how it can help your service business.
+          Everything you need to know about Callwell and how it can help your business.
         </p>
       </div>
     </section>
@@ -75,11 +75,11 @@ const faqs = [
   },
   {
     question: 'Can I customize the AI responses?',
-    answer: 'Yes! Both Standard and Enterprise plans include custom AI training to match your business voice and brand. You can set booking rules, availability, and customize how the AI interacts with your customers.'
+    answer: 'Yes! We provide custom AI training to match your business voice, brand, and clinic terminology. You can set booking rules, availability, and customize how the AI interacts with your customers or patients.'
   },
   {
-    question: 'What happens if I exceed my call limit?',
-    answer: 'If you exceed your monthly call limit, we\'ll notify you and you can upgrade to Enterprise or purchase additional call credits. We never want you to miss a call, so we\'ll work with you to find the right solution.'
+    question: 'How does call volume pricing work?',
+    answer: 'Our tailored plan is modeled around your actual business needs. We will work with you to analyze your typical volume and design custom pricing so you only pay for what you actually use.'
   },
   {
     question: 'How quickly can I get started?',
@@ -91,7 +91,7 @@ const faqs = [
   },
   {
     question: 'What kind of support do you offer?',
-    answer: 'Standard plans include priority support with faster response times. Enterprise plans include a dedicated account manager and 24/7 phone support.'
+    answer: 'We provide comprehensive, dedicated support and hands-on setup setup assistance. We will walk you through setting up call routes, training the AI, connecting your existing calendars, and offer priority ongoing support.'
   }
 ]
 

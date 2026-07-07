@@ -6,7 +6,7 @@
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
       <div class="text-center mb-12 sm:mb-16">
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
-          Solutions for Every Service Business Challenge
+          Solutions for Every Appointment-Based Business
         </h1>
         <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
           From after-hours calls to peak demand periods, Callwell handles every scenario so you never miss a booking opportunity.
@@ -151,30 +151,30 @@
 
       <!-- Industries Section -->
       <section class="bg-blue-50 rounded-lg p-6 sm:p-8 lg:p-12 mb-12 sm:mb-16">
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">Built for Service Businesses</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">Built for Appointment-Based Businesses</h2>
         <p class="text-base sm:text-lg text-gray-600 mb-8 sm:mb-12 text-center max-w-3xl mx-auto">
-          Callwell is designed specifically for service businesses that need reliable call handling and appointment management.
+          Callwell is designed specifically for teams that need reliable call handling and seamless appointment management.
         </p>
         <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 max-w-5xl mx-auto">
           <div class="text-center">
+            <HeartIcon class="w-8 h-8 sm:w-10 sm:h-10 text-blue-600 mx-auto mb-3 sm:mb-4" />
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Medical & Dental</h3>
+            <p class="text-sm sm:text-base text-gray-600">Schedule appointments and field inquiries</p>
+          </div>
+          <div class="text-center">
+            <BriefcaseIcon class="w-8 h-8 sm:w-10 sm:h-10 text-blue-600 mx-auto mb-3 sm:mb-4" />
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Professional Services</h3>
+            <p class="text-sm sm:text-base text-gray-600">Perfect for law firms and agencies</p>
+          </div>
+          <div class="text-center">
             <WrenchScrewdriverIcon class="w-8 h-8 sm:w-10 sm:h-10 text-blue-600 mx-auto mb-3 sm:mb-4" />
             <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Plumbing & HVAC</h3>
-            <p class="text-sm sm:text-base text-gray-600">Perfect for emergency service calls</p>
+            <p class="text-sm sm:text-base text-gray-600">Perfect for emergency dispatch calls</p>
           </div>
           <div class="text-center">
-            <WrenchScrewdriverIcon class="w-8 h-8 sm:w-10 sm:h-10 text-blue-600 mx-auto mb-3 sm:mb-4" />
-            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Electrical</h3>
-            <p class="text-sm sm:text-base text-gray-600">Handle urgent electrical service requests</p>
-          </div>
-          <div class="text-center">
-            <WrenchScrewdriverIcon class="w-8 h-8 sm:w-10 sm:h-10 text-blue-600 mx-auto mb-3 sm:mb-4" />
-            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Contracting</h3>
-            <p class="text-sm sm:text-base text-gray-600">Manage complex project bookings</p>
-          </div>
-          <div class="text-center">
-            <WrenchScrewdriverIcon class="w-8 h-8 sm:w-10 sm:h-10 text-blue-600 mx-auto mb-3 sm:mb-4" />
-            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Home Services</h3>
-            <p class="text-sm sm:text-base text-gray-600">All service business types</p>
+            <HomeIcon class="w-8 h-8 sm:w-10 sm:h-10 text-blue-600 mx-auto mb-3 sm:mb-4" />
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Home & Field Services</h3>
+            <p class="text-sm sm:text-base text-gray-600">All specialized service types</p>
           </div>
         </div>
       </section>
@@ -199,6 +199,6 @@
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import { CheckIcon, ChartBarIcon, UserMinusIcon, CurrencyDollarIcon, ClockIcon, ArrowPathIcon, ArrowTrendingUpIcon } from '@heroicons/vue/24/solid'
-import { WrenchScrewdriverIcon, AdjustmentsHorizontalIcon, DocumentTextIcon } from '@heroicons/vue/24/outline'
+import { WrenchScrewdriverIcon, AdjustmentsHorizontalIcon, DocumentTextIcon, HeartIcon, BriefcaseIcon, HomeIcon } from '@heroicons/vue/24/outline'
 import { trackContactSales } from '../composables/useAnalytics'
 </script>

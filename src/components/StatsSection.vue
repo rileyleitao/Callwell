@@ -4,10 +4,10 @@
       <!-- Heading -->
       <div ref="headingRef" :class="['text-center mb-12 sm:mb-16 reveal', { 'is-visible': headingVisible }]">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-          Built for service businesses like yours
+          Built for appointment-based businesses and clinics
         </h2>
         <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-          Join service businesses that never miss a booking opportunity and deliver a consistently professional experience.
+          Join the businesses and clinics that never miss a booking opportunity and deliver a consistently professional experience.
         </p>
       </div>
       

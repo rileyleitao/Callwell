@@ -42,7 +42,7 @@
         <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">Information from Third Parties</h3>
         <ul class="list-disc pl-6 text-gray-600 mb-4 space-y-2">
           <li><strong>Calendar Integrations:</strong> Availability and appointment data from connected calendar services</li>
-          <li><strong>CRM Integrations:</strong> Customer data from connected business software (ServiceTitan, Jobber, etc.)</li>
+          <li><strong>CRM Integrations:</strong> Customer data from connected business software and CRMs</li>
         </ul>
 
         <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">2. How We Use Your Information</h2>

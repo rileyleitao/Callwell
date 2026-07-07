@@ -11,7 +11,7 @@
           <span class="rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600">How-To Guide</span>
         </div>
         <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-4">
-          The Best Phone Setup for Service Businesses in 2026 (Without Replacing Your Current System)
+          The Best Phone Setup for Modern Businesses & Clinics in 2026 (Without Replacing Your Current System)
         </h1>
         <div class="flex items-center gap-x-4 mt-6">
           <img src="/RileyParada.webp" alt="Riley Parada" class="h-10 w-10 rounded-full object-cover" loading="lazy" decoding="async" width="40" height="40" />
@@ -34,7 +34,7 @@
 
         <h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">The 3-Layer Phone Setup</h2>
         
-        <p>The most effective setup for service businesses has three simple layers:</p>
+        <p>The most effective setup for clinics and modern businesses has three simple layers:</p>
 
         <div class="bg-gray-50 rounded-lg p-6 my-6 space-y-4">
           <div class="flex items-start">
@@ -169,7 +169,7 @@ import { CheckIcon, ArrowLeftIcon, XMarkIcon } from '@heroicons/vue/24/solid'
 
 // Blog post metadata
 const post = {
-  title: 'The Best Phone Setup for Service Businesses in 2026 (Without Replacing Your Current System)',
+  title: 'The Best Phone Setup for Modern Businesses & Clinics in 2026 (Without Replacing Your Current System)',
   description: 'The ideal phone setup for plumbers, electricians, and contractors. No new hardware, no new numbers, just better call handling.',
   datePublished: '2025-01-05',
   dateModified: '2025-01-05',
@@ -204,7 +204,7 @@ onMounted(() => {
       '@type': 'WebPage',
       '@id': post.url
     },
-    keywords: 'phone system for service business, business phone setup, AI phone assistant, call routing small business'
+    keywords: 'phone system for clinic and business, business phone setup, AI phone assistant, call routing small business'
   }
 
   const script = document.createElement('script')

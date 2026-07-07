@@ -45,7 +45,7 @@
                       </div>
                       <div>
                         <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Call Answering</p>
-                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">24/7 AI-powered call answering for service businesses</p>
+                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">24/7 AI-powered call answering for modern businesses</p>
                       </div>
                     </div>
                   </router-link>
@@ -71,20 +71,17 @@
                       </div>
                     </div>
                   </router-link>
-                  <div class="block group/item opacity-50">
+                  <router-link to="/text-messaging" class="block group/item">
                     <div class="flex items-start space-x-3">
-                      <div :class="['w-8 h-8 rounded flex items-center justify-center flex-shrink-0', scrolled ? 'bg-gray-100' : 'bg-white/10']">
-                        <ChatBubbleLeftRightIcon :class="['w-5 h-5', scrolled ? 'text-gray-500' : 'text-white/60']" />
+                      <div :class="['w-8 h-8 rounded flex items-center justify-center flex-shrink-0', scrolled ? 'bg-blue-100' : 'bg-white/15']">
+                        <ChatBubbleLeftRightIcon :class="['w-5 h-5', scrolled ? 'text-blue-600' : 'text-white']" />
                       </div>
                       <div>
-                        <div class="flex items-center space-x-2">
-                          <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900' : 'text-white']">Text Messaging</p>
-                          <span :class="['text-xs px-2 py-0.5 rounded-full', scrolled ? 'bg-gray-200 text-gray-600' : 'bg-white/15 text-white/70']">Coming Soon</span>
-                        </div>
-                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Automated SMS confirmations and follow-ups</p>
+                        <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Text Messaging</p>
+                        <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Automated SMS & email reminders, open slots, and campaigns</p>
                       </div>
                     </div>
-                  </div>
+                  </router-link>
                   <div class="block group/item opacity-50">
                     <div class="flex items-start space-x-3">
                       <div :class="['w-8 h-8 rounded flex items-center justify-center flex-shrink-0', scrolled ? 'bg-gray-100' : 'bg-white/10']">
@@ -112,6 +109,18 @@
               <!-- Dropdown Menu -->
               <div :class="['absolute top-full left-0 mt-2 w-[90vw] max-w-[400px] rounded-2xl shadow-2xl p-4 sm:p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200', scrolled ? 'bg-white border border-gray-200' : 'bg-gray-900/95 backdrop-blur-xl border border-white/20']">
                 <div class="space-y-4">
+                  <router-link to="/industries/medical-clinics" class="block group/item">
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Medical Clinics</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for medical practices</p>
+                  </router-link>
+                  <router-link to="/industries/dental-clinics" class="block group/item">
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Dental Clinics</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for dental practices</p>
+                  </router-link>
+                  <router-link to="/industries/physiotherapy-massage" class="block group/item">
+                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Physiotherapy & Massage</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for PT and massage clinics</p>
+                  </router-link>
                   <router-link to="/industries/plumbing-hvac" class="block group/item">
                     <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Plumbing & HVAC</p>
                     <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for plumbers and heating & cooling companies</p>
@@ -127,18 +136,6 @@
                   <router-link to="/industries/construction" class="block group/item">
                     <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Construction & Contracting</p>
                     <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for general contractors</p>
-                  </router-link>
-                  <router-link to="/industries/dental-clinics" class="block group/item">
-                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Dental Clinics</p>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for dental practices</p>
-                  </router-link>
-                  <router-link to="/industries/medical-clinics" class="block group/item">
-                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Medical Clinics</p>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for medical practices</p>
-                  </router-link>
-                  <router-link to="/industries/physiotherapy-massage" class="block group/item">
-                    <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Physiotherapy & Massage</p>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">AI answering for PT and massage clinics</p>
                   </router-link>
                 </div>
               </div>
@@ -163,7 +160,7 @@
                   </router-link>
                   <router-link to="/blog" class="block group/item">
                     <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Blog</p>
-                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Tips and insights for service businesses</p>
+                    <p :class="['text-xs mt-1', scrolled ? 'text-gray-600' : 'text-white/70']">Tips and insights for appointment-based teams</p>
                   </router-link>
                   <router-link to="/terms" class="block group/item">
                     <p :class="['text-sm font-semibold', scrolled ? 'text-gray-900 group-hover/item:text-blue-600' : 'text-white group-hover/item:text-white/80']">Terms of Service</p>

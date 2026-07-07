@@ -20,7 +20,7 @@ export function useSEO() {
           name: 'Callwell',
           url: 'https://callwell.io',
           logo: 'https://callwell.io/logo.svg',
-          description: 'AI office assistant that answers calls and books appointments 24/7 for service businesses',
+          description: 'AI office assistant that answers calls and books appointments 24/7 for clinics and businesses',
           sameAs: [],
           founder: {
             '@id': 'https://callwell.io/#author'
@@ -52,7 +52,7 @@ export function useSEO() {
           name: 'Callwell',
           applicationCategory: 'BusinessApplication',
           operatingSystem: 'Web',
-          description: 'AI-powered virtual receptionist that answers calls and books appointments automatically for service businesses',
+          description: 'AI-powered virtual receptionist that answers calls and books appointments automatically for clinics and businesses',
           offers: {
             '@type': 'Offer',
             price: '350',
@@ -73,8 +73,7 @@ export function useSEO() {
             'Calendar Integration',
             'Emergency Call Routing',
             'Custom AI Training',
-            'ServiceTitan Integration',
-            'Jobber Integration'
+            'CRM & Tool Integrations'
           ],
           screenshot: 'https://callwell.io/PlumbingHeroimage.png',
           softwareVersion: '1.0',
@@ -95,7 +94,7 @@ export function useSEO() {
           '@id': 'https://callwell.io/#organization'
         },
         areaServed: 'Worldwide',
-        description: 'AI-powered office assistant that answers customer calls and enables 24/7 appointment booking for service businesses',
+        description: 'AI-powered office assistant that answers customer calls and enables 24/7 appointment booking for clinics and businesses',
         offers: {
           '@type': 'Offer',
           priceCurrency: 'CAD',

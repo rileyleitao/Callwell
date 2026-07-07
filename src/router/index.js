@@ -25,6 +25,7 @@ import BlogPostAIvsAnswering from '../pages/BlogPostAIvsAnswering.vue'
 import BlogPostPhoneSetup from '../pages/BlogPostPhoneSetup.vue'
 import TermsPage from '../pages/TermsPage.vue'
 import PrivacyPage from '../pages/PrivacyPage.vue'
+import TextMessagingPage from '../pages/TextMessagingPage.vue'
 
 const routes = [
   {
@@ -42,7 +43,7 @@ const routes = [
     component: PricingPage,
     meta: {
       title: 'Pricing | Callwell',
-      description: 'Choose the perfect plan for your service business. All plans include 24/7 AI call answering and automated appointment booking.'
+      description: 'Choose the perfect plan for your business or clinic. All plans include 24/7 AI call answering and automated appointment booking.'
     }
   },
   {
@@ -51,7 +52,7 @@ const routes = [
     component: HowItWorksPage,
     meta: {
       title: 'Your Automated Office Assistant for Calls & Scheduling | Callwell',
-      description: 'A virtual office assistant that never misses a call, books appointments automatically, and handles scheduling 24/7. Perfect for service businesses.'
+      description: 'A virtual office assistant that never misses a call, books appointments automatically, and handles scheduling 24/7. Perfect for clinics and service businesses.'
     }
   },
   {
@@ -59,7 +60,7 @@ const routes = [
     name: 'CallAnswering',
     component: CallAnsweringPage,
     meta: {
-      title: 'Automated Call Answering for Service Businesses | Callwell',
+      title: 'Automated Call Answering for Clinics & Service Businesses | Callwell',
       description: 'Never miss another call. Our software that answers calls and books appointments automatically handles every customer interaction, 24/7.'
     }
   },
@@ -69,7 +70,7 @@ const routes = [
     component: AppointmentBookingPage,
     meta: {
       title: 'AI That Schedules Appointments Automatically | Callwell',
-      description: 'An automated booking system for service businesses that handles scheduling, cancellations, and waitlists—all without human intervention.'
+      description: 'An automated booking system for appointment-driven businesses and clinics that handles scheduling, cancellations, and waitlists—all without human intervention.'
     }
   },
   {
@@ -82,12 +83,21 @@ const routes = [
     }
   },
   {
+    path: '/text-messaging',
+    name: 'TextMessaging',
+    component: TextMessagingPage,
+    meta: {
+      title: 'Automated SMS, Text & Email Reminders | Callwell',
+      description: 'Set text or email reminders for upcoming appointments, notify of open slots immediately, and run marketing campaigns to fill sequences.'
+    }
+  },
+  {
     path: '/products',
     name: 'Products',
     component: ProductsPage,
     meta: {
       title: 'Products | Callwell',
-      description: 'Complete AI-powered solutions to handle calls, book appointments, and grow your service business—all automatically.'
+      description: 'Complete AI-powered solutions to handle calls, book appointments, and grow your clinic or business—all automatically.'
     }
   },
   {
@@ -95,7 +105,7 @@ const routes = [
     name: 'Solutions',
     component: SolutionsPage,
     meta: {
-      title: 'Solutions for Service Businesses | Callwell',
+      title: 'Solutions for Clinics & Service Businesses | Callwell',
       description: 'From after-hours calls to peak demand periods, Callwell handles every scenario so you never miss a booking opportunity.'
     }
   },
@@ -123,8 +133,8 @@ const routes = [
     component: BlogPage,
     meta: {
       title: 'Blog | Callwell',
-      description: 'Expert advice and insights for service businesses on AI call answering, appointment booking, and growing your business.',
-      keywords: 'service business tips, AI call answering blog, small business growth, phone answering tips'
+      description: 'Expert advice and insights for appointment-based teams and clinics on AI call answering, appointment booking, and growing your business.',
+      keywords: 'clinic tips, appointment business tips, AI call answering blog, small business growth, phone answering tips'
     }
   },
   {
@@ -133,8 +143,8 @@ const routes = [
     component: BlogPostMissedCalls,
     meta: {
       title: 'How Many Calls Is Your Business Missing After Hours? | Callwell Blog',
-      description: 'Learn how missed calls cost service businesses thousands in lost revenue and how AI call answering can help capture every lead.',
-      keywords: 'missed calls cost businesses, after hours calls service business, missed calls lost revenue, answering service alternatives',
+      description: 'Learn how missed calls cost businesses and clinics thousands in lost revenue and how AI call answering can help capture every lead.',
+      keywords: 'missed calls cost businesses, after hours calls clinic, missed calls lost revenue, answering service alternatives',
       type: 'article',
       datePublished: '2025-01-15',
       dateModified: '2025-01-15',
@@ -148,7 +158,7 @@ const routes = [
     meta: {
       title: 'AI Receptionist vs Answering Service: What Works in 2026 | Callwell Blog',
       description: 'Compare AI receptionists to traditional answering services. Learn the differences in cost, capability, and customer experience.',
-      keywords: 'AI receptionist for small business, answering service vs AI, virtual receptionist comparison, phone answering for service businesses',
+      keywords: 'AI receptionist for small business, answering service vs AI, virtual receptionist comparison, phone answering for clinics and businesses',
       type: 'article',
       datePublished: '2025-01-10',
       dateModified: '2025-01-10',
@@ -160,9 +170,9 @@ const routes = [
     name: 'BlogPhoneSetup',
     component: BlogPostPhoneSetup,
     meta: {
-      title: 'Best Phone Setup for Service Businesses in 2026 | Callwell Blog',
+      title: 'Best Phone Setup for Modern Businesses & Clinics in 2026 | Callwell Blog',
       description: 'The ideal phone setup for plumbers, electricians, and contractors. No new hardware, no new numbers, just better call handling.',
-      keywords: 'phone system for service business, business phone setup, AI phone assistant, call routing small business',
+      keywords: 'phone system for clinic and business, business phone setup, AI phone assistant, call routing small business',
       type: 'article',
       datePublished: '2025-01-05',
       dateModified: '2025-01-05',

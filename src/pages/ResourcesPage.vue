@@ -13,22 +13,6 @@
         </p>
       </div>
 
-      <!-- Resources Grid -->
-      <section class="max-w-4xl mx-auto mb-12 sm:mb-16">
-        <ul class="space-y-2">
-          <li v-for="resource in resources" :key="resource.path">
-            <router-link
-              :to="resource.path"
-              class="flex items-center justify-between px-4 py-4 sm:px-6 sm:py-5 rounded-lg border border-gray-200 bg-white text-gray-900 hover:bg-gray-50 hover:border-gray-300 transition-colors group"
-            >
-              <span class="font-semibold text-base sm:text-lg group-hover:text-blue-600">{{ resource.name }}</span>
-              <svg class="w-5 h-5 text-gray-400 group-hover:text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </router-link>
-          </li>
-        </ul>
-      </section>
     </section>
 
     <!-- Inline FAQ Section -->
@@ -82,12 +66,6 @@ import Footer from '../components/Footer.vue'
 import { ChevronDownIcon } from '@heroicons/vue/24/solid'
 import { trackContactSales } from '../composables/useAnalytics'
 
-const resources = [
-  { name: 'How It Works', path: '/how-it-works' },
-  { name: 'Blog', path: '/blog' },
-  { name: 'Terms of Service', path: '/terms' },
-  { name: 'Privacy Policy', path: '/privacy' }
-]
 
 const openFaqs = ref({})
 
@@ -102,11 +80,11 @@ const faqs = [
   },
   {
     question: 'Can I customize the AI responses?',
-    answer: 'Yes! Both Standard and Enterprise plans include custom AI training to match your business voice and brand. You can set booking rules, availability, and customize how the AI interacts with your customers.'
+    answer: 'Yes! We provide custom AI training to match your business voice, brand, and clinic terminology. You can set booking rules, availability, and customize how the AI interacts with your customers or patients.'
   },
   {
-    question: 'What happens if I exceed my call limit?',
-    answer: 'If you exceed your monthly call limit, we\'ll notify you and you can upgrade to Enterprise or purchase additional call credits. We never want you to miss a call, so we\'ll work with you to find the right solution.'
+    question: 'How does call volume pricing work?',
+    answer: 'Our tailored plan is modeled around your actual business needs. We will work with you to analyze your typical volume and design custom pricing so you only pay for what you actually use.'
   },
   {
     question: 'How quickly can I get started?',
@@ -118,7 +96,7 @@ const faqs = [
   },
   {
     question: 'What kind of support do you offer?',
-    answer: 'Standard plans include priority support with faster response times. Enterprise plans include a dedicated account manager and 24/7 phone support.'
+    answer: 'We provide comprehensive, dedicated support and hands-on setup setup assistance. We will walk you through setting up call routes, training the AI, connecting your existing calendars, and offer priority ongoing support.'
   }
 ]
 

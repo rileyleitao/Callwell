@@ -6,7 +6,7 @@
     <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
       <div class="mb-10">
         <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">From the Blog</h1>
-        <p class="mt-2 text-lg text-gray-600">Learn how to grow your service business with our expert advice.</p>
+        <p class="mt-2 text-lg text-gray-600">Learn how to grow your business or clinic with our expert advice.</p>
       </div>
 
       <div class="border-t border-gray-200 pt-10">
@@ -42,7 +42,7 @@
       <!-- Coming Soon Message if no posts -->
       <div v-if="posts.length === 0" class="text-center py-12">
         <h2 class="text-2xl font-semibold text-gray-900 mb-4">Coming Soon</h2>
-        <p class="text-gray-600">We're working on great content for service businesses. Check back soon!</p>
+        <p class="text-gray-600">We're working on great content. Check back soon!</p>
       </div>
     </section>
 
@@ -51,7 +51,7 @@
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Ready to never miss a call?</h2>
         <p class="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8">
-          See how Callwell can help your service business capture more leads.
+          See how Callwell can help your business or clinic capture more bookings.
         </p>
         <a href="https://calendly.com/rileyleitao/30min" target="_blank" rel="noopener noreferrer" @click="trackContactSales('Blog Page')" class="bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-gray-800 transition-colors inline-block">
           Contact Sales
@@ -78,7 +78,7 @@ const posts = [
   {
     slug: 'missed-calls-cost',
     title: 'How Many Calls Is Your Business Missing After Hours? (And How Much Revenue That Costs You)',
-    excerpt: 'Most service businesses don\'t realize how many calls they miss — because missed calls don\'t show up on the books. Learn the real cost and how to fix it.',
+    excerpt: 'Most appointment-based businesses and clinics don\'t realize how many calls they miss — because missed calls don\'t show up on the books. Learn the real cost and how to fix it.',
     date: '2025-01-15',
     category: 'Business Growth',
     author: {
@@ -99,7 +99,7 @@ const posts = [
   },
   {
     slug: 'phone-setup-service-business',
-    title: 'The Best Phone Setup for Service Businesses in 2026 (Without Replacing Your Current System)',
+    title: 'The Best Phone Setup for Modern Businesses & Clinics in 2026 (Without Replacing Your Current System)',
     excerpt: 'Most business owners think improving their phone setup means switching providers, buying hardware, or retraining staff. It doesn\'t.',
     date: '2025-01-05',
     category: 'How-To Guide',

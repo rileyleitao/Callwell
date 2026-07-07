@@ -7,7 +7,10 @@
             <p class="font-semibold mb-2 sm:mb-4 text-sm sm:text-base">Product</p>
             <ul class="space-y-1.5 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
               <li><router-link to="/products" class="hover:text-white">Products</router-link></li>
-              <li><router-link to="/how-it-works" class="hover:text-white">How it works</router-link></li>
+              <li><router-link to="/automated-call-answering" class="hover:text-white">Call Answering</router-link></li>
+              <li><router-link to="/ai-appointment-scheduling" class="hover:text-white">Appointment Scheduling</router-link></li>
+              <li><router-link to="/text-messaging" class="hover:text-white">Text Messaging</router-link></li>
+              <li><router-link to="/emergency-call-routing" class="hover:text-white">Emergency Routing</router-link></li>
             </ul>
           </div>
           <div class="text-left sm:text-center">
@@ -15,20 +18,19 @@
             <ul class="space-y-1.5 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
               <li><router-link to="/solutions" class="hover:text-white">Solutions</router-link></li>
               <li><router-link to="/pricing" class="hover:text-white">Pricing</router-link></li>
-              <li><router-link to="/automated-call-answering" class="hover:text-white">Call Answering</router-link></li>
-              <li><router-link to="/ai-appointment-scheduling" class="hover:text-white">Appointment Scheduling</router-link></li>
+              <li><router-link to="/how-it-works" class="hover:text-white">How It Works</router-link></li>
             </ul>
           </div>
           <div class="text-left sm:text-center">
             <p class="font-semibold mb-2 sm:mb-4 text-sm sm:text-base">Industries</p>
             <ul class="space-y-1.5 sm:space-y-2 text-gray-300 text-xs sm:text-sm">
+              <li><router-link to="/industries/medical-clinics" class="hover:text-white">Medical Clinics</router-link></li>
+              <li><router-link to="/industries/dental-clinics" class="hover:text-white">Dental Clinics</router-link></li>
+              <li><router-link to="/industries/physiotherapy-massage" class="hover:text-white">Physiotherapy & Massage</router-link></li>
               <li><router-link to="/industries/plumbing-hvac" class="hover:text-white">Plumbing & HVAC</router-link></li>
               <li><router-link to="/industries/electrician" class="hover:text-white">Electrician</router-link></li>
               <li><router-link to="/industries/window-door" class="hover:text-white">Window & Door</router-link></li>
               <li><router-link to="/industries/construction" class="hover:text-white">Construction</router-link></li>
-              <li><router-link to="/industries/dental-clinics" class="hover:text-white">Dental Clinics</router-link></li>
-              <li><router-link to="/industries/medical-clinics" class="hover:text-white">Medical Clinics</router-link></li>
-              <li><router-link to="/industries/physiotherapy-massage" class="hover:text-white">Physiotherapy & Massage</router-link></li>
             </ul>
           </div>
           <div class="text-left sm:text-center">

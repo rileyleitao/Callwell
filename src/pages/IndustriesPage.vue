@@ -40,12 +40,12 @@ import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 
 const industries = [
+  { name: 'Medical Clinics', path: '/industries/medical-clinics' },
+  { name: 'Dental Clinics', path: '/industries/dental-clinics' },
+  { name: 'Physiotherapy & Massage', path: '/industries/physiotherapy-massage' },
   { name: 'Plumbing & HVAC', path: '/industries/plumbing-hvac' },
   { name: 'Electrician', path: '/industries/electrician' },
   { name: 'Window & Door Installation', path: '/industries/window-door' },
-  { name: 'Construction & Contracting', path: '/industries/construction' },
-  { name: 'Dental Clinics', path: '/industries/dental-clinics' },
-  { name: 'Medical Clinics', path: '/industries/medical-clinics' },
-  { name: 'Physiotherapy & Massage', path: '/industries/physiotherapy-massage' }
+  { name: 'Construction & Contracting', path: '/industries/construction' }
 ]
 </script>
