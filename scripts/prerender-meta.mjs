@@ -245,12 +245,21 @@ for (const route of routes) {
         `<meta name="twitter:description" content="${desc}">`
     )
 
+    // In-links map for crawlers to avoid indexer orphan pages.
+    const allLinks = routes.map(r => {
+        const linkPath = r.path === '/' ? '/' : `${r.path}/`
+        return `<a href="${linkPath}">${escapeHtml(r.h1 || r.title || '')}</a>`
+    }).join('\n    ')
+
     // Inject SEO content inside #root so crawlers see H1 + text.
     // Vue replaces this when it mounts.
     const seoBlock = [
         `<div id="root">`,
         `  <h1>${escapeHtml(route.h1)}</h1>`,
         `  <p>${desc}</p>`,
+        `  <nav style="display:none;" aria-hidden="true">`,
+        `    ${allLinks}`,
+        `  </nav>`,
         `  <noscript><p>Please enable JavaScript to use Callwell. <a href="https://callwell.io">Visit homepage</a>.</p></noscript>`
     ].join('\n')
 

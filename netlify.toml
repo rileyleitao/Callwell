@@ -3,6 +3,18 @@
   publish = "dist"
 
 [[redirects]]
+  from = "https://callwell.ca/*"
+  to = "https://callwell.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://callwell.ca/*"
+  to = "https://callwell.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
