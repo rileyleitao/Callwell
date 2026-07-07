@@ -64,6 +64,12 @@ const routes = [
         h1: 'Products'
     },
     {
+        path: '/text-messaging',
+        title: 'Automated SMS, Text & Email Reminders | Callwell',
+        description: 'Keep your schedule full and eliminate no-shows. Automatically send text or email reminders, notify of open slots, and run campaigns.',
+        h1: 'Automated Text & SMS Messaging'
+    },
+    {
         path: '/solutions',
         title: 'Solutions for Service Businesses | Callwell',
         description: 'From after-hours calls to peak demand periods, Callwell handles every scenario so you never miss a booking opportunity.',
@@ -180,7 +186,7 @@ function escapeHtml(str) {
 }
 
 function buildCanonical(routePath) {
-    return routePath === '/' ? 'https://callwell.io' : `https://callwell.io${routePath}`
+    return routePath === '/' ? 'https://callwell.io' : `https://callwell.io${routePath}/`
 }
 
 // ── Main ──────────────────────────────────────────────────────────────
